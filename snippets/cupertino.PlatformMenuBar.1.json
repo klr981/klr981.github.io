@@ -1,0 +1,13 @@
+{
+    "id": "cupertino.PlatformMenuBar.1",
+    "element": "PlatformMenuBar",
+    "sourcePath": "lib/src/widgets/platform_menu_bar.dart",
+    "sourceLine": 511,
+    "channel": "master",
+    "serial": "1",
+    "package": "flutter",
+    "library": "cupertino",
+    "copyright": null,
+    "description": "This example shows a [PlatformMenuBar] that contains a single top level\nmenu, containing three items for \"About\", a toggleable menu item for showing\na message, a cascading submenu with message choices, and \"Quit\".\n\n**This example will only work on macOS.**",
+    "file": "cupertino.PlatformMenuBar.1.dart"
+}
