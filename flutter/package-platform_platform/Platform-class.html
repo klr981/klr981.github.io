@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Platform class from the platform library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -142,7 +135,7 @@ the use of these APIs in tests, where you can provide mock implementations.</p>
 </dt>
 <dd>
   The environment for this process.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -153,7 +146,7 @@ the use of these APIs in tests, where you can provide mock implementations.</p>
 </dt>
 <dd>
   The path of the executable used to run the script in this isolate.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -167,7 +160,7 @@ the use of these APIs in tests, where you can provide mock implementations.</p>
 isolate. These are the command-line flags between the executable name
 and the script name. Each fetch of <code>executableArguments</code> returns a new
 list containing the flags passed to the executable.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -178,7 +171,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -189,7 +182,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is Android.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -200,7 +193,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is Fuchsia
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -211,7 +204,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is iOS.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -222,7 +215,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is Linux.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -233,7 +226,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is OS X.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -244,7 +237,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   True if the operating system is Windows.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -255,7 +248,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   Get the name of the current locale.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -266,7 +259,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   Get the local hostname for the system.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -277,7 +270,7 @@ list containing the flags passed to the executable.
 </dt>
 <dd>
   The number of processors of the machine.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -289,7 +282,7 @@ list containing the flags passed to the executable.
 <dd>
   A string (<code>linux</code>, <code>macos</code>, <code>windows</code>, <code>android</code>, <code>ios</code>, or <code>fuchsia</code>)
 representing the operating system.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -300,7 +293,7 @@ representing the operating system.
 </dt>
 <dd>
   A string representing the version of the operating system or platform.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -313,7 +306,7 @@ representing the operating system.
   The value of the <code>--packages</code> flag passed to the executable
 used to run the script in this isolate. This is the configuration which
 specifies how Dart packages are looked up.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -325,7 +318,7 @@ specifies how Dart packages are looked up.
 <dd>
   The path separator used by the operating system to separate
 components in file paths.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -337,7 +330,7 @@ components in file paths.
 <dd>
   The path of the executable used to run the script in this
 isolate after it has been resolved by the OS.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -348,7 +341,7 @@ isolate after it has been resolved by the OS.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -360,7 +353,7 @@ isolate after it has been resolved by the OS.
 <dd>
   The absolute URI of the script being run in this
 isolate.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -371,7 +364,7 @@ isolate.
 </dt>
 <dd>
   When stdin is connected to a terminal, whether ANSI codes are supported.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -382,7 +375,7 @@ isolate.
 </dt>
 <dd>
   When stdout is connected to a terminal, whether ANSI codes are supported.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -393,7 +386,7 @@ isolate.
 </dt>
 <dd>
   The version of the current Dart runtime.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -415,7 +408,7 @@ isolate.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -441,7 +434,7 @@ isolate.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -462,7 +455,7 @@ isolate.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

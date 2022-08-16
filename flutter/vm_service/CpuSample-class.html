@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the CpuSample class from the vm_service library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -123,7 +116,7 @@
 <dd>
   Matches the index of a class in HeapSnapshot.classes. Provided for
 CpuSample instances returned from a getAllocationTraces().
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -134,7 +127,7 @@ CpuSample instances returned from a getAllocationTraces().
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -147,7 +140,7 @@ CpuSample instances returned from a getAllocationTraces().
   The identityHashCode assigned to the allocated object. This hash code is
 the same as the hash code provided in HeapSnapshot. Provided for CpuSample
 instances returned from a getAllocationTraces().
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -158,7 +151,7 @@ instances returned from a getAllocationTraces().
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -171,7 +164,7 @@ instances returned from a getAllocationTraces().
   The call stack at the time this sample was collected. The stack is to be
 interpreted as top to bottom. Each element in this array is a key into the
 <code>functions</code> array in <code>CpuSamples</code>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -182,7 +175,7 @@ interpreted as top to bottom. Each element in this array is a key into the
 </dt>
 <dd>
   The thread ID representing the thread on which this sample was collected.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -193,7 +186,7 @@ interpreted as top to bottom. Each element in this array is a key into the
 </dt>
 <dd>
   The time this sample was collected in microseconds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -206,7 +199,7 @@ interpreted as top to bottom. Each element in this array is a key into the
   Provided and set to true if the sample's stack was truncated. This can
 happen if the stack is deeper than the <code>stackDepth</code> in the <code>CpuSamples</code>
 response.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -218,7 +211,7 @@ response.
 <dd>
   The name of the User tag set when this sample was collected. Omitted if no
 User tag was set when this sample was collected.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -230,7 +223,7 @@ User tag was set when this sample was collected.
 <dd>
   The name of VM tag set when this sample was collected. Omitted if the VM
 tag for the sample is not considered valid.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -252,7 +245,7 @@ tag for the sample is not considered valid.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -278,7 +271,7 @@ tag for the sample is not considered valid.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -299,7 +292,7 @@ tag for the sample is not considered valid.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

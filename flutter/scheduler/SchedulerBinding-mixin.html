@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the SchedulerBinding mixin from the scheduler library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -155,7 +148,7 @@ priority and are executed in priority order according to a
 </dt>
 <dd>
   The strategy to use when deciding whether to run a task or not.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -167,7 +160,7 @@ priority and are executed in priority order according to a
 <dd>
   Whether the application is visible, and if so, whether it is currently
 interactive.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -178,7 +171,7 @@ interactive.
 </dt>
 <dd>
   The current number of transient frame callbacks scheduled.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -189,7 +182,7 @@ interactive.
 </dt>
 <dd>
   Returns a Future that completes after the frame completes.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -200,7 +193,7 @@ interactive.
 </dt>
 <dd>
   Whether this scheduler has requested that <a href="scheduler/SchedulerBinding/handleBeginFrame.html">handleBeginFrame</a> be called soon.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -211,7 +204,7 @@ interactive.
 </dt>
 <dd>
   The phase that the scheduler is currently operating under.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -222,7 +215,7 @@ interactive.
 </dt>
 <dd>
   Whether frames are currently being scheduled when <a href="scheduler/SchedulerBinding/scheduleFrame.html">scheduleFrame</a> is called.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -233,7 +226,7 @@ interactive.
 </dt>
 <dd>
   The time stamp for the frame currently being processed.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -246,7 +239,7 @@ interactive.
   The raw time stamp as provided by the engine to
 <a href="dart-ui/PlatformDispatcher/onBeginFrame.html">dart:ui.PlatformDispatcher.onBeginFrame</a> for the frame currently being
 processed.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -257,7 +250,7 @@ processed.
 </dt>
 <dd class="inherited">
   The main window to which this binding is bound.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -268,7 +261,7 @@ processed.
 </dt>
 <dd class="inherited">
   The <a href="dart-ui/PlatformDispatcher-class.html">ui.PlatformDispatcher</a> to which this binding is bound.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -279,7 +272,7 @@ processed.
 </dt>
 <dd class="inherited">
   Whether <a href="foundation/BindingBase/lockEvents.html">lockEvents</a> is currently locking events.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, read-only, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -290,7 +283,7 @@ processed.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -301,7 +294,7 @@ processed.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -391,7 +384,7 @@ there are, prints their locations and throws an exception.
 <dd>
   Ensures callbacks for <a href="dart-ui/PlatformDispatcher/onBeginFrame.html">PlatformDispatcher.onBeginFrame</a> and
 <a href="dart-ui/PlatformDispatcher/onDrawFrame.html">PlatformDispatcher.onDrawFrame</a> are registered.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a></div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span></div>
 
 </dd>
 
@@ -418,7 +411,7 @@ currently producing a frame.
 </dt>
 <dd>
   Called when the application lifecycle state changes.
-  <div class="features">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="meta/protected-constant.html">protected</a></div>
+  <div class="features"><span class=" @<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a></span><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span></div>
 
 </dd>
 
@@ -457,7 +450,7 @@ currently producing a frame.
 </dt>
 <dd>
   Execute the highest-priority task, if it is of a high enough priority.
-  <div class="features">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></div>
+  <div class="features"><span class=" @<a href="meta/visibleForTesting-constant.html">visibleForTesting</a>">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></span></div>
 
 </dd>
 
@@ -472,7 +465,7 @@ currently producing a frame.
   The initialization method. Subclasses override this method to hook into
 the platform and otherwise configure their services. Subclasses must call
 "super.initInstances()".
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -486,7 +479,7 @@ the platform and otherwise configure their services. Subclasses must call
 <dd>
   Called when the binding is initialized, to register service
 extensions.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -500,7 +493,7 @@ extensions.
 <dd class="inherited">
   Locks the dispatching of asynchronous events and callbacks until the
 callback's future completes.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -513,7 +506,7 @@ callback's future completes.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -527,7 +520,7 @@ callback's future completes.
 <dd class="inherited">
   This method is called by <a href="foundation/BindingBase/reassembleApplication.html">reassembleApplication</a> to actually cause the
 application to reassemble, e.g. after a hot reload.
-  <div class="features">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a></span><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -542,7 +535,7 @@ application to reassemble, e.g. after a hot reload.
   All events dispatched by a <a href="foundation/BindingBase-class.html">BindingBase</a> use this method instead of
 calling <a href="dart-developer/postEvent.html">developer.postEvent</a> directly so that tests for <a href="foundation/BindingBase-class.html">BindingBase</a>
 can track which events were dispatched by overriding this method.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -555,7 +548,7 @@ can track which events were dispatched by overriding this method.
 </dt>
 <dd class="inherited">
   Cause the entire application to redraw, e.g. after a hot reload.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -573,7 +566,7 @@ name "ext.flutter.name"), which takes a single argument
 or can be omitted to read the current value. (Any value other
 than "true" is considered equivalent to "false". Other arguments
 are ignored.)
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -590,7 +583,7 @@ name "ext.flutter.name"), which takes a single argument with the
 same name as the method which, if present, must have a value
 that can be parsed by <a href="dart-core/double/parse.html">double.parse</a>, and can be omitted to read
 the current value. (Other arguments are ignored.)
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -604,7 +597,7 @@ the current value. (Other arguments are ignored.)
 <dd class="inherited">
   Registers a service extension method with the given name (full name
 "ext.flutter.name").
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -619,7 +612,7 @@ the current value. (Other arguments are ignored.)
   Registers a service extension method with the given name (full
 name "ext.flutter.name"), which takes no arguments and returns
 no value.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -635,7 +628,7 @@ no value.
 "ext.flutter.name"), which optionally takes a single argument with the
 name "value". If the argument is omitted, the value is to be read,
 otherwise it is to be set. Returns the current value.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -744,7 +737,7 @@ the engine to request a frame in response to a system "Vsync" signal.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -757,7 +750,7 @@ the engine to request a frame in response to a system "Vsync" signal.
 </dt>
 <dd>
   Called by <a href="foundation/BindingBase/lockEvents.html">lockEvents</a> when events get unlocked.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -778,7 +771,7 @@ the engine to request a frame in response to a system "Vsync" signal.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -796,7 +789,7 @@ the engine to request a frame in response to a system "Vsync" signal.
 </dt>
 <dd>
   The current <a href="scheduler/SchedulerBinding-mixin.html">SchedulerBinding</a>, if one has been created.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 

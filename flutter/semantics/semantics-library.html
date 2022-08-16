@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="semantics library API docs, for the Dart programming language.">
@@ -70,15 +70,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -417,7 +410,7 @@ rendered as text art.
 <dd>
   Overrides the setting of <a href="semantics/SemanticsBinding/disableAnimations.html">SemanticsBinding.disableAnimations</a> for debugging
 and testing.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -449,6 +442,14 @@ and testing.
       <h2>Enums</h2>
 
       <dl>
+        <dt id="Assertiveness">
+  <span class="name "><a href="semantics/Assertiveness.html">Assertiveness</a></span> 
+
+</dt>
+<dd>
+  Determines the assertiveness level of the accessibility announcement.
+</dd>
+
         <dt id="DebugSemanticsDumpOrder">
   <span class="name "><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></span> 
 
@@ -612,6 +613,7 @@ current text with the input <code>text</code>.
       <li><a href="widgets/widgets-library.html">widgets</a></li>
       <li class="section-title">Dart</li>
       <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+      <li><a href="dart-wasm/dart-wasm-library.html">dart:wasm</a></li>
       <li class="section-subtitle">Core</li>
         <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
         <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
@@ -824,6 +826,7 @@ current text with the input <code>text</code>.
         <li><a href="semantics/debugResetSemanticsIdCounter.html">debugResetSemanticsIdCounter</a></li>
 
       <li class="section-title"><a href="semantics/semantics-library.html#enums">Enums</a></li>
+        <li><a href="semantics/Assertiveness.html">Assertiveness</a></li>
         <li><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></li>
         <li><a href="foundation/DiagnosticLevel.html">DiagnosticLevel</a></li>
         <li><a href="foundation/DiagnosticsTreeStyle.html">DiagnosticsTreeStyle</a></li>

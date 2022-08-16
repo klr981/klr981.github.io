@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the debugDumpSemanticsTree function from the rendering library, for the Dart programming language.">
@@ -71,21 +71,14 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/rendering/binding.dart#L578"><i class="material-icons">description</i></a></div>
+  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/rendering/binding.dart#L574"><i class="material-icons">description</i></a></div>
 <h1><span class="kind-function">debugDumpSemanticsTree</span> function 
     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
  
@@ -95,7 +88,7 @@
         
 
 <span class="returntype">void</span>
-<span class="name ">debugDumpSemanticsTree</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="debugDumpSemanticsTree-param-childOrder"><span class="type-annotation"><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></span> <span class="parameter-name">childOrder</span></span></li>
+<span class="name ">debugDumpSemanticsTree</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="debugDumpSemanticsTree-param-childOrder">[<span class="type-annotation"><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></span> <span class="parameter-name">childOrder</span> = <span class="default-value">DebugSemanticsDumpOrder.traversalOrder</span>]</span></li>
 </ol>)
 
     </section>
@@ -112,8 +105,8 @@ controlled by the <code>childOrder</code> parameter.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">void debugDumpSemanticsTree(DebugSemanticsDumpOrder childOrder) {
-  debugPrint(RendererBinding.instance.renderView.debugSemantics?.toStringDeep(childOrder: childOrder) ?? &#39;Semantics not collected.&#39;);
+  <pre class="language-dart"><code class="language-dart">void debugDumpSemanticsTree([DebugSemanticsDumpOrder childOrder = DebugSemanticsDumpOrder.traversalOrder]) {
+  debugPrint(_generateSemanticsTree(childOrder));
 }</code></pre>
 </section>
 
@@ -463,6 +456,7 @@ controlled by the <code>childOrder</code> parameter.</p>
         <li><a href="dart-ui/SpellOutStringAttribute-class.html">SpellOutStringAttribute</a></li>
         <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="dart-ui/StringAttribute-class.html">StringAttribute</a></li>
         <li><a href="foundation/StringProperty-class.html">StringProperty</a></li>
         <li><a href="painting/StrutStyle-class.html">StrutStyle</a></li>
@@ -575,6 +569,7 @@ controlled by the <code>childOrder</code> parameter.</p>
         <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
 
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
+        <li><a href="semantics/Assertiveness.html">Assertiveness</a></li>
         <li><a href="painting/Axis.html">Axis</a></li>
         <li><a href="painting/AxisDirection.html">AxisDirection</a></li>
         <li><a href="dart-ui/BlendMode.html">BlendMode</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the WebDriver class from the webdriver.io library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -138,7 +131,7 @@
 <dd>
   The currently focused element, or the body element if no element has
 focus.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -149,7 +142,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -160,7 +153,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -171,7 +164,7 @@ focus.
 </dt>
 <dd>
   The current url.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -182,7 +175,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -193,7 +186,7 @@ focus.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -204,7 +197,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -215,7 +208,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -226,7 +219,7 @@ focus.
 </dt>
 <dd>
   <code>logs.get(logType)</code> will give list of logs captured in browser.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -237,7 +230,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -248,7 +241,7 @@ focus.
 </dt>
 <dd>
   If true, WebDriver actions are recorded as <a href="webdriver.sync_io/WebDriverCommandEvent-class.html">WebDriverCommandEvent</a>s.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -259,7 +252,7 @@ focus.
 </dt>
 <dd>
   An artist's rendition of the current page's source.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -270,7 +263,7 @@ focus.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -281,7 +274,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -292,7 +285,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -303,7 +296,7 @@ focus.
 </dt>
 <dd>
   
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -315,7 +308,7 @@ focus.
 <dd>
   Produces a <a href="webdriver.sync_io/WebDriver-class.html">sync_core.WebDriver</a> with the same session ID. Allows
 forwards compatibility with other frameworks.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -326,7 +319,7 @@ forwards compatibility with other frameworks.
 </dt>
 <dd>
   
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -337,7 +330,7 @@ forwards compatibility with other frameworks.
 </dt>
 <dd>
   The title of the current page.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -348,7 +341,7 @@ forwards compatibility with other frameworks.
 </dt>
 <dd>
   
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -359,7 +352,7 @@ forwards compatibility with other frameworks.
 </dt>
 <dd>
   Handle for the active tab/window.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -370,7 +363,7 @@ forwards compatibility with other frameworks.
 </dt>
 <dd>
   Handles for all of the currently displayed tabs/windows.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -446,7 +439,7 @@ base64-encoded string.
 </dt>
 <dd>
   Take a screenshot of the current page as PNG as stream of uint8.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use captureScreenshotAsBase64 or captureScreenshotAsList!&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use captureScreenshotAsBase64 or captureScreenshotAsList!&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use captureScreenshotAsBase64 or captureScreenshotAsList!&#39;)</span></div>
 
 </dd>
 
@@ -545,7 +538,7 @@ The value to this callback will be returned to the client.
 <dd>
   Search for an element within the entire current page.
 Throws <a href="webdriver.sync_io/NoSuchElementException-class.html">NoSuchElementException</a> if a matching element is not found.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -558,7 +551,7 @@ Throws <a href="webdriver.sync_io/NoSuchElementException-class.html">NoSuchEleme
 </dt>
 <dd>
   Search for multiple elements within the entire current page.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -623,7 +616,7 @@ Throws <a href="webdriver.sync_io/NoSuchElementException-class.html">NoSuchEleme
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -675,7 +668,7 @@ Throws <a href="webdriver.sync_io/NoSuchElementException-class.html">NoSuchEleme
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -696,7 +689,7 @@ Throws <a href="webdriver.sync_io/NoSuchElementException-class.html">NoSuchEleme
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

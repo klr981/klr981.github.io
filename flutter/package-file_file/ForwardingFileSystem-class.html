@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the ForwardingFileSystem class from the file library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -143,7 +136,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   Creates a directory object pointing to the current working directory.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -154,7 +147,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   The file system to which this file system will forward all activity.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, final</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature final">final</span></div>
 
 </dd>
 
@@ -165,7 +158,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -176,7 +169,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   Tests if <a href="dart-io/FileSystemEntity/watch.html">FileSystemEntity.watch</a> is supported on the current system.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -187,7 +180,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   An object for manipulating paths in this file system.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -198,7 +191,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -209,7 +202,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   Gets the system temp directory.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -231,7 +224,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   Returns a reference to a <a href="package-file_file/Directory-class.html">Directory</a> at <code>path</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -244,7 +237,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd>
   Returns a reference to a <a href="package-file_file/File-class.html">File</a> at <code>path</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -257,7 +250,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 </dt>
 <dd class="inherited">
   Gets the string path represented by the specified generic <code>path</code>.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -271,7 +264,7 @@ properties to the specified <a href="package-file_file/ForwardingFileSystem/dele
 <dd>
   Checks whether two paths refer to the same object in the
 file system. Returns a <a href="dart-async/Future-class.html">Future&lt;bool&gt;</a> that completes with the result.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -285,7 +278,7 @@ file system. Returns a <a href="dart-async/Future-class.html">Future&lt;bool&gt;
 <dd>
   Synchronously checks whether two paths refer to the same object in the
 file system.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -298,7 +291,7 @@ file system.
 </dt>
 <dd class="inherited">
   Checks if <a href="type"><code>type(path)</code></a> returns <code>io.FileSystemEntityType.DIRECTORY</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -312,7 +305,7 @@ file system.
 <dd class="inherited">
   Synchronously checks if <a href="type"><code>type(path)</code></a> returns
 <code>io.FileSystemEntityType.DIRECTORY</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -325,7 +318,7 @@ file system.
 </dt>
 <dd class="inherited">
   Checks if <a href="type"><code>type(path)</code></a> returns <code>io.FileSystemEntityType.FILE</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -339,7 +332,7 @@ file system.
 <dd class="inherited">
   Synchronously checks if <a href="type"><code>type(path)</code></a> returns
 <code>io.FileSystemEntityType.FILE</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -352,7 +345,7 @@ file system.
 </dt>
 <dd class="inherited">
   Checks if <a href="type"><code>type(path)</code></a> returns <code>io.FileSystemEntityType.LINK</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -366,7 +359,7 @@ file system.
 <dd class="inherited">
   Synchronously checks if <a href="type"><code>type(path)</code></a> returns
 <code>io.FileSystemEntityType.LINK</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -379,7 +372,7 @@ file system.
 </dt>
 <dd>
   Returns a reference to a <a href="package-file_file/Link-class.html">Link</a> at <code>path</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -392,7 +385,7 @@ file system.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -409,7 +402,7 @@ Returns a Future which completes with a <a href="dart-io/FileStat-class.html">io
 the data returned by stat().
 If the call fails, completes the future with a <a href="dart-io/FileStat-class.html">io.FileStat</a> object with
 .type set to FileSystemEntityType.NOT_FOUND and the other fields invalid.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -425,7 +418,7 @@ If the call fails, completes the future with a <a href="dart-io/FileStat-class.h
 Returns a <a href="dart-io/FileStat-class.html">io.FileStat</a> object containing the data returned by stat().
 If the call fails, returns a <a href="dart-io/FileStat-class.html">io.FileStat</a> object with .type set to
 FileSystemEntityType.NOT_FOUND and the other fields invalid.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -438,7 +431,7 @@ FileSystemEntityType.NOT_FOUND and the other fields invalid.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -452,7 +445,7 @@ FileSystemEntityType.NOT_FOUND and the other fields invalid.
 <dd>
   Finds the type of file system object that a <code>path</code> points to. Returns
 a Future<filesystementitytype> that completes with the result.</filesystementitytype>
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -466,7 +459,7 @@ a Future<filesystementitytype> that completes with the result.</filesystementity
 <dd>
   Syncronously finds the type of file system object that a <code>path</code> points
 to. Returns a <a href="dart-io/FileSystemEntityType-class.html">io.FileSystemEntityType</a>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -487,7 +480,7 @@ to. Returns a <a href="dart-io/FileSystemEntityType-class.html">io.FileSystemEnt
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

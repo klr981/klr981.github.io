@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the ModalRoute class from the widgets library, for the Dart programming language.">
@@ -71,21 +71,14 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/routes.dart#L952"><i class="material-icons">description</i></a></div>
+  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/routes.dart#L948"><i class="material-icons">description</i></a></div>
 <h1><span class="kind-class">ModalRoute&lt;<wbr><span class="type-parameter">T</span>&gt;</span> class 
     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
  
@@ -162,7 +155,7 @@ return value, consider using <code>void</code> as the return value.</p>
 <dd>
   The animation that drives the route's transition and the previous route's
 forward transition.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -174,7 +167,7 @@ forward transition.
 <dd>
   The color to use for the modal barrier. If this is null, the barrier will
 be transparent.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -185,7 +178,7 @@ be transparent.
 </dt>
 <dd>
   The curve that is used for animating the modal barrier in and out.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -196,7 +189,7 @@ be transparent.
 </dt>
 <dd>
   Whether you can dismiss this route by tapping the modal barrier.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -207,7 +200,7 @@ be transparent.
 </dt>
 <dd>
   The semantic label used for a dismissible barrier.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -218,7 +211,7 @@ be transparent.
 </dt>
 <dd>
   Whether this route can be popped.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -230,7 +223,7 @@ be transparent.
 <dd class="inherited">
   This future completes only once the transition itself has finished, after
 the overlay entries have been removed from the navigator's overlay.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -241,7 +234,7 @@ the overlay entries have been removed from the navigator's overlay.
 </dt>
 <dd class="inherited">
   The animation controller that the route uses to drive the transitions.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, read-only, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -253,7 +246,7 @@ the overlay entries have been removed from the navigator's overlay.
 <dd class="inherited">
   When this route is popped (see <a href="widgets/Navigator/pop.html">Navigator.pop</a>) if the result isn't
 specified or if it's null, this value will be used instead.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -264,7 +257,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd class="inherited">
   A short description of this route useful for debugging.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -275,7 +268,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd>
   The filter to add to the barrier.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -286,7 +279,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd class="inherited">
   Controls whether <a href="widgets/LocalHistoryRoute/didPop.html">didPop</a> calls <a href="widgets/NavigatorState/finalizeRoute.html">NavigatorState.finalizeRoute</a>.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -297,7 +290,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd class="inherited">
   Whether there is at least one active route underneath this route.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, read-only, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -308,7 +301,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -319,7 +312,7 @@ specified or if it's null, this value will be used instead.
 </dt>
 <dd>
   True if one or more <a href="widgets/WillPopCallback.html">WillPopCallback</a> callbacks exist.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, read-only</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -331,7 +324,7 @@ specified or if it's null, this value will be used instead.
 <dd>
   Whether an <a href="material/AppBar-class.html">AppBar</a> in the route should automatically add a back button or
 close button.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -342,7 +335,7 @@ close button.
 </dt>
 <dd class="inherited">
   Whether this route is on the navigator.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -353,7 +346,7 @@ close button.
 </dt>
 <dd class="inherited">
   Whether this route is the top-most route on the navigator.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -364,7 +357,7 @@ close button.
 </dt>
 <dd class="inherited">
   Whether this route is the bottom-most active route on the navigator.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -375,7 +368,7 @@ close button.
 </dt>
 <dd>
   Whether the route should remain in memory when it is inactive.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -386,7 +379,7 @@ close button.
 </dt>
 <dd class="inherited">
   The navigator that the route is in, if any.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -397,7 +390,7 @@ close button.
 </dt>
 <dd>
   Whether this route is currently offstage.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -408,7 +401,7 @@ close button.
 </dt>
 <dd class="inherited">
   Whether the route obscures previous routes when the transition is complete.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -419,7 +412,7 @@ close button.
 </dt>
 <dd class="inherited">
   The overlay entries of this route.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -430,7 +423,7 @@ close button.
 </dt>
 <dd class="inherited">
   A future that completes when this route is popped off the navigator.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -442,7 +435,7 @@ close button.
 <dd class="inherited">
   Whether the route transition will prefer to animate a rasterized
 snapshot of the entering/exiting routes.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -454,7 +447,7 @@ snapshot of the entering/exiting routes.
 <dd class="inherited">
   The restoration scope ID to be used for the <a href="widgets/RestorationScope-class.html">RestorationScope</a> surrounding
 this route.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -465,7 +458,7 @@ this route.
 </dt>
 <dd class="inherited">
   The duration the transition going in reverse.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -476,7 +469,7 @@ this route.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -489,7 +482,7 @@ this route.
   The animation for the route being pushed on top of this route. This
 animation lets this route coordinate with the entrance and exit transition
 of route pushed on top of this route.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -501,7 +494,7 @@ of route pushed on top of this route.
 <dd>
   Whether the semantics of the modal barrier are included in the
 semantics tree.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -512,7 +505,7 @@ semantics tree.
 </dt>
 <dd class="inherited">
   The settings for this route.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -523,7 +516,7 @@ semantics tree.
 </dt>
 <dd>
   The build context for the subtree containing the primary content of this route.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -534,7 +527,7 @@ semantics tree.
 </dt>
 <dd class="inherited">
   The duration the transition going forwards.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -545,7 +538,7 @@ semantics tree.
 </dt>
 <dd class="inherited">
   Whether to takeover the <a href="widgets/TransitionRoute/controller.html">controller</a> created by <a href="widgets/TransitionRoute/createAnimationController.html">createAnimationController</a>.
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -556,7 +549,7 @@ semantics tree.
 </dt>
 <dd class="inherited">
   Whether calling <a href="widgets/LocalHistoryRoute/didPop.html">didPop</a> would return false.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -578,7 +571,7 @@ semantics tree.
 </dt>
 <dd class="inherited">
   Adds a local history entry to this route.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -632,7 +625,7 @@ widgets that define how the route arrives on and leaves the screen.
 <dd class="inherited">
   Returns true if <code>previousRoute</code> should animate when this route
 is pushed on top of it or when then this route is popped off of it.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -647,7 +640,7 @@ is pushed on top of it or when then this route is popped off of it.
   Returns true if this route supports a transition animation that runs
 when <code>nextRoute</code> is pushed on top of it or when <code>nextRoute</code> is popped
 off of it.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -661,7 +654,7 @@ off of it.
 <dd>
   Called whenever the <a href="widgets/Navigator-class.html">Navigator</a> has updated in some manner that might
 affect routes, to indicate that the route may wish to rebuild as well.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -674,7 +667,7 @@ affect routes, to indicate that the route may wish to rebuild as well.
 </dt>
 <dd>
   Called whenever the internal state of the route has changed.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -689,7 +682,7 @@ affect routes, to indicate that the route may wish to rebuild as well.
   Called to create the animation that exposes the current progress of
 the transition controlled by the animation controller created by
 <a href="widgets/TransitionRoute/createAnimationController.html">createAnimationController()</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -704,7 +697,7 @@ the transition controlled by the animation controller created by
   Called to create the animation controller that will drive the transitions to
 this route from the previous one, and back to the previous route from this
 one.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -717,7 +710,7 @@ one.
 </dt>
 <dd>
   Subclasses should override this getter to return the builders for the overlay.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -730,7 +723,7 @@ one.
 </dt>
 <dd>
   Called after <a href="widgets/ModalRoute/install.html">install</a> when the route is added to the navigator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -743,7 +736,7 @@ one.
 </dt>
 <dd class="inherited">
   This route's next route has changed to the given new route.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -756,7 +749,7 @@ one.
 </dt>
 <dd>
   This route's previous route has changed to the given new route.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -769,7 +762,7 @@ one.
 </dt>
 <dd class="inherited">
   The route was popped or is otherwise being removed somewhat gracefully.
-  <div class="features">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a></span><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -786,7 +779,7 @@ internally (e.g. because it has its own stack of internal state) then
 return false, otherwise return true (by returning the value of calling
 <code>super.didPop</code>). Returning false will prevent the default behavior of
 <a href="widgets/NavigatorState/pop.html">NavigatorState.pop</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -800,7 +793,7 @@ return false, otherwise return true (by returning the value of calling
 <dd class="inherited">
   The given route, which was above this one, has been popped off the
 navigator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -813,7 +806,7 @@ navigator.
 </dt>
 <dd>
   Called after <a href="widgets/ModalRoute/install.html">install</a> when the route is pushed onto the navigator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -826,7 +819,7 @@ navigator.
 </dt>
 <dd class="inherited">
   Called after <a href="widgets/ModalRoute/install.html">install</a> when the route replaced another in the navigator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -839,7 +832,7 @@ navigator.
 </dt>
 <dd class="inherited">
   Discards any resources used by the object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -852,7 +845,7 @@ navigator.
 </dt>
 <dd>
   Called when the route is inserted into the navigator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -865,7 +858,7 @@ navigator.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -878,7 +871,7 @@ navigator.
 </dt>
 <dd class="inherited">
   Remove a local history entry from this route.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -904,7 +897,7 @@ navigator.
 </dt>
 <dd>
   Schedule a call to <a href="widgets/ModalRoute/buildTransitions.html">buildTransitions</a>.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a></div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span></div>
 
 </dd>
 
@@ -917,7 +910,7 @@ navigator.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -934,7 +927,7 @@ navigator.
 return true, the base <a href="widgets/Route/willPop.html">Route.willPop</a>'s result will be returned. The
 callbacks will be called in the order they were added, and will only be
 called if all previous callbacks returned true.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -955,7 +948,7 @@ called if all previous callbacks returned true.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -975,7 +968,7 @@ called if all previous callbacks returned true.
 </dt>
 <dd>
   Returns the modal route most closely associated with the given context.
-  <div class="features">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></div>
+  <div class="features"><span class=" @<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a>">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></span></div>
 
 </dd>
 
@@ -1276,8 +1269,6 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="widgets/FocusOrder-class.html">FocusOrder</a></li>
         <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
         <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
-        <li><a href="widgets/FocusTrap-class.html">FocusTrap</a></li>
-        <li><a href="widgets/FocusTrapArea-class.html">FocusTrapArea</a></li>
         <li><a href="widgets/FocusTraversalGroup-class.html">FocusTraversalGroup</a></li>
         <li><a href="widgets/FocusTraversalOrder-class.html">FocusTraversalOrder</a></li>
         <li><a href="widgets/FocusTraversalPolicy-class.html">FocusTraversalPolicy</a></li>
@@ -1535,6 +1526,8 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="rendering/RenderSemanticsGestureHandler-class.html">RenderSemanticsGestureHandler</a></li>
         <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
         <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+        <li><a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a></li>
+        <li><a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a></li>
         <li><a href="widgets/ReorderableDelayedDragStartListener-class.html">ReorderableDelayedDragStartListener</a></li>
         <li><a href="widgets/ReorderableDragStartListener-class.html">ReorderableDragStartListener</a></li>
         <li><a href="widgets/ReorderableList-class.html">ReorderableList</a></li>
@@ -1704,6 +1697,7 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="physics/SpringDescription-class.html">SpringDescription</a></li>
         <li><a href="widgets/Stack-class.html">Stack</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="widgets/State-class.html">State</a></li>
         <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
         <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
@@ -1724,6 +1718,9 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
         <li><a href="widgets/TableRow-class.html">TableRow</a></li>
         <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+        <li><a href="widgets/TapRegion-class.html">TapRegion</a></li>
+        <li><a href="widgets/TapRegionRegistry-class.html">TapRegionRegistry</a></li>
+        <li><a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a></li>
         <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
         <li><a href="widgets/Text-class.html">Text</a></li>
         <li><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a></li>
@@ -1731,6 +1728,7 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
         <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
         <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+        <li><a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a></li>
         <li><a href="dart-ui/TextHeightBehavior-class.html">TextHeightBehavior</a></li>
         <li><a href="services/TextInputType-class.html">TextInputType</a></li>
         <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
@@ -2110,6 +2108,7 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="widgets/SliverLayoutWidgetBuilder.html">SliverLayoutWidgetBuilder</a></li>
         <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
         <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+        <li><a href="widgets/TapRegionCallback.html">TapRegionCallback</a></li>
         <li><a href="widgets/TextEditingValueCallback.html">TextEditingValueCallback</a></li>
         <li><a href="widgets/ToolbarBuilder.html">ToolbarBuilder</a></li>
         <li><a href="widgets/TransitionBuilder.html">TransitionBuilder</a></li>
@@ -2117,6 +2116,7 @@ popping the route will not yield the same route, i.e. if the route's
         <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
         <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
         <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
         <li><a href="widgets/ValueWidgetBuilder.html">ValueWidgetBuilder</a></li>
         <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>

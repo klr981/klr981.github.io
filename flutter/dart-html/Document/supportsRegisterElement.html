@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the supportsRegisterElement property from the Document class, for the Dart programming language.">
@@ -66,21 +66,14 @@
     <li><a href="index.html">Flutter</a></li>
     <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
     <li><a href="dart-html/Document-class.html">Document</a></li>
-    <li class="self-crumb">supportsRegisterElement property</li>
+    <li class="self-crumb"><span class="deprecated">supportsRegisterElement</span> property</li>
   </ol>
   <div class="self-name">supportsRegisterElement</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -96,20 +89,21 @@
 
 <section class="multi-line-signature">
   <span class="returntype"><a href="dart-core/bool-class.html">bool</a></span>
-  <span class="name ">supportsRegisterElement</span>
+  <span class="name deprecated">supportsRegisterElement</span>
   
 
 </section>
 
 
 <section class="desc markdown">
-  <p>Checks if <a href="dart-html/Document/registerElement.html">registerElement</a> is supported on the current platform.</p>
+  <p>Checks if <a class="deprecated" href="dart-html/Document/registerElement.html">registerElement</a> is supported on the current platform.</p>
 </section>
 
 
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool get supportsRegisterElement {
+  <pre class="language-dart"><code class="language-dart">@deprecated
+bool get supportsRegisterElement {
   return JS(&#39;bool&#39;, &#39;(&quot;registerElement&quot; in #)&#39;, this);
 }</code></pre>
 </section>
@@ -130,7 +124,7 @@
   <li><a href="index.html">Flutter</a></li>
   <li><a href="dart-html/dart-html-library.html">dart:html</a></li>
   <li><a href="dart-html/Document-class.html">Document</a></li>
-  <li class="self-crumb">supportsRegisterElement property</li>
+  <li class="self-crumb"><span class="deprecated">supportsRegisterElement</span> property</li>
 </ol>
 
 
@@ -252,7 +246,7 @@
           <li><a href="dart-html/Document/scrollingElement.html">scrollingElement</a></li>
           <li><a href="dart-html/Document/suborigin.html">suborigin</a></li>
           <li><a class="deprecated" href="dart-html/Document/supportsRegister.html">supportsRegister</a></li>
-          <li><a href="dart-html/Document/supportsRegisterElement.html">supportsRegisterElement</a></li>
+          <li><a class="deprecated" href="dart-html/Document/supportsRegisterElement.html">supportsRegisterElement</a></li>
           <li class="inherited"><a href="dart-html/Node/text.html">text</a></li>
           <li><a href="dart-html/Document/timeline.html">timeline</a></li>
           <li><a href="dart-html/Document/visibilityState.html">visibilityState</a></li>
@@ -291,8 +285,8 @@
           <li><a href="dart-html/Document/queryCommandValue.html">queryCommandValue</a></li>
           <li><a href="dart-html/Document/querySelector.html">querySelector</a></li>
           <li><a href="dart-html/Document/querySelectorAll.html">querySelectorAll</a></li>
-          <li><a href="dart-html/Document/registerElement.html">registerElement</a></li>
-          <li><a href="dart-html/Document/registerElement2.html">registerElement2</a></li>
+          <li><a class="deprecated" href="dart-html/Document/registerElement.html">registerElement</a></li>
+          <li><a class="deprecated" href="dart-html/Document/registerElement2.html">registerElement2</a></li>
           <li class="inherited"><a href="dart-html/Node/remove.html">remove</a></li>
           <li class="inherited"><a href="dart-html/EventTarget/removeEventListener.html">removeEventListener</a></li>
           <li class="inherited"><a href="dart-html/Node/replaceWith.html">replaceWith</a></li>

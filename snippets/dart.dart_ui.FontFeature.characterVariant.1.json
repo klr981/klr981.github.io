@@ -2,7 +2,7 @@
     "id": "dart.dart_ui.FontFeature.characterVariant.1",
     "element": "FontFeature.characterVariant",
     "sourcePath": "../pkg/sky_engine/lib/ui/text.dart",
-    "sourceLine": 310,
+    "sourceLine": 311,
     "channel": "master",
     "serial": "1",
     "package": "Dart",

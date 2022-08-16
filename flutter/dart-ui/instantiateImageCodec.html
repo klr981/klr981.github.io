@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the instantiateImageCodec function from the dart:ui library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -110,7 +103,8 @@ make better determinations about how and whether to use the <code>targetWidth</c
 and <code>targetHeight</code> parameters.</p>
 <p>The <code>list</code> parameter is the binary image data (e.g a PNG or GIF binary data).
 The data can be for either static or animated images. The following image
-formats are supported: JPEG, PNG, GIF, Animated GIF, WebP, Animated WebP, BMP, and WBMP. Additional
+formats are supported:
+JPEG, PNG, GIF, Animated GIF, WebP, Animated WebP, BMP, and WBMP. Additional
 formats may be supported by the underlying platform. Flutter will
 attempt to call platform API to decode unrecognized formats, and if the
 platform API supports decoding the image Flutter will be able to render it.</p>
@@ -135,7 +129,32 @@ failed.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">Future&lt;Codec&gt; instantiateImageCodec(
+  <pre class="language-dart"><code class="language-dart">&#47;&#47; Update this list when changing the list of supported codecs.
+&#47;&#47;&#47; {@template dart.ui.imageFormats}
+&#47;&#47;&#47; JPEG, PNG, GIF, Animated GIF, WebP, Animated WebP, BMP, and WBMP. Additional
+&#47;&#47;&#47; formats may be supported by the underlying platform. Flutter will
+&#47;&#47;&#47; attempt to call platform API to decode unrecognized formats, and if the
+&#47;&#47;&#47; platform API supports decoding the image Flutter will be able to render it.
+&#47;&#47;&#47; {@endtemplate}
+&#47;&#47;&#47;
+&#47;&#47;&#47; The `targetWidth` and `targetHeight` arguments specify the size of the
+&#47;&#47;&#47; output image, in image pixels. If they are not equal to the intrinsic
+&#47;&#47;&#47; dimensions of the image, then the image will be scaled after being decoded.
+&#47;&#47;&#47; If the `allowUpscaling` parameter is not set to true, both dimensions will
+&#47;&#47;&#47; be capped at the intrinsic dimensions of the image, even if only one of
+&#47;&#47;&#47; them would have exceeded those intrinsic dimensions. If exactly one of these
+&#47;&#47;&#47; two arguments is specified, then the aspect ratio will be maintained while
+&#47;&#47;&#47; forcing the image to match the other given dimension. If neither is
+&#47;&#47;&#47; specified, then the image maintains its intrinsic size.
+&#47;&#47;&#47;
+&#47;&#47;&#47; Scaling the image to larger than its intrinsic size should usually be
+&#47;&#47;&#47; avoided, since it causes the image to use more memory than necessary.
+&#47;&#47;&#47; Instead, prefer scaling the [Canvas] transform. If the image must be scaled
+&#47;&#47;&#47; up, the `allowUpscaling` parameter must be set to true.
+&#47;&#47;&#47;
+&#47;&#47;&#47; The returned future can complete with an error if the image decoding has
+&#47;&#47;&#47; failed.
+Future&lt;Codec&gt; instantiateImageCodec(
   Uint8List list, {
   int? targetWidth,
   int? targetHeight,

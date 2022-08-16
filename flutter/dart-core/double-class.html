@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the double class from the dart:core library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -126,6 +119,10 @@ double.</p>
         
 
 
+        <dt>Available Extensions</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="dart-wasm/DoubleToWasmFloat.html">DoubleToWasmFloat</a></li>
+        </ul></dd>
 
         
       </dl>
@@ -156,7 +153,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Returns a hash code for a numerical value.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -167,7 +164,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Whether this number is finite.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -178,7 +175,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Whether this number is positive infinity or negative infinity.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -189,7 +186,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Whether this number is a Not-a-Number value.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -200,7 +197,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Whether this number is negative.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -211,7 +208,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -222,7 +219,7 @@ double.</p>
 </dt>
 <dd>
   The sign of the double's numerical value.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -244,7 +241,7 @@ double.</p>
 </dt>
 <dd>
   The absolute value of this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -257,7 +254,7 @@ double.</p>
 </dt>
 <dd>
   Returns the least integer that is not smaller than this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -270,7 +267,7 @@ double.</p>
 </dt>
 <dd>
   Returns the least integer double value no smaller than <code>this</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -283,7 +280,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Returns this <a href="dart-core/num-class.html">num</a> clamped to be in the range <code>lowerLimit</code>-<code>upperLimit</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -296,7 +293,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Compares this to <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -309,7 +306,7 @@ double.</p>
 </dt>
 <dd>
   Returns the greatest integer no greater than this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -322,7 +319,7 @@ double.</p>
 </dt>
 <dd>
   Returns the greatest integer double value no greater than <code>this</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -335,7 +332,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -348,7 +345,7 @@ double.</p>
 </dt>
 <dd>
   The remainder of the truncating division of <code>this</code> by <code>other</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -361,7 +358,7 @@ double.</p>
 </dt>
 <dd>
   Returns the integer closest to this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -374,7 +371,7 @@ double.</p>
 </dt>
 <dd>
   Returns the integer double value closest to <code>this</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -387,7 +384,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   This number as a <a href="dart-core/double-class.html">double</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -400,7 +397,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   Truncates this <a href="dart-core/num-class.html">num</a> to an integer and returns the result as an <a href="dart-core/int-class.html">int</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -413,7 +410,7 @@ double.</p>
 </dt>
 <dd>
   Provide a representation of this <a href="dart-core/double-class.html">double</a> value.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -426,7 +423,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   An exponential string-representation of this number.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -439,7 +436,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   A decimal-point string-representation of this number.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -452,7 +449,7 @@ double.</p>
 </dt>
 <dd class="inherited">
   A string representation with <code>precision</code> significant digits.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -466,7 +463,7 @@ double.</p>
 <dd>
   Returns the integer obtained by discarding any fractional
 part of this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -480,7 +477,7 @@ part of this number.
 <dd>
   Returns the integer double value obtained by discarding any fractional
 digits from <code>this</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -501,7 +498,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Euclidean modulo of this number by <code>other</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -514,7 +511,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Multiplies this number by <code>other</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -527,7 +524,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Adds <code>other</code> to this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -540,7 +537,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Subtracts <code>other</code> from this number.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -553,7 +550,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Divides this number by <code>other</code>.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -566,7 +563,7 @@ digits from <code>this</code>.
 </dt>
 <dd class="inherited">
   Whether this number is numerically smaller than <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -579,7 +576,7 @@ digits from <code>this</code>.
 </dt>
 <dd class="inherited">
   Whether this number is numerically smaller than or equal to <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -592,7 +589,7 @@ digits from <code>this</code>.
 </dt>
 <dd class="inherited">
   Test whether this value is numerically equal to <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -605,7 +602,7 @@ digits from <code>this</code>.
 </dt>
 <dd class="inherited">
   Whether this number is numerically greater than <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -618,7 +615,7 @@ digits from <code>this</code>.
 </dt>
 <dd class="inherited">
   Whether this number is numerically greater than or equal to <code>other</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -631,7 +628,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   The negation of this value.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -644,7 +641,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Truncating division operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -664,7 +661,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Parse <code>source</code> as a double literal and return its value.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -677,7 +674,7 @@ digits from <code>this</code>.
 </dt>
 <dd>
   Parse <code>source</code> as a double literal and return its value.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 

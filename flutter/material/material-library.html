@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="material library API docs, for the Dart programming language.">
@@ -70,15 +70,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -3175,24 +3168,6 @@ descendants, restricting focus traversal to the scoped controls.
   A subclass of <a href="widgets/FocusNode-class.html">FocusNode</a> that acts as a scope for its descendants,
 maintaining information about which descendant is currently or was last
 focused.
-</dd>
-
-        <dt id="FocusTrap">
-  <span class="name "><a href="widgets/FocusTrap-class.html">FocusTrap</a></span> 
-
-</dt>
-<dd>
-  The <a href="widgets/FocusTrap-class.html">FocusTrap</a> widget removes focus when a mouse primary pointer makes contact with another
-region of the screen.
-</dd>
-
-        <dt id="FocusTrapArea">
-  <span class="name "><a href="widgets/FocusTrapArea-class.html">FocusTrapArea</a></span> 
-
-</dt>
-<dd>
-  Declares a widget subtree which is part of the provided <a href="widgets/FocusTrapArea/focusNode.html">focusNode</a>'s focus area
-without attaching focus to that region.
 </dd>
 
         <dt id="FocusTraversalGroup">
@@ -6325,6 +6300,29 @@ overlap.
 <a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a>.
 </dd>
 
+        <dt id="RenderTapRegion">
+  <span class="name "><a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a></span> 
+
+</dt>
+<dd>
+  A render object that defines a region that can detect taps inside or outside
+of itself and any group of regions it belongs to, without participating in
+the <a href="https://flutter.dev/gestures/#gesture-disambiguation">gesture
+disambiguation</a>
+system.
+</dd>
+
+        <dt id="RenderTapRegionSurface">
+  <span class="name "><a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a></span> 
+
+</dt>
+<dd>
+  A render object that provides notification of a tap inside or outside of a
+set of registered regions, without participating in the <a href="https://flutter.dev/gestures/#gesture-disambiguation">gesture
+disambiguation</a>
+system.
+</dd>
+
         <dt id="ReorderableDelayedDragStartListener">
   <span class="name "><a href="widgets/ReorderableDelayedDragStartListener-class.html">ReorderableDelayedDragStartListener</a></span> 
 
@@ -7312,7 +7310,7 @@ the subtree.
 
 </dt>
 <dd>
-  An object that manages a pair of selection handles.
+  An object that manages a pair of selection handles and a toolbar.
 </dd>
 
         <dt id="SelectionRegistrarScope">
@@ -8059,6 +8057,15 @@ used with mixins <a href="material/FabTopOffsetY-mixin.html">FabTopOffsetY</a>, 
 <a href="material/FabStartOffsetX-mixin.html">FabStartOffsetX</a>, <a href="material/FabCenterOffsetX-mixin.html">FabCenterOffsetX</a>, <a href="material/FabEndOffsetX-mixin.html">FabEndOffsetX</a>, and <a href="material/FabMiniOffsetAdjustment-mixin.html">FabMiniOffsetAdjustment</a>.
 </dd>
 
+        <dt id="StarBorder">
+  <span class="name "><a href="painting/StarBorder-class.html">StarBorder</a></span> 
+
+</dt>
+<dd>
+  A border that fits a star or polygon-shaped border within the rectangle of
+the widget it is applied to.
+</dd>
+
         <dt id="State">
   <span class="name "><a href="widgets/State-class.html">State</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="widgets/StatefulWidget-class.html">StatefulWidget</a></span>&gt;</span></span> 
 
@@ -8351,6 +8358,39 @@ and background colors.
   An interface for Material Design chips that can be tapped.
 </dd>
 
+        <dt id="TapRegion">
+  <span class="name "><a href="widgets/TapRegion-class.html">TapRegion</a></span> 
+
+</dt>
+<dd>
+  A widget that defines a region that can detect taps inside or outside of
+itself and any group of regions it belongs to, without participating in the
+<a href="https://flutter.dev/gestures/#gesture-disambiguation">gesture disambiguation</a>
+system.
+</dd>
+
+        <dt id="TapRegionRegistry">
+  <span class="name "><a href="widgets/TapRegionRegistry-class.html">TapRegionRegistry</a></span> 
+
+</dt>
+<dd>
+  An interface for registering and unregistering a <a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a>
+(typically created with a <a href="widgets/TapRegion-class.html">TapRegion</a> widget) with a
+<a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a> (typically created with a <a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a>
+widget).
+</dd>
+
+        <dt id="TapRegionSurface">
+  <span class="name "><a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a></span> 
+
+</dt>
+<dd>
+  A widget that provides notification of a tap inside or outside of a set of
+registered regions, without participating in the <a href="https://flutter.dev/gestures/#gesture-disambiguation">gesture
+disambiguation</a>
+system.
+</dd>
+
         <dt id="TapUpDetails">
   <span class="name "><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></span> 
 
@@ -8439,6 +8479,16 @@ overall <a href="material/Theme-class.html">Theme</a>'s <a href="material/ThemeD
 </dt>
 <dd>
   A Material Design text field.
+</dd>
+
+        <dt id="TextFieldTapRegion">
+  <span class="name "><a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a></span> 
+
+</dt>
+<dd>
+  A <a href="widgets/TapRegion-class.html">TapRegion</a> that adds its children to the tap region group for widgets
+based on the <a href="widgets/EditableText-class.html">EditableText</a> text editing widget, such as <a href="material/TextField-class.html">TextField</a> and
+<a href="cupertino/CupertinoTextField-class.html">CupertinoTextField</a>.
 </dd>
 
         <dt id="TextFormField">
@@ -10077,7 +10127,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates an <a href="dart-ui/Image-class.html">Image</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10088,7 +10138,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates a <a href="dart-ui/Picture-class.html">Picture</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10099,7 +10149,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Whether to replace all shadows with solid color blocks.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10110,7 +10160,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Adds debugging information to <a href="dart-developer/Timeline-class.html">Timeline</a> events related to <a href="widgets/Widget-class.html">Widget</a> builds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10121,7 +10171,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Setting to true will cause extensive logging to occur when focus changes occur.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10132,7 +10182,7 @@ visible than otherwise necessary, to make code testable.
 </dt>
 <dd>
   Show banners for deprecated widgets.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10144,7 +10194,7 @@ visible than otherwise necessary, to make code testable.
 <dd>
   The number of bytes an image must use before it triggers inversion when
 <a href="painting/debugInvertOversizedImages.html">debugInvertOversizedImages</a> is true.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10157,7 +10207,7 @@ visible than otherwise necessary, to make code testable.
   If true, the framework will color invert and horizontally flip images that
 have been decoded to a size taking at least <a href="painting/debugImageOverheadAllowance.html">debugImageOverheadAllowance</a>
 bytes more than necessary.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10168,7 +10218,7 @@ bytes more than necessary.
 </dt>
 <dd>
   Provider from which <a href="painting/NetworkImage-class.html">NetworkImage</a> will get its <a href="dart-io/HttpClient-class.html">HttpClient</a> in debug builds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10181,7 +10231,7 @@ bytes more than necessary.
   If not null, called when the framework is about to paint an <a href="dart-ui/Image-class.html">Image</a> to a
 <a href="dart-ui/Canvas-class.html">Canvas</a> with an <a href="painting/ImageSizeInfo-class.html">ImageSizeInfo</a> that contains the decoded size of the
 image as well as its output size.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10192,7 +10242,7 @@ image as well as its output size.
 </dt>
 <dd>
   Callback invoked for every dirty widget built each frame.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10204,7 +10254,7 @@ image as well as its output size.
 <dd>
   Prints a message to the console, which you can access using the "flutter"
 tool's "logs" command ("flutter logs").
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10215,7 +10265,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Log all calls to <a href="widgets/BuildOwner/buildScope.html">BuildOwner.buildScope</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10227,7 +10277,7 @@ tool's "logs" command ("flutter logs").
 <dd>
   Log when widgets with global keys are deactivated and log when they are
 reactivated (retaken).
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10238,7 +10288,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Log the dirty widgets that are built each frame.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10249,7 +10299,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Log the call stacks that mark widgets as needing to be rebuilt.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10260,7 +10310,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Adds <a href="dart-developer/Timeline-class.html">Timeline</a> events for every Widget built.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10271,7 +10321,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Adds <a href="dart-developer/Timeline-class.html">Timeline</a> events for every user-created <a href="widgets/Widget-class.html">Widget</a> built.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -10282,7 +10332,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Text selection controls that loosely follows Material design conventions.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -10293,7 +10343,7 @@ reactivated (retaken).
 </dt>
 <dd>
   The singleton that implements the Flutter framework's image cache.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -10304,7 +10354,7 @@ reactivated (retaken).
 </dt>
 <dd>
   Text selection controls that follow the Material Design specification.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -10316,7 +10366,7 @@ reactivated (retaken).
 <dd>
   Provides convenient access to the current <a href="widgets/FocusManager/primaryFocus.html">FocusManager.primaryFocus</a> from the
 <a href="widgets/WidgetsBinding-mixin.html">WidgetsBinding</a> instance.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -10682,7 +10732,7 @@ current attributes on each node.
 </dt>
 <dd>
   Flushes inter-frame tracking of image size information from <a href="painting/paintImage.html">paintImage</a>.
-  <div class="features">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></div>
+  <div class="features"><span class=" @<a href="meta/visibleForTesting-constant.html">visibleForTesting</a>">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></span></div>
 
 </dd>
 
@@ -10844,7 +10894,7 @@ through any intervening scrolling widgets.
   Combine the <a href="dart-core/Object/hashCode.html">Object.hashCode</a> values of an arbitrary number of objects from
 an <a href="dart-core/Iterable-class.html">Iterable</a> into one value. This function will return the same value if
 given null as if given an empty list.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -10857,7 +10907,7 @@ given null as if given an empty list.
 </dt>
 <dd>
   Combine up to twenty objects' hash codes into one value.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -12472,7 +12522,7 @@ confirm or veto a dismiss gesture.
   </dt>
   <dd>
     Performs the decode process for use in <a class="deprecated" href="painting/ImageProvider/load.html">ImageProvider.load</a>.
-    <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</div>
+    <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</span></div>
 
   </dd>
 
@@ -14213,6 +14263,21 @@ listen to notifications from their children.
   </dd>
 
           
+  <dt id="TapRegionCallback" class="callable">
+    <span class="name"><a href="widgets/TapRegionCallback.html">TapRegionCallback</a></span><span class="signature">
+      <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-event"><span class="type-annotation"><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></span> <span class="parameter-name">event</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    The type of callback that <a href="widgets/TapRegion/onTapOutside.html">TapRegion.onTapOutside</a> and
+<a href="widgets/TapRegion/onTapInside.html">TapRegion.onTapInside</a> take.
+    
+
+  </dd>
+
+          
   <dt id="TextEditingValueCallback" class="callable">
     <span class="name"><a href="widgets/TextEditingValueCallback.html">TextEditingValueCallback</a></span><span class="signature">
       <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-value"><span class="type-annotation"><a href="services/TextEditingValue-class.html">TextEditingValue</a></span> <span class="parameter-name">value</span></span>)</span></span>
@@ -14222,7 +14287,7 @@ listen to notifications from their children.
   </dt>
   <dd>
     A void function that takes a <a href="services/TextEditingValue-class.html">TextEditingValue</a>.
-    <div class="features">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></div>
+    <div class="features"><span class=" @<a href="meta/visibleForTesting-constant.html">visibleForTesting</a>">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></span></div>
 
   </dd>
 
@@ -14321,6 +14386,20 @@ child.
   </dt>
   <dd>
     Signature for callbacks that are to report a value on demand.
+    
+
+  </dd>
+
+          
+  <dt id="ValueListenableTransformer" class="callable">
+    <span class="name"><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></span>&lt;<wbr><span class="type-parameter">T</span>&gt;<span class="signature">
+      <span class="returntype parameter">= T Function<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation">T</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    Signature for method used to transform values in <a href="animation/Animation/Animation.fromValueListenable.html">Animation.fromValueListenable</a>.
     
 
   </dd>
@@ -14479,6 +14558,7 @@ when the ticker is canceled.
       <li><a href="widgets/widgets-library.html">widgets</a></li>
       <li class="section-title">Dart</li>
       <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+      <li><a href="dart-wasm/dart-wasm-library.html">dart:wasm</a></li>
       <li class="section-subtitle">Core</li>
         <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
         <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
@@ -15004,8 +15084,6 @@ when the ticker is canceled.
         <li><a href="widgets/FocusOrder-class.html">FocusOrder</a></li>
         <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
         <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
-        <li><a href="widgets/FocusTrap-class.html">FocusTrap</a></li>
-        <li><a href="widgets/FocusTrapArea-class.html">FocusTrapArea</a></li>
         <li><a href="widgets/FocusTraversalGroup-class.html">FocusTraversalGroup</a></li>
         <li><a href="widgets/FocusTraversalOrder-class.html">FocusTraversalOrder</a></li>
         <li><a href="widgets/FocusTraversalPolicy-class.html">FocusTraversalPolicy</a></li>
@@ -15376,6 +15454,8 @@ when the ticker is canceled.
         <li><a href="rendering/RenderSemanticsGestureHandler-class.html">RenderSemanticsGestureHandler</a></li>
         <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
         <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+        <li><a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a></li>
+        <li><a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a></li>
         <li><a href="widgets/ReorderableDelayedDragStartListener-class.html">ReorderableDelayedDragStartListener</a></li>
         <li><a href="widgets/ReorderableDragStartListener-class.html">ReorderableDragStartListener</a></li>
         <li><a href="widgets/ReorderableList-class.html">ReorderableList</a></li>
@@ -15582,6 +15662,7 @@ when the ticker is canceled.
         <li><a href="widgets/Stack-class.html">Stack</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
         <li><a href="material/StandardFabLocation-class.html">StandardFabLocation</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="widgets/State-class.html">State</a></li>
         <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
         <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
@@ -15617,6 +15698,9 @@ when the ticker is canceled.
         <li><a href="material/TabPageSelectorIndicator-class.html">TabPageSelectorIndicator</a></li>
         <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
         <li><a href="material/TappableChipAttributes-class.html">TappableChipAttributes</a></li>
+        <li><a href="widgets/TapRegion-class.html">TapRegion</a></li>
+        <li><a href="widgets/TapRegionRegistry-class.html">TapRegionRegistry</a></li>
+        <li><a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a></li>
         <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
         <li><a href="widgets/Text-class.html">Text</a></li>
         <li><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a></li>
@@ -15628,6 +15712,7 @@ when the ticker is canceled.
         <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
         <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
         <li><a href="material/TextField-class.html">TextField</a></li>
+        <li><a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a></li>
         <li><a href="material/TextFormField-class.html">TextFormField</a></li>
         <li><a href="dart-ui/TextHeightBehavior-class.html">TextHeightBehavior</a></li>
         <li><a href="services/TextInputType-class.html">TextInputType</a></li>
@@ -16147,6 +16232,7 @@ when the ticker is canceled.
         <li><a href="widgets/SliverLayoutWidgetBuilder.html">SliverLayoutWidgetBuilder</a></li>
         <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
         <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+        <li><a href="widgets/TapRegionCallback.html">TapRegionCallback</a></li>
         <li><a href="widgets/TextEditingValueCallback.html">TextEditingValueCallback</a></li>
         <li><a href="widgets/ToolbarBuilder.html">ToolbarBuilder</a></li>
         <li><a href="material/TooltipTriggeredCallback.html">TooltipTriggeredCallback</a></li>
@@ -16155,6 +16241,7 @@ when the ticker is canceled.
         <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
         <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
         <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
         <li><a href="widgets/ValueWidgetBuilder.html">ValueWidgetBuilder</a></li>
         <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>

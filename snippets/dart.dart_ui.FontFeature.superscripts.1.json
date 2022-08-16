@@ -2,7 +2,7 @@
     "id": "dart.dart_ui.FontFeature.superscripts.1",
     "element": "FontFeature.superscripts",
     "sourcePath": "../pkg/sky_engine/lib/ui/text.dart",
-    "sourceLine": 803,
+    "sourceLine": 804,
     "channel": "master",
     "serial": "1",
     "package": "Dart",

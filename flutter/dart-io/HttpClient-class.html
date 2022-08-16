@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the HttpClient class from the dart:io library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -197,7 +190,7 @@ client.findProxy = null;
 <dd>
   Sets the function to be called when a site is requesting
 authentication.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -209,7 +202,7 @@ authentication.
 <dd>
   Sets the function to be called when a proxy is requesting
 authentication.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -221,7 +214,7 @@ authentication.
 <dd>
   Gets and sets whether the body of a response will be automatically
 uncompressed.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -234,7 +227,7 @@ uncompressed.
   Sets a callback that will decide whether to accept a secure connection
 with a server certificate that cannot be authenticated by any of our
 trusted root certificates.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -245,7 +238,7 @@ trusted root certificates.
 </dt>
 <dd>
   Sets the function used to create socket connections.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -256,7 +249,7 @@ trusted root certificates.
 </dt>
 <dd>
   Gets and sets the connection timeout.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -269,7 +262,7 @@ trusted root certificates.
   Sets the function used to resolve the proxy server to be used for
 opening a HTTP connection to the specified <code>url</code>. If this
 function is not set, direct connections will always be used.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -280,7 +273,7 @@ function is not set, direct connections will always be used.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -292,7 +285,7 @@ function is not set, direct connections will always be used.
 <dd>
   Gets and sets the idle timeout of non-active persistent (keep-alive)
 connections.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -310,7 +303,7 @@ for each call. Writing these lines to a file will allow tools (such as
 to decrypt communication between the this client and the server. This is
 meant to allow network-level debugging of secure sockets and should not
 be used in production code. For example:
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -321,7 +314,7 @@ be used in production code. For example:
 </dt>
 <dd>
   Gets and sets the maximum number of live connections, to a single host.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -332,7 +325,7 @@ be used in production code. For example:
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -344,7 +337,7 @@ be used in production code. For example:
 <dd>
   Gets and sets the default value of the <code>User-Agent</code> header for all requests
 generated by this <a href="dart-io/HttpClient-class.html">HttpClient</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -483,7 +476,7 @@ generated by this <a href="dart-io/HttpClient-class.html">HttpClient</a>.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -600,7 +593,7 @@ generated by this <a href="dart-io/HttpClient-class.html">HttpClient</a>.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -621,7 +614,7 @@ generated by this <a href="dart-io/HttpClient-class.html">HttpClient</a>.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -640,7 +633,7 @@ generated by this <a href="dart-io/HttpClient-class.html">HttpClient</a>.
 <dd>
   Current state of HTTP request logging from all <a href="dart-io/HttpClient-class.html">HttpClient</a>s to the
 developer timeline.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 

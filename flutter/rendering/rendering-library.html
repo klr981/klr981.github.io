@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="rendering library API docs, for the Dart programming language.">
@@ -70,15 +70,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -2847,6 +2840,15 @@ to spell out the string character by character.
 within the rectangle of the widget it is applied to.
 </dd>
 
+        <dt id="StarBorder">
+  <span class="name "><a href="painting/StarBorder-class.html">StarBorder</a></span> 
+
+</dt>
+<dd>
+  A border that fits a star or polygon-shaped border within the rectangle of
+the widget it is applied to.
+</dd>
+
         <dt id="StringAttribute">
   <span class="name "><a href="dart-ui/StringAttribute-class.html">StringAttribute</a></span> 
 
@@ -3257,7 +3259,7 @@ managed by the <a href="rendering/ContainerRenderObjectMixin-mixin.html">Contain
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates an <a href="dart-ui/Image-class.html">Image</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3268,7 +3270,7 @@ managed by the <a href="rendering/ContainerRenderObjectMixin-mixin.html">Contain
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates a <a href="dart-ui/Picture-class.html">Picture</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3279,7 +3281,7 @@ managed by the <a href="rendering/ContainerRenderObjectMixin-mixin.html">Contain
 </dt>
 <dd>
   Check the intrinsic sizes of each <a href="rendering/RenderBox-class.html">RenderBox</a> during layout.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3290,7 +3292,7 @@ managed by the <a href="rendering/ContainerRenderObjectMixin-mixin.html">Contain
 </dt>
 <dd>
   The current color to overlay when repainting a layer.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3302,7 +3304,7 @@ managed by the <a href="rendering/ContainerRenderObjectMixin-mixin.html">Contain
 <dd>
   Setting to true will cause all clipping effects from the layer tree to be
 ignored.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3314,7 +3316,7 @@ ignored.
 <dd>
   Setting to true will cause all opacity effects from the layer tree to be
 ignored.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3326,7 +3328,7 @@ ignored.
 <dd>
   Setting to true will cause all physical modeling effects from the layer
 tree, such as shadows from elevations, to be ignored.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3337,7 +3339,7 @@ tree, such as shadows from elevations, to be ignored.
 </dt>
 <dd>
   Whether to replace all shadows with solid color blocks.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3349,7 +3351,7 @@ tree, such as shadows from elevations, to be ignored.
 <dd>
   Adds debugging information to <a href="dart-developer/Timeline-class.html">Timeline</a> events related to <a href="rendering/RenderObject-class.html">RenderObject</a>
 layouts.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3361,7 +3363,7 @@ layouts.
 <dd>
   Adds debugging information to <a href="dart-developer/Timeline-class.html">Timeline</a> events related to <a href="rendering/RenderObject-class.html">RenderObject</a>
 paints.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3373,7 +3375,7 @@ paints.
 <dd>
   The number of bytes an image must use before it triggers inversion when
 <a href="painting/debugInvertOversizedImages.html">debugInvertOversizedImages</a> is true.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3386,7 +3388,7 @@ paints.
   If true, the framework will color invert and horizontally flip images that
 have been decoded to a size taking at least <a href="painting/debugImageOverheadAllowance.html">debugImageOverheadAllowance</a>
 bytes more than necessary.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3397,7 +3399,7 @@ bytes more than necessary.
 </dt>
 <dd>
   Provider from which <a href="painting/NetworkImage-class.html">NetworkImage</a> will get its <a href="dart-io/HttpClient-class.html">HttpClient</a> in debug builds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3410,7 +3412,7 @@ bytes more than necessary.
   If not null, called when the framework is about to paint an <a href="dart-ui/Image-class.html">Image</a> to a
 <a href="dart-ui/Canvas-class.html">Canvas</a> with an <a href="painting/ImageSizeInfo-class.html">ImageSizeInfo</a> that contains the decoded size of the
 image as well as its output size.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3421,7 +3423,7 @@ image as well as its output size.
 </dt>
 <dd>
   Callback invoked for every <a href="rendering/RenderObject-class.html">RenderObject</a> painted each frame.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3432,7 +3434,7 @@ image as well as its output size.
 </dt>
 <dd>
   Causes each RenderBox to paint a line at each of its baselines.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3443,7 +3445,7 @@ image as well as its output size.
 </dt>
 <dd>
   Causes each Layer to paint a box around its bounds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3456,7 +3458,7 @@ image as well as its output size.
   Causes objects like <a href="rendering/RenderPointerListener-class.html">RenderPointerListener</a> to flash while they are being
 tapped. This can be useful to see how large the hit box is, e.g. when
 debugging buttons that are harder to hit than expected.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3468,7 +3470,7 @@ debugging buttons that are harder to hit than expected.
 <dd>
   Causes each RenderBox to paint a box around its bounds, and some extra
 boxes, such as <a href="rendering/RenderPadding-class.html">RenderPadding</a>, to draw construction lines.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3480,7 +3482,7 @@ boxes, such as <a href="rendering/RenderPadding-class.html">RenderPadding</a>, t
 <dd>
   Prints a message to the console, which you can access using the "flutter"
 tool's "logs" command ("flutter logs").
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3491,7 +3493,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Log the dirty render objects that are laid out each frame.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3502,7 +3504,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Log the call stacks that mark render objects as needing layout.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3513,7 +3515,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Log the call stacks that mark render objects as needing paint.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3524,7 +3526,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Adds <a href="dart-developer/Timeline-class.html">dart:developer.Timeline</a> events for every <a href="rendering/RenderObject-class.html">RenderObject</a> layout.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3535,7 +3537,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Adds <a href="dart-developer/Timeline-class.html">dart:developer.Timeline</a> events for every <a href="rendering/RenderObject-class.html">RenderObject</a> painted.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3546,7 +3548,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Overlay a rotating set of colors when repainting layers in debug mode.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3557,7 +3559,7 @@ tool's "logs" command ("flutter logs").
 </dt>
 <dd>
   Overlay a rotating set of colors when repainting text in debug mode.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3569,7 +3571,7 @@ tool's "logs" command ("flutter logs").
 <dd>
   Overrides the setting of <a href="semantics/SemanticsBinding/disableAnimations.html">SemanticsBinding.disableAnimations</a> for debugging
 and testing.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -3580,7 +3582,7 @@ and testing.
 </dt>
 <dd>
   The singleton that implements the Flutter framework's image cache.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -3737,7 +3739,7 @@ useful for <a href="painting/TransformProperty-class.html">TransformProperty</a>
 </dd>
 
         <dt id="debugDumpSemanticsTree" class="callable">
-  <span class="name"><a href="rendering/debugDumpSemanticsTree.html">debugDumpSemanticsTree</a></span><span class="signature">(<wbr><span class="parameter" id="debugDumpSemanticsTree-param-childOrder"><span class="type-annotation"><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></span> <span class="parameter-name">childOrder</span></span>)
+  <span class="name"><a href="rendering/debugDumpSemanticsTree.html">debugDumpSemanticsTree</a></span><span class="signature">(<wbr><span class="parameter" id="debugDumpSemanticsTree-param-childOrder">[<span class="type-annotation"><a href="semantics/DebugSemanticsDumpOrder.html">DebugSemanticsDumpOrder</a></span> <span class="parameter-name">childOrder</span> = <span class="default-value">DebugSemanticsDumpOrder.traversalOrder</span>]</span>)
     <span class="returntype parameter">&#8594; void</span>
   </span>
   
@@ -3760,7 +3762,7 @@ Otherwise, a notice that no semantics are available will be printed.
 </dt>
 <dd>
   Flushes inter-frame tracking of image size information from <a href="painting/paintImage.html">paintImage</a>.
-  <div class="features">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></div>
+  <div class="features"><span class=" @<a href="meta/visibleForTesting-constant.html">visibleForTesting</a>">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></span></div>
 
 </dd>
 
@@ -3854,7 +3856,7 @@ Otherwise, a notice that no semantics are available will be printed.
   Combine the <a href="dart-core/Object/hashCode.html">Object.hashCode</a> values of an arbitrary number of objects from
 an <a href="dart-core/Iterable-class.html">Iterable</a> into one value. This function will return the same value if
 given null as if given an empty list.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -3867,7 +3869,7 @@ given null as if given an empty list.
 </dt>
 <dd>
   Combine up to twenty objects' hash codes into one value.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -3945,6 +3947,14 @@ point.
       <h2>Enums</h2>
 
       <dl>
+        <dt id="Assertiveness">
+  <span class="name "><a href="semantics/Assertiveness.html">Assertiveness</a></span> 
+
+</dt>
+<dd>
+  Determines the assertiveness level of the accessibility announcement.
+</dd>
+
         <dt id="Axis">
   <span class="name "><a href="painting/Axis.html">Axis</a></span> 
 
@@ -4513,7 +4523,7 @@ that the <a href="rendering/RenderBox-class.html">RenderBox</a> would have if it
   </dt>
   <dd>
     Performs the decode process for use in <a class="deprecated" href="painting/ImageProvider/load.html">ImageProvider.load</a>.
-    <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</div>
+    <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</span></div>
 
   </dd>
 
@@ -5057,6 +5067,7 @@ contract violations.
       <li><a href="widgets/widgets-library.html">widgets</a></li>
       <li class="section-title">Dart</li>
       <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+      <li><a href="dart-wasm/dart-wasm-library.html">dart:wasm</a></li>
       <li class="section-subtitle">Core</li>
         <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
         <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
@@ -5549,6 +5560,7 @@ contract violations.
         <li><a href="dart-ui/SpellOutStringAttribute-class.html">SpellOutStringAttribute</a></li>
         <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="dart-ui/StringAttribute-class.html">StringAttribute</a></li>
         <li><a href="foundation/StringProperty-class.html">StringProperty</a></li>
         <li><a href="painting/StrutStyle-class.html">StrutStyle</a></li>
@@ -5661,6 +5673,7 @@ contract violations.
         <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
 
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
+        <li><a href="semantics/Assertiveness.html">Assertiveness</a></li>
         <li><a href="painting/Axis.html">Axis</a></li>
         <li><a href="painting/AxisDirection.html">AxisDirection</a></li>
         <li><a href="dart-ui/BlendMode.html">BlendMode</a></li>

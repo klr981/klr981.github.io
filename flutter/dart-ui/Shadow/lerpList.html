@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the lerpList method from the Shadow class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -124,18 +117,22 @@ an <a href="animation/AnimationController-class.html">AnimationController</a>.</
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">static List&lt;Shadow&gt;? lerpList(List&lt;Shadow&gt;? a, List&lt;Shadow&gt;? b, double t) {
   assert(t != null);
-  if (a == null &amp;&amp; b == null)
+  if (a == null &amp;&amp; b == null) {
     return null;
+  }
   a ??= &lt;Shadow&gt;[];
   b ??= &lt;Shadow&gt;[];
   final List&lt;Shadow&gt; result = &lt;Shadow&gt;[];
   final int commonLength = math.min(a.length, b.length);
-  for (int i = 0; i &lt; commonLength; i += 1)
+  for (int i = 0; i &lt; commonLength; i += 1) {
     result.add(Shadow.lerp(a[i], b[i], t)!);
-  for (int i = commonLength; i &lt; a.length; i += 1)
+  }
+  for (int i = commonLength; i &lt; a.length; i += 1) {
     result.add(a[i].scale(1.0 - t));
-  for (int i = commonLength; i &lt; b.length; i += 1)
+  }
+  for (int i = commonLength; i &lt; b.length; i += 1) {
     result.add(b[i].scale(t));
+  }
   return result;
 }</code></pre>
 </section>

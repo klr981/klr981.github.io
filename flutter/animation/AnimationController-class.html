@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the AnimationController class from the animation library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -319,7 +312,7 @@ value.
 <dd>
   The behavior of the controller when <a href="dart-ui/AccessibilityFeatures/disableAnimations.html">AccessibilityFeatures.disableAnimations</a>
 is true.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -331,7 +324,7 @@ is true.
 <dd>
   A label that is used in the <a href="animation/Animation/toString.html">toString</a> output. Intended to aid with
 identifying animation controller instances in debug output.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -342,7 +335,7 @@ identifying animation controller instances in debug output.
 </dt>
 <dd>
   The length of time this animation should last.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -353,7 +346,7 @@ identifying animation controller instances in debug output.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -364,7 +357,7 @@ identifying animation controller instances in debug output.
 </dt>
 <dd>
   Whether this animation is currently animating in either the forward or reverse direction.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -375,7 +368,7 @@ identifying animation controller instances in debug output.
 </dt>
 <dd class="inherited">
   Whether this animation is stopped at the end.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -386,7 +379,7 @@ identifying animation controller instances in debug output.
 </dt>
 <dd class="inherited">
   Whether this animation is stopped at the beginning.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -398,7 +391,7 @@ identifying animation controller instances in debug output.
 <dd>
   The amount of time that has passed between the time the animation started
 and the most recent tick of the animation.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -409,7 +402,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The value at which this animation is deemed to be dismissed.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -420,7 +413,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The length of time this animation should last when going in <a href="animation/AnimationController/reverse.html">reverse</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -431,7 +424,7 @@ and the most recent tick of the animation.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -442,7 +435,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The current status of this animation.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -453,7 +446,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The value at which this animation is deemed to be completed.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -464,7 +457,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The current value of the animation.
-  <div class="features">read / write, override-getter</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override-getter">override-getter</span></div>
 
 </dd>
 
@@ -475,7 +468,7 @@ and the most recent tick of the animation.
 </dt>
 <dd>
   The rate of change of <a href="animation/AnimationController/value.html">value</a> per second.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -488,7 +481,7 @@ and the most recent tick of the animation.
   Returns an <a href="animation/Animation-class.html">Animation&lt;double&gt;</a> for this animation controller, so that a
 pointer to this object can be passed around without allowing users of that
 pointer to mutate the <a href="animation/AnimationController-class.html">AnimationController</a> state.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -510,7 +503,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   Calls the listener every time the value of the animation changes.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -523,7 +516,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   Calls listener every time the status of the animation changes.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -575,7 +568,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   Removes all listeners added with <a href="animation/AnimationLocalListenersMixin/addListener.html">addListener</a>.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -588,7 +581,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   Removes all listeners added with <a href="animation/AnimationLocalStatusListenersMixin/addStatusListener.html">addStatusListener</a>.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -601,7 +594,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   This implementation ignores listener registrations.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -614,7 +607,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 </dt>
 <dd class="inherited">
   This implementation ignores listener registrations.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -628,7 +621,7 @@ pointer to mutate the <a href="animation/AnimationController-class.html">Animati
 <dd>
   Release the resources used by this object. The object is no longer usable
 after this method is called.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -641,7 +634,7 @@ after this method is called.
 </dt>
 <dd class="inherited">
   Chains a <a href="animation/Tween-class.html">Tween</a> (or <a href="animation/CurveTween-class.html">CurveTween</a>) to this <a href="animation/Animation-class.html">Animation</a>.
-  <div class="features">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a>">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -681,7 +674,7 @@ and initial velocity.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -694,7 +687,7 @@ and initial velocity.
 </dt>
 <dd class="inherited">
   Calls all the listeners.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -707,7 +700,7 @@ and initial velocity.
 </dt>
 <dd class="inherited">
   Calls all the status listeners.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -720,7 +713,7 @@ and initial velocity.
 </dt>
 <dd class="inherited">
   Stop calling the listener every time the value of the animation changes.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -733,7 +726,7 @@ and initial velocity.
 </dt>
 <dd class="inherited">
   Stops calling the listener every time the status of the animation changes.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -813,7 +806,7 @@ in progress), and resetting to its beginning point, or dismissed state.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -827,7 +820,7 @@ in progress), and resetting to its beginning point, or dismissed state.
 <dd>
   Provides a string describing the status of this object, but not including
 information about the object itself.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -848,7 +841,7 @@ information about the object itself.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -947,6 +940,7 @@ information about the object itself.
 
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
         <li><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
 
       <li class="section-title"><a href="animation/animation-library.html#exceptions">Exceptions</a></li>

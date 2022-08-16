@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the styleFrom method from the OutlinedButton class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -128,13 +121,11 @@
 <section class="desc markdown">
   <p>A static convenience method that constructs an outlined button
 <a href="material/ButtonStyle-class.html">ButtonStyle</a> given simple values.</p>
-<p>The <code>primary</code>, and <code>onSurface</code> colors are used to create a
-<a href="material/MaterialStateProperty-class.html">MaterialStateProperty</a> <a href="material/ButtonStyle/foregroundColor.html">ButtonStyle.foregroundColor</a> value in the same
-way that <a href="material/OutlinedButton/defaultStyleOf.html">defaultStyleOf</a> uses the <a href="material/ColorScheme-class.html">ColorScheme</a> colors with the same
-names. Specify a value for <code>primary</code> to specify the color of the button's
-text and icons as well as the overlay colors used to indicate the hover,
-focus, and pressed states. Use <code>onSurface</code> to specify the button's
-disabled text and icon color.</p>
+<p>The <code>foregroundColor</code> and <code>disabledForegroundColor</code> colors are used
+to create a <a href="material/MaterialStateProperty-class.html">MaterialStateProperty</a> <a href="material/ButtonStyle/foregroundColor.html">ButtonStyle.foregroundColor</a>, and
+a derived <a href="material/ButtonStyle/overlayColor.html">ButtonStyle.overlayColor</a>.</p>
+<p>The <code>backgroundColor</code> and <code>disabledBackgroundColor</code> colors are
+used to create a <a href="material/MaterialStateProperty-class.html">MaterialStateProperty</a> <a href="material/ButtonStyle/backgroundColor.html">ButtonStyle.backgroundColor</a>.</p>
 <p>Similarly, the <code>enabledMouseCursor</code> and <code>disabledMouseCursor</code>
 parameters are used to construct <a href="material/ButtonStyle/mouseCursor.html">ButtonStyle.mouseCursor</a>.</p>
 <p>All of the other parameters are either used directly or used to

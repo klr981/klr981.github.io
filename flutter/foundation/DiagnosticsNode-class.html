@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the DiagnosticsNode class from the foundation library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -156,7 +149,7 @@ value.
 </dt>
 <dd>
   Whether to wrap the name onto multiple lines or not.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -167,7 +160,7 @@ value.
 </dt>
 <dd>
   Whether to allow truncation when displaying the node and its children.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -178,7 +171,7 @@ value.
 </dt>
 <dd>
   Whether to wrap text on onto multiple lines or not.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -189,7 +182,7 @@ value.
 </dt>
 <dd>
   Description to show if the node has no displayed properties or children.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -200,7 +193,7 @@ value.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -212,7 +205,7 @@ value.
 <dd>
   Priority level of the diagnostic used to control which diagnostics should
 be shown and filtered.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -223,7 +216,7 @@ be shown and filtered.
 </dt>
 <dd>
   Prefix to include at the start of each line.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -235,7 +228,7 @@ be shown and filtered.
 <dd>
   Label describing the <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a>, typically shown before a separator
 (see <a href="foundation/DiagnosticsNode/showSeparator.html">showSeparator</a>).
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -246,7 +239,7 @@ be shown and filtered.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -258,7 +251,7 @@ be shown and filtered.
 <dd>
   Whether the name of the property should be shown when showing the default
 view of the tree.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -269,7 +262,7 @@ view of the tree.
 </dt>
 <dd>
   Whether to show a separator between <a href="foundation/DiagnosticsNode/name.html">name</a> and description.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -280,7 +273,7 @@ view of the tree.
 </dt>
 <dd>
   Hint for how the node should be displayed.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -292,7 +285,7 @@ view of the tree.
 <dd>
   Returns a configuration specifying how this object should be rendered
 as text art.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, read-only</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -303,7 +296,7 @@ as text art.
 </dt>
 <dd>
   The actual object this is diagnostics data for.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -365,7 +358,7 @@ than <code>minLevel</code>.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -393,7 +386,7 @@ including children or properties.
 <dd>
   Serialize the node to a JSON map according to the configuration provided
 in the <a href="foundation/DiagnosticsSerializationDelegate-class.html">DiagnosticsSerializationDelegate</a>.
-  <div class="features">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a></div>
+  <div class="features"><span class=" @<a href="meta/mustCallSuper-constant.html">mustCallSuper</a>">@<a href="meta/mustCallSuper-constant.html">mustCallSuper</a></span></div>
 
 </dd>
 
@@ -407,7 +400,7 @@ in the <a href="foundation/DiagnosticsSerializationDelegate-class.html">Diagnost
 <dd>
   Returns a string representation of this diagnostic that is compatible with
 the style of the parent if the node is not the root.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -455,7 +448,7 @@ for <a href="dart-developer/Timeline-class.html">Timeline</a> event arguments (a
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

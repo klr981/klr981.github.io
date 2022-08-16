@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the keepToString constant from the dart:ui library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -111,13 +104,14 @@ for a specific class, applying this annotation will direct the compiler
 to leave the method body as-is.</p>
 <p>For example, in the following class the <code>toString</code> method will remain as
 <code>return _buffer.toString();</code>, even if the  <code>--delete-tostring-package-uri</code>
-option would otherwise apply and replace it with <code>return super.toString()</code>.</p>
+option would otherwise apply and replace it with <code>return super.toString()</code>.
+(By convention, <code>dart:ui</code> is usually imported <code>as ui</code>, hence the prefix.)</p>
 <pre class="language-dart"><code class="language-dart">class MyStringBuffer {
-  StringBuffer _buffer = StringBuffer();
+  final StringBuffer _buffer = StringBuffer();
 
   // ...
 
-  @keepToString
+  @ui.keepToString
   @override
   String toString() {
     return _buffer.toString();

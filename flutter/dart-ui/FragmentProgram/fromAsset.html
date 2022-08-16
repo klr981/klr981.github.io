@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the fromAsset method from the FragmentProgram class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -93,7 +86,7 @@
     <section class="multi-line-signature">
       
 
-<span class="returntype"><a href="dart-ui/FragmentProgram-class.html">FragmentProgram</a></span>
+<span class="returntype"><a href="dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-ui/FragmentProgram-class.html">FragmentProgram</a></span>&gt;</span></span>
 <span class="name ">fromAsset</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="fromAsset-param-assetKey"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">assetKey</span></span></li>
 </ol>)
 
@@ -112,14 +105,16 @@ method to create <a href="dart-ui/Shader-class.html">Shader</a> objects that can
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">static FragmentProgram fromAsset(String assetKey) {
-  FragmentProgram? program = _shaderRegistry[assetKey]?.target;
-  if (program == null) {
-    program = FragmentProgram._fromAsset(assetKey);
-    _shaderRegistry[assetKey] = WeakReference&lt;FragmentProgram&gt;(program);
+  <pre class="language-dart"><code class="language-dart">static Future&lt;FragmentProgram&gt; fromAsset(String assetKey) {
+  final FragmentProgram? program = _shaderRegistry[assetKey]?.target;
+  if (program != null) {
+    return Future&lt;FragmentProgram&gt;.value(program);
   }
-
-  return program;
+  return Future&lt;FragmentProgram&gt;.microtask(() {
+    final FragmentProgram program = FragmentProgram._fromAsset(assetKey);
+    _shaderRegistry[assetKey] = WeakReference&lt;FragmentProgram&gt;(program);
+    return program;
+  });
 }</code></pre>
 </section>
 

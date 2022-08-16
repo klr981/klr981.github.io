@@ -9,65 +9,9 @@
 .secondary-text-color  { color: #727272; }
 .divider-color         { border-color: #B6B6B6; }
 
-
-.light{
-/*background-color body, listdropdown*/
---main-bg-color: #fff;
-/*header id-tittle*/
---main-header-color: #eeeeee;
-/*package-name*/
---main-sidebar-color: #727272;
-/*section-title and section subtitle, desc markdown(body, dd, h3), header a*/
---main-text-color: #111111;
-/*typehead search-box*/
---main-search-bar: #fff;
-/* scrollbar-thumb */
---main-scrollbar-color: #CCC;
-/* footer */
---main-footer-background: #111111;
-/*header text color*/
---main-h-text: black;
-/* hyperlinks*/
---main-hyperlinks-color: #0175C2;
-}
-
-.dark{
-/*background-color body, listdropdown*/
---main-bg-color: #0E161F;
-/*header id-tittle*/
---main-header-color: #1C2834;
-/*package-name*/
---main-sidebar-color: #fff;
-/*section-title and section subtitle, desc markdown(body, dd, h3), header a*/
---main-text-color: #fff;
-/*typehead search-box*/
---main-search-bar: #454545;
-/* scrollbar-thumb */
---main-scrollbar-color: #5f6368;
-/* footer */
---main-footer-background: #27323a;
-/* hyperlinks*/
---main-hyperlinks-color: #00D2FA;
-}
-
-i.fa.fa-sun-o{
-    font-size: 24px;
-    margin-right: 10px;
-    margin-left: 5px;
-    color: var(--main-text-color);
-}
-
-i.fa.fa-moon-o{
-    font-size: 24px;
-    margin-right: 30px;
-    margin-left: 10px;
-    color: var(--main-text-color);
-}
-
 /* for layout */
 html,
-body
-{
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -128,63 +72,6 @@ main {
   flex-direction: row;
   padding: 20px;
   min-height: 0;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .sidebar-offcanvas-left {
@@ -258,7 +145,7 @@ nav .container {
 }
 
 header {
-  background-color: var(--main-header-color);
+  background-color: #eeeeee;
   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
@@ -419,6 +306,11 @@ header h1 {
   margin-bottom: 16px;
 }
 
+header a,
+header p,
+header li {
+  color: #111111;
+}
 
 header a:hover {
   color: #0175C2;
@@ -570,6 +462,8 @@ h1 .category {
   vertical-align: middle;
 }
 
+/* The badge under a declaration for things like "const", "read-only", etc. and for the badges inline like Null safety*/
+/* See https://github.com/dart-lang/dartdoc/blob/master/lib/src/model/feature.dart */
 .feature {
   display: inline-block;
   background: white;
@@ -716,12 +610,6 @@ td {
   content: "";
   margin: 0;
   padding: 0;
-}
-
-/* The slug line under a declaration for things like "const", "read-only", etc. */
-.features {
-  font-style: italic;
-  color: #727272;
 }
 
 .multi-line-signature {
@@ -1029,8 +917,8 @@ button {
 .navbar-right .tt-menu {
   right:0;
   left: inherit !important;
-  width: 422px;
-  max-height: 250px;
+  width: 480px;
+  max-height: 280px;
   overflow-y: scroll;
 }
 
@@ -1051,23 +939,23 @@ button {
 }
 
 .tt-suggestion {
-  padding: 1px 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border-style: solid;
-  border-color: lightgrey;
-  border-width: 0.5px;
-  color: #111111;
+   padding: 1px 10px;
+   margin-top: 5px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+   border-style: solid;
+   border-color: lightgrey;
+   border-width: 0.5px;
+  color: #212121;
 }
 
-.typeahead, .tt-query, .tt-hint{
+.typeahead, .tt-query, .tt-hint {
   padding:17px;
   padding-left:50px;
   width:422px;
   height: 20px;
-  border:1px solid #ccc;
+  border:1px solid #fff;
   font-size:13px;
   background-image: url('https://img.icons8.com/search');
   background-repeat:no-repeat;
@@ -1076,20 +964,20 @@ button {
   background-size: 16px;
 }
 
-.search-summary{
+.search-summary {
   margin-bottom: 10px;
 }
 
-a.tt-category-title{
+a.tt-category-title {
   font-size: 16px;
   color: #0175C2;
 }
 
-.enter-search-message{
+.enter-search-message {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    background-color: #eeeeee;
+    background-color: #ccc;
     padding: 0px;
     font-size: 14px;
     margin: 0px;
@@ -1129,14 +1017,14 @@ a.tt-category-title{
 }
 
 .tt-suggestion-title {
-  font-size: 14px;
+  font-size: 16px;
   margin-right:10px;
   margin-left: 10px;
   margin-bottom: 0px;
   margin-top:4px;
 }
 
-.temp-box{
+.temp-box {
  width: 0px;
 }
 
@@ -1178,17 +1066,17 @@ a.tt-category-title{
     width: 0px;
   }
 
-  #sidenav-left-toggle{
+  #sidenav-left-toggle {
    margin-right:10px;
    margin-left:20px;
   }
 
-  .self-name{
+  .self-name {
    margin-right:10px;
   }
 }
 
-.one-line-description{
+.one-line-description {
   font-size: 12px;
   margin-right:10px;
   margin-left: 10px;
@@ -1198,7 +1086,7 @@ a.tt-category-title{
 
 .search-from-lib {
   font-style: italic;
-  color: #111111;
+  color: gray;
   font-size: 11px;
 }
 

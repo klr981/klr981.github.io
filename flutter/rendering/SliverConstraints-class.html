@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the SliverConstraints class from the rendering library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -149,7 +142,7 @@ offset.</p>
 </dt>
 <dd>
   The axis along which the <a href="rendering/SliverConstraints/scrollOffset.html">scrollOffset</a> and <a href="rendering/SliverConstraints/remainingPaintExtent.html">remainingPaintExtent</a> are measured.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -161,7 +154,7 @@ offset.</p>
 <dd>
   The direction in which the <a href="rendering/SliverConstraints/scrollOffset.html">scrollOffset</a> and <a href="rendering/SliverConstraints/remainingPaintExtent.html">remainingPaintExtent</a>
 increase.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -172,7 +165,7 @@ increase.
 </dt>
 <dd>
   Where the cache area starts relative to the <a href="rendering/SliverConstraints/scrollOffset.html">scrollOffset</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -183,7 +176,7 @@ increase.
 </dt>
 <dd>
   The direction in which children should be placed in the cross axis.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -194,7 +187,7 @@ increase.
 </dt>
 <dd>
   The number of pixels in the cross-axis.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -206,7 +199,7 @@ increase.
 <dd>
   The direction in which the contents of slivers are ordered, relative to
 the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -217,7 +210,7 @@ the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -228,7 +221,7 @@ the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
 </dt>
 <dd>
   Whether the constraint is expressed in a consistent manner.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -239,7 +232,7 @@ the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
 </dt>
 <dd>
   Whether there is exactly one size possible given these constraints.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -251,7 +244,7 @@ the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
 <dd>
   Return what the <a href="rendering/SliverConstraints/growthDirection.html">growthDirection</a> would be if the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a> was
 either <a href="painting/AxisDirection.html">AxisDirection.down</a> or <a href="painting/AxisDirection.html">AxisDirection.right</a>.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -264,7 +257,7 @@ either <a href="painting/AxisDirection.html">AxisDirection.down</a> or <a href="
   The number of pixels from where the pixels corresponding to the
 <a href="rendering/SliverConstraints/scrollOffset.html">scrollOffset</a> will be painted up to the first pixel that has not yet been
 painted on by an earlier sliver, in the <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -276,7 +269,7 @@ painted on by an earlier sliver, in the <a href="rendering/SliverConstraints/axi
 <dd>
   The scroll distance that has been consumed by all <a href="rendering/RenderSliver-class.html">RenderSliver</a>s that
 came before this <a href="rendering/RenderSliver-class.html">RenderSliver</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -288,7 +281,7 @@ came before this <a href="rendering/RenderSliver-class.html">RenderSliver</a>.
 <dd>
   Describes how much content the sliver should provide starting from the
 <a href="rendering/SliverConstraints/cacheOrigin.html">cacheOrigin</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -300,7 +293,7 @@ came before this <a href="rendering/RenderSliver-class.html">RenderSliver</a>.
 <dd>
   The number of pixels of content that the sliver should consider providing.
 (Providing more pixels than this is inefficient.)
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -311,7 +304,7 @@ came before this <a href="rendering/RenderSliver-class.html">RenderSliver</a>.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -325,7 +318,7 @@ came before this <a href="rendering/RenderSliver-class.html">RenderSliver</a>.
 the earliest visible part of this sliver in the <a href="painting/AxisDirection.html">AxisDirection</a> if
 <a href="rendering/SliverConstraints/growthDirection.html">growthDirection</a> is <a href="rendering/GrowthDirection.html">GrowthDirection.forward</a> or in the opposite
 <a href="painting/AxisDirection.html">AxisDirection</a> direction if <a href="rendering/SliverConstraints/growthDirection.html">growthDirection</a> is <a href="rendering/GrowthDirection.html">GrowthDirection.reverse</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -337,7 +330,7 @@ the earliest visible part of this sliver in the <a href="painting/AxisDirection.
 <dd>
   The direction in which the user is attempting to scroll, relative to the
 <a href="rendering/SliverConstraints/axisDirection.html">axisDirection</a> and <a href="rendering/SliverConstraints/growthDirection.html">growthDirection</a>.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -348,7 +341,7 @@ the earliest visible part of this sliver in the <a href="painting/AxisDirection.
 </dt>
 <dd>
   The number of pixels the viewport can display in the main axis.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -397,7 +390,7 @@ new values.
 </dt>
 <dd>
   Asserts that the constraints are valid.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -410,7 +403,7 @@ new values.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -423,7 +416,7 @@ new values.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -444,7 +437,7 @@ new values.
 </dt>
 <dd>
   The equality operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -800,6 +793,7 @@ new values.
         <li><a href="dart-ui/SpellOutStringAttribute-class.html">SpellOutStringAttribute</a></li>
         <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="dart-ui/StringAttribute-class.html">StringAttribute</a></li>
         <li><a href="foundation/StringProperty-class.html">StringProperty</a></li>
         <li><a href="painting/StrutStyle-class.html">StrutStyle</a></li>
@@ -912,6 +906,7 @@ new values.
         <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
 
       <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
+        <li><a href="semantics/Assertiveness.html">Assertiveness</a></li>
         <li><a href="painting/Axis.html">Axis</a></li>
         <li><a href="painting/AxisDirection.html">AxisDirection</a></li>
         <li><a href="dart-ui/BlendMode.html">BlendMode</a></li>

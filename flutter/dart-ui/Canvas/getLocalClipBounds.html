@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the getLocalClipBounds method from the Canvas class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -121,12 +114,15 @@ ignoring any clip method that was executed with <a href="dart-ui/ClipOp.html">Cl
 <a href="dart-ui/ClipOp.html">ClipOp</a> argument is only present on the <a href="dart-ui/Canvas/clipRect.html">clipRect</a> method.</p>
 <p>To understand how the bounds estimate can be conservative, consider the
 following two clip method calls:</p>
-<pre class="language-dart"><code class="language-dart">   clipPath(Path()
-     ..addRect(const Rect.fromLTRB(10, 10, 20, 20))
-     ..addRect(const Rect.fromLTRB(80, 80, 100, 100)));
-   clipPath(Path()
-     ..addRect(const Rect.fromLTRB(80, 10, 100, 20))
-     ..addRect(const Rect.fromLTRB(10, 80, 20, 100)));
+<pre class="language-dart"><code class="language-dart">void draw(Canvas canvas) {
+  canvas.clipPath(Path()
+    ..addRect(const Rect.fromLTRB(10, 10, 20, 20))
+    ..addRect(const Rect.fromLTRB(80, 80, 100, 100)));
+  canvas.clipPath(Path()
+    ..addRect(const Rect.fromLTRB(80, 10, 100, 20))
+    ..addRect(const Rect.fromLTRB(10, 80, 20, 100)));
+  ...
+}
 </code></pre>
 <p>After executing both of those calls there is no area left in which to draw
 because the two paths have no overlapping regions. But, in this case,

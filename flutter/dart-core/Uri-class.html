@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Uri class from the dart:core library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -234,7 +227,7 @@ print(uri.data); // null
 </dt>
 <dd>
   The authority component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -245,7 +238,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Access the structure of a <code>data:</code> URI.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -256,7 +249,7 @@ print(uri.data); // null
 </dt>
 <dd>
   The fragment identifier component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -267,7 +260,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has an absolute path (starting with '/').
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -278,7 +271,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has an <a href="dart-core/Uri/authority.html">authority</a> component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -289,7 +282,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has an empty path.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -300,7 +293,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has a fragment part.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -311,7 +304,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Returns a hash code computed as <code>toString().hashCode</code>.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -322,7 +315,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has an explicit port.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -333,7 +326,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has a query part.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -344,7 +337,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI has a <a href="dart-core/Uri/scheme.html">scheme</a> component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -355,7 +348,7 @@ print(uri.data); // null
 </dt>
 <dd>
   The host part of the authority component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -366,7 +359,7 @@ print(uri.data); // null
 </dt>
 <dd>
   Whether the URI is absolute.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -378,7 +371,7 @@ print(uri.data); // null
 <dd>
   Returns the origin of the URI in the form scheme://host:port for the
 schemes http and https.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -389,7 +382,7 @@ schemes http and https.
 </dt>
 <dd>
   The path component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -400,7 +393,7 @@ schemes http and https.
 </dt>
 <dd>
   The URI path split into its segments.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -411,7 +404,7 @@ schemes http and https.
 </dt>
 <dd>
   The port part of the authority component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -422,7 +415,7 @@ schemes http and https.
 </dt>
 <dd>
   The query component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -435,7 +428,7 @@ schemes http and https.
   The URI query split into a map according to the rules
 specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.4" title="HTML 4.01 section 17.13.4">HTML 4.01 specification section
 17.13.4</a>.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -448,7 +441,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
   Returns the URI query split into a map according to the rules
 specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.4" title="HTML 4.01 section 17.13.4">HTML 4.01 specification section
 17.13.4</a>.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -459,7 +452,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -470,7 +463,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd>
   The scheme component of the URI.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -481,7 +474,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd>
   The user info part of the authority component.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -529,7 +522,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -607,7 +600,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd>
   The normalized string representation of the URI.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -628,7 +621,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd>
   A URI is equal to another URI with the same normalized representation.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -646,7 +639,7 @@ specified for FORM post in the <a href="https://www.w3.org/TR/REC-html40/interac
 </dt>
 <dd>
   The natural base URI for the current platform.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 

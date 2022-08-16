@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the hashAllUnordered method from the Object class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -102,7 +95,7 @@
 <span class="name ">hashAllUnordered</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="hashAllUnordered-param-objects"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/Object-class.html">Object</a>?</span>&gt;</span></span> <span class="parameter-name">objects</span></span></li>
 </ol>)
 
-      <div class="features">@Since(&quot;2.14&quot;)</div>
+      <div class="features"><span class=" @Since(&quot;2.14&quot;)">@Since(&quot;2.14&quot;)</span></div>
 
     </section>
     
@@ -112,11 +105,11 @@
 even if they are <code>null</code>,
 by numerically combining the <a href="dart-core/Object/hashCode.html">Object.hashCode</a> of each element
 in an order independent way.</p>
-<p>The result of <code>unorderedHashAll({o})</code> is not <code>o.hashCode</code>.</p>
+<p>The result of <code>hashAllUnordered({o})</code> is not <code>o.hashCode</code>.</p>
 <p>Example:</p>
 <pre class="language-dart"><code class="language-dart">bool setEquals&lt;T&gt;(Set&lt;T&gt; set1, Set&lt;T&gt; set2) {
-  var hashCode1 = Object.unorderedHashAll(set1);
-  var hashCode2 = Object.unorderedHashAll(set2);
+  var hashCode1 = Object.hashAllUnordered(set1);
+  var hashCode2 = Object.hashAllUnordered(set2);
   if (hashCode1 != hashCode2) return false;
   // Compare elements ...
 }
@@ -129,7 +122,7 @@ even if the objects are not necessarily in the same order,</p>
 over different runs of the same program.
 The exact algorithm used may differ between different platforms,
 or between different versions of the platform libraries,
-and it may depend on values that change per program run</p>
+and it may depend on values that change on each program execution.</p>
 </section>
 
 

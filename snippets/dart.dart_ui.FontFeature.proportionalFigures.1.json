@@ -2,7 +2,7 @@
     "id": "dart.dart_ui.FontFeature.proportionalFigures.1",
     "element": "FontFeature.proportionalFigures",
     "sourcePath": "../pkg/sky_engine/lib/ui/text.dart",
-    "sourceLine": 630,
+    "sourceLine": 631,
     "channel": "master",
     "serial": "1",
     "package": "Dart",

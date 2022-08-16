@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Animation class from the animation library, for the Dart programming language.">
@@ -71,21 +71,14 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/animation/animation.dart#L54"><i class="material-icons">description</i></a></div>
+  <div id="external-links" class="btn-group"><a title="View source code" class="source-link" href="https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/animation/animation.dart#L58"><i class="material-icons">description</i></a></div>
 <h1><span class="kind-class">Animation&lt;<wbr><span class="type-parameter">T</span>&gt;</span> class 
     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
  
@@ -162,6 +155,13 @@ convert <code>Animation&lt;double&gt;</code>s into other kinds of <code>Animatio
 const constructors so that they can be used in const expressions.
             <div class="constructor-modifier features">const</div>
         </dd>
+        <dt id="Animation.fromValueListenable" class="callable">
+          <span class="name"><a href="animation/Animation/Animation.fromValueListenable.html">Animation.fromValueListenable</a></span><span class="signature">(<span class="parameter" id="fromValueListenable-param-listenable"><span class="type-annotation"><a href="foundation/ValueListenable-class.html">ValueListenable</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">listenable</span>, </span><span class="parameter" id="fromValueListenable-param-transformer">{<span class="type-annotation"><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span>?</span> <span class="parameter-name">transformer</span>}</span>)</span>
+        </dt>
+        <dd>
+          Create a new animation from a <a href="foundation/ValueListenable-class.html">ValueListenable</a>.
+            <div class="constructor-modifier features">factory</div>
+        </dd>
     </dl>
   </section>
 
@@ -176,7 +176,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -187,7 +187,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   Whether this animation is stopped at the end.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -198,7 +198,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   Whether this animation is stopped at the beginning.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -209,7 +209,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -220,7 +220,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   The current status of this animation.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -231,7 +231,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   The current value of the animation.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -253,7 +253,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   Calls the listener every time the value of the animation changes.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -279,7 +279,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   Chains a <a href="animation/Tween-class.html">Tween</a> (or <a href="animation/CurveTween-class.html">CurveTween</a>) to this <a href="animation/Animation-class.html">Animation</a>.
-  <div class="features">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></div>
+  <div class="features"><span class=" @<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a>">@<a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></span></div>
 
 </dd>
 
@@ -292,7 +292,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -305,7 +305,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   Stop calling the listener every time the value of the animation changes.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -331,7 +331,7 @@ const constructors so that they can be used in const expressions.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -366,7 +366,7 @@ information about the object itself.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -465,6 +465,7 @@ information about the object itself.
 
       <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
         <li><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
 
       <li class="section-title"><a href="animation/animation-library.html#exceptions">Exceptions</a></li>
@@ -478,6 +479,7 @@ information about the object itself.
 
         <li class="section-title"><a href="animation/Animation-class.html#constructors">Constructors</a></li>
           <li><a href="animation/Animation/Animation.html">Animation</a></li>
+          <li><a href="animation/Animation/Animation.fromValueListenable.html">fromValueListenable</a></li>
 
 
         <li class="section-title">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the WidgetSpan class from the widgets library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -212,7 +205,7 @@ semantics tree.</p>
 </dt>
 <dd class="inherited">
   How the placeholder aligns vertically with the text.
-  <div class="features">final, inherited</div>
+  <div class="features"><span class="feature final">final</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -224,7 +217,7 @@ semantics tree.</p>
 <dd class="inherited">
   The <a href="dart-ui/TextBaseline.html">TextBaseline</a> to align against when using <a href="dart-ui/PlaceholderAlignment.html">ui.PlaceholderAlignment.baseline</a>,
 <a href="dart-ui/PlaceholderAlignment.html">ui.PlaceholderAlignment.aboveBaseline</a>, and <a href="dart-ui/PlaceholderAlignment.html">ui.PlaceholderAlignment.belowBaseline</a>.
-  <div class="features">final, inherited</div>
+  <div class="features"><span class="feature final">final</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -235,7 +228,7 @@ semantics tree.</p>
 </dt>
 <dd>
   The widget to embed inline within text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -246,7 +239,7 @@ semantics tree.</p>
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -257,7 +250,7 @@ semantics tree.</p>
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -268,7 +261,7 @@ semantics tree.</p>
 </dt>
 <dd class="inherited">
   The <a href="painting/TextStyle-class.html">TextStyle</a> to apply to this span.
-  <div class="features">final, inherited</div>
+  <div class="features"><span class="feature final">final</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -291,7 +284,7 @@ semantics tree.</p>
 <dd>
   Adds a placeholder box to the paragraph builder if a size has been
 calculated for the widget.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -304,7 +297,7 @@ calculated for the widget.
 </dt>
 <dd class="inherited">
   Returns the UTF-16 code unit at the given <code>index</code> in the flattened string.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -318,7 +311,7 @@ calculated for the widget.
 <dd>
   Performs the check at each <a href="painting/InlineSpan-class.html">InlineSpan</a> for if the <code>index</code> falls within the range
 of the span and returns the corresponding code unit. Returns null otherwise.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -332,7 +325,7 @@ of the span and returns the corresponding code unit. Returns null otherwise.
 <dd>
   Describe the difference between this span and another, in terms of
 how much damage it will make to the rendering. The comparison is deep.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -346,7 +339,7 @@ how much damage it will make to the rendering. The comparison is deep.
 <dd class="inherited">
   Walks the <a href="painting/InlineSpan-class.html">InlineSpan</a> tree and accumulates a list of
 <a href="painting/InlineSpanSemanticsInformation-class.html">InlineSpanSemanticsInformation</a> objects.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -360,7 +353,7 @@ how much damage it will make to the rendering. The comparison is deep.
 <dd class="inherited">
   <a href="painting/PlaceholderSpan-class.html">PlaceholderSpan</a>s are flattened to a <code>0xFFFC</code> object replacement character in the
 plain text representation when <code>includePlaceholders</code> is true.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -374,7 +367,7 @@ plain text representation when <code>includePlaceholders</code> is true.
 <dd>
   In debug mode, throws an exception if the object is not in a
 valid configuration. Otherwise, returns true.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -388,7 +381,7 @@ valid configuration. Otherwise, returns true.
 <dd class="inherited">
   Returns a list of <code>DiagnosticsNode</code> objects describing this node's
 children.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -401,7 +394,7 @@ children.
 </dt>
 <dd class="inherited">
   Add additional properties associated with the node.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -415,7 +408,7 @@ children.
 <dd class="inherited">
   Populates the <code>semanticsOffsets</code> and <code>semanticsElements</code> with the appropriate data
 to be able to construct a <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -429,7 +422,7 @@ to be able to construct a <a href="semantics/SemanticsNode-class.html">Semantics
 <dd class="inherited">
   Flattens the <a href="painting/InlineSpan-class.html">InlineSpan</a> tree to a list of
 <code>InlineSpanSemanticsInformation</code> objects.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -442,7 +435,7 @@ to be able to construct a <a href="semantics/SemanticsNode-class.html">Semantics
 </dt>
 <dd>
   Returns the text span that contains the given position in the text.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -456,7 +449,7 @@ to be able to construct a <a href="semantics/SemanticsNode-class.html">Semantics
 <dd>
   Performs the check at each <a href="painting/InlineSpan-class.html">InlineSpan</a> for if the <code>position</code> falls within the range
 of the span and returns the span if it does.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -469,7 +462,7 @@ of the span and returns the span if it does.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -483,7 +476,7 @@ of the span and returns the span if it does.
 <dd class="inherited">
   Returns a debug representation of the object that is used by debugging
 tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsNode.toStringDeep</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -496,7 +489,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   Flattens the <a href="painting/InlineSpan-class.html">InlineSpan</a> tree into a single string.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -509,7 +502,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -522,7 +515,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   Returns a string representation of this node and its descendants.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -535,7 +528,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   Returns a one-line detailed description of the object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -549,7 +542,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 <dd class="inherited">
   A brief description of this object, usually just the <a href="dart-core/Object/runtimeType.html">runtimeType</a> and the
 <a href="widgets/WidgetSpan/hashCode.html">hashCode</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -562,7 +555,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd>
   Calls <code>visitor</code> on this <a href="widgets/WidgetSpan-class.html">WidgetSpan</a>. There are no children spans to walk.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -583,7 +576,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd>
   The equality operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -871,8 +864,6 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/FocusOrder-class.html">FocusOrder</a></li>
         <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
         <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
-        <li><a href="widgets/FocusTrap-class.html">FocusTrap</a></li>
-        <li><a href="widgets/FocusTrapArea-class.html">FocusTrapArea</a></li>
         <li><a href="widgets/FocusTraversalGroup-class.html">FocusTraversalGroup</a></li>
         <li><a href="widgets/FocusTraversalOrder-class.html">FocusTraversalOrder</a></li>
         <li><a href="widgets/FocusTraversalPolicy-class.html">FocusTraversalPolicy</a></li>
@@ -1130,6 +1121,8 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="rendering/RenderSemanticsGestureHandler-class.html">RenderSemanticsGestureHandler</a></li>
         <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
         <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+        <li><a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a></li>
+        <li><a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a></li>
         <li><a href="widgets/ReorderableDelayedDragStartListener-class.html">ReorderableDelayedDragStartListener</a></li>
         <li><a href="widgets/ReorderableDragStartListener-class.html">ReorderableDragStartListener</a></li>
         <li><a href="widgets/ReorderableList-class.html">ReorderableList</a></li>
@@ -1299,6 +1292,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="physics/SpringDescription-class.html">SpringDescription</a></li>
         <li><a href="widgets/Stack-class.html">Stack</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="widgets/State-class.html">State</a></li>
         <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
         <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
@@ -1319,6 +1313,9 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
         <li><a href="widgets/TableRow-class.html">TableRow</a></li>
         <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+        <li><a href="widgets/TapRegion-class.html">TapRegion</a></li>
+        <li><a href="widgets/TapRegionRegistry-class.html">TapRegionRegistry</a></li>
+        <li><a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a></li>
         <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
         <li><a href="widgets/Text-class.html">Text</a></li>
         <li><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a></li>
@@ -1326,6 +1323,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
         <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
         <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+        <li><a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a></li>
         <li><a href="dart-ui/TextHeightBehavior-class.html">TextHeightBehavior</a></li>
         <li><a href="services/TextInputType-class.html">TextInputType</a></li>
         <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
@@ -1705,6 +1703,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/SliverLayoutWidgetBuilder.html">SliverLayoutWidgetBuilder</a></li>
         <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
         <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+        <li><a href="widgets/TapRegionCallback.html">TapRegionCallback</a></li>
         <li><a href="widgets/TextEditingValueCallback.html">TextEditingValueCallback</a></li>
         <li><a href="widgets/ToolbarBuilder.html">ToolbarBuilder</a></li>
         <li><a href="widgets/TransitionBuilder.html">TransitionBuilder</a></li>
@@ -1712,6 +1711,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
         <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
         <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
         <li><a href="widgets/ValueWidgetBuilder.html">ValueWidgetBuilder</a></li>
         <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>

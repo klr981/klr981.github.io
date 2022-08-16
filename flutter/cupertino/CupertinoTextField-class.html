@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the CupertinoTextField class from the cupertino library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -198,14 +191,14 @@ Design UI conventions.</li>
 
     <dl class="constructor-summary-list">
         <dt id="CupertinoTextField" class="callable">
-          <span class="name"><a href="cupertino/CupertinoTextField/CupertinoTextField.html">CupertinoTextField</a></span><span class="signature">(<span class="parameter" id="-param-key">{<span class="type-annotation"><a href="foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="-param-controller"><span class="type-annotation"><a href="widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span><span class="parameter" id="-param-focusNode"><span class="type-annotation"><a href="widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span><span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="painting/BoxDecoration-class.html">BoxDecoration</a>?</span> <span class="parameter-name">decoration</span> = <span class="default-value">_kDefaultRoundedBorderDecoration</span>, </span><span class="parameter" id="-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span> = <span class="default-value">const EdgeInsets.all(6.0)</span>, </span><span class="parameter" id="-param-placeholder"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">placeholder</span>, </span><span class="parameter" id="-param-placeholderStyle"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">placeholderStyle</span> = <span class="default-value">const TextStyle(fontWeight: FontWeight.w400, color: CupertinoColors.placeholderText)</span>, </span><span class="parameter" id="-param-prefix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">prefix</span>, </span><span class="parameter" id="-param-prefixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">prefixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="-param-suffix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">suffix</span>, </span><span class="parameter" id="-param-suffixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">suffixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="-param-clearButtonMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">clearButtonMode</span> = <span class="default-value">OverlayVisibilityMode.never</span>, </span><span class="parameter" id="-param-keyboardType"><span class="type-annotation"><a href="services/TextInputType-class.html">TextInputType</a>?</span> <span class="parameter-name">keyboardType</span>, </span><span class="parameter" id="-param-textInputAction"><span class="type-annotation"><a href="services/TextInputAction.html">TextInputAction</a>?</span> <span class="parameter-name">textInputAction</span>, </span><span class="parameter" id="-param-textCapitalization"><span class="type-annotation"><a href="services/TextCapitalization.html">TextCapitalization</a></span> <span class="parameter-name">textCapitalization</span> = <span class="default-value">TextCapitalization.none</span>, </span><span class="parameter" id="-param-style"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">style</span>, </span><span class="parameter" id="-param-strutStyle"><span class="type-annotation"><a href="painting/StrutStyle-class.html">StrutStyle</a>?</span> <span class="parameter-name">strutStyle</span>, </span><span class="parameter" id="-param-textAlign"><span class="type-annotation"><a href="dart-ui/TextAlign.html">TextAlign</a></span> <span class="parameter-name">textAlign</span> = <span class="default-value">TextAlign.start</span>, </span><span class="parameter" id="-param-textAlignVertical"><span class="type-annotation"><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a>?</span> <span class="parameter-name">textAlignVertical</span>, </span><span class="parameter" id="-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection.html">TextDirection</a>?</span> <span class="parameter-name">textDirection</span>, </span><span class="parameter" id="-param-readOnly"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">readOnly</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-toolbarOptions"><span class="type-annotation"><a href="widgets/ToolbarOptions-class.html">ToolbarOptions</a>?</span> <span class="parameter-name">toolbarOptions</span>, </span><span class="parameter" id="-param-showCursor"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">showCursor</span>, </span><span class="parameter" id="-param-autofocus"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autofocus</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-obscuringCharacter"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">obscuringCharacter</span> = <span class="default-value">&#39;•&#39;</span>, </span><span class="parameter" id="-param-obscureText"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">obscureText</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-autocorrect"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autocorrect</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-smartDashesType"><span class="type-annotation"><a href="services/SmartDashesType.html">SmartDashesType</a>?</span> <span class="parameter-name">smartDashesType</span>, </span><span class="parameter" id="-param-smartQuotesType"><span class="type-annotation"><a href="services/SmartQuotesType.html">SmartQuotesType</a>?</span> <span class="parameter-name">smartQuotesType</span>, </span><span class="parameter" id="-param-enableSuggestions"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableSuggestions</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-maxLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLines</span> = <span class="default-value">1</span>, </span><span class="parameter" id="-param-minLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">minLines</span>, </span><span class="parameter" id="-param-expands"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">expands</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-maxLength"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLength</span>, </span><span class="parameter" id="-param-maxLengthEnforcement"><span class="type-annotation"><a href="services/MaxLengthEnforcement.html">MaxLengthEnforcement</a>?</span> <span class="parameter-name">maxLengthEnforcement</span>, </span><span class="parameter" id="-param-onChanged"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="-param-onEditingComplete"><span class="type-annotation"><a href="dart-ui/VoidCallback.html">VoidCallback</a>?</span> <span class="parameter-name">onEditingComplete</span>, </span><span class="parameter" id="-param-onSubmitted"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSubmitted</span>, </span><span class="parameter" id="-param-inputFormatters"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="services/TextInputFormatter-class.html">TextInputFormatter</a></span>&gt;</span>?</span> <span class="parameter-name">inputFormatters</span>, </span><span class="parameter" id="-param-enabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enabled</span>, </span><span class="parameter" id="-param-cursorWidth"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cursorWidth</span> = <span class="default-value">2.0</span>, </span><span class="parameter" id="-param-cursorHeight"><span class="type-annotation"><a href="dart-core/double-class.html">double</a>?</span> <span class="parameter-name">cursorHeight</span>, </span><span class="parameter" id="-param-cursorRadius"><span class="type-annotation"><a href="dart-ui/Radius-class.html">Radius</a></span> <span class="parameter-name">cursorRadius</span> = <span class="default-value">const Radius.circular(2.0)</span>, </span><span class="parameter" id="-param-cursorColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">cursorColor</span>, </span><span class="parameter" id="-param-selectionHeightStyle"><span class="type-annotation"><a href="dart-ui/BoxHeightStyle.html">BoxHeightStyle</a></span> <span class="parameter-name">selectionHeightStyle</span> = <span class="default-value">ui.BoxHeightStyle.tight</span>, </span><span class="parameter" id="-param-selectionWidthStyle"><span class="type-annotation"><a href="dart-ui/BoxWidthStyle.html">BoxWidthStyle</a></span> <span class="parameter-name">selectionWidthStyle</span> = <span class="default-value">ui.BoxWidthStyle.tight</span>, </span><span class="parameter" id="-param-keyboardAppearance"><span class="type-annotation"><a href="dart-ui/Brightness.html">Brightness</a>?</span> <span class="parameter-name">keyboardAppearance</span>, </span><span class="parameter" id="-param-scrollPadding"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">scrollPadding</span> = <span class="default-value">const EdgeInsets.all(20.0)</span>, </span><span class="parameter" id="-param-dragStartBehavior"><span class="type-annotation"><a href="gestures/DragStartBehavior.html">DragStartBehavior</a></span> <span class="parameter-name">dragStartBehavior</span> = <span class="default-value">DragStartBehavior.start</span>, </span><span class="parameter" id="-param-enableInteractiveSelection"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableInteractiveSelection</span>, </span><span class="parameter" id="-param-selectionControls"><span class="type-annotation"><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a>?</span> <span class="parameter-name">selectionControls</span>, </span><span class="parameter" id="-param-onTap"><span class="type-annotation"><a href="gestures/GestureTapCallback.html">GestureTapCallback</a>?</span> <span class="parameter-name">onTap</span>, </span><span class="parameter" id="-param-scrollController"><span class="type-annotation"><a href="widgets/ScrollController-class.html">ScrollController</a>?</span> <span class="parameter-name">scrollController</span>, </span><span class="parameter" id="-param-scrollPhysics"><span class="type-annotation"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a>?</span> <span class="parameter-name">scrollPhysics</span>, </span><span class="parameter" id="-param-autofillHints"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">autofillHints</span> = <span class="default-value">const &lt;String&gt;[]</span>, </span><span class="parameter" id="-param-clipBehavior"><span class="type-annotation"><a href="dart-ui/Clip.html">Clip</a></span> <span class="parameter-name">clipBehavior</span> = <span class="default-value">Clip.hardEdge</span>, </span><span class="parameter" id="-param-restorationId"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">restorationId</span>, </span><span class="parameter" id="-param-scribbleEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">scribbleEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-enableIMEPersonalizedLearning"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableIMEPersonalizedLearning</span> = <span class="default-value">true</span>}</span>)</span>
+          <span class="name"><a href="cupertino/CupertinoTextField/CupertinoTextField.html">CupertinoTextField</a></span><span class="signature">(<span class="parameter" id="-param-key">{<span class="type-annotation"><a href="foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="-param-controller"><span class="type-annotation"><a href="widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span><span class="parameter" id="-param-focusNode"><span class="type-annotation"><a href="widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span><span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="painting/BoxDecoration-class.html">BoxDecoration</a>?</span> <span class="parameter-name">decoration</span> = <span class="default-value">_kDefaultRoundedBorderDecoration</span>, </span><span class="parameter" id="-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span> = <span class="default-value">const EdgeInsets.all(6.0)</span>, </span><span class="parameter" id="-param-placeholder"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">placeholder</span>, </span><span class="parameter" id="-param-placeholderStyle"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">placeholderStyle</span> = <span class="default-value">const TextStyle(fontWeight: FontWeight.w400, color: CupertinoColors.placeholderText)</span>, </span><span class="parameter" id="-param-prefix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">prefix</span>, </span><span class="parameter" id="-param-prefixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">prefixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="-param-suffix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">suffix</span>, </span><span class="parameter" id="-param-suffixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">suffixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="-param-clearButtonMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">clearButtonMode</span> = <span class="default-value">OverlayVisibilityMode.never</span>, </span><span class="parameter" id="-param-keyboardType"><span class="type-annotation"><a href="services/TextInputType-class.html">TextInputType</a>?</span> <span class="parameter-name">keyboardType</span>, </span><span class="parameter" id="-param-textInputAction"><span class="type-annotation"><a href="services/TextInputAction.html">TextInputAction</a>?</span> <span class="parameter-name">textInputAction</span>, </span><span class="parameter" id="-param-textCapitalization"><span class="type-annotation"><a href="services/TextCapitalization.html">TextCapitalization</a></span> <span class="parameter-name">textCapitalization</span> = <span class="default-value">TextCapitalization.none</span>, </span><span class="parameter" id="-param-style"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">style</span>, </span><span class="parameter" id="-param-strutStyle"><span class="type-annotation"><a href="painting/StrutStyle-class.html">StrutStyle</a>?</span> <span class="parameter-name">strutStyle</span>, </span><span class="parameter" id="-param-textAlign"><span class="type-annotation"><a href="dart-ui/TextAlign.html">TextAlign</a></span> <span class="parameter-name">textAlign</span> = <span class="default-value">TextAlign.start</span>, </span><span class="parameter" id="-param-textAlignVertical"><span class="type-annotation"><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a>?</span> <span class="parameter-name">textAlignVertical</span>, </span><span class="parameter" id="-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection.html">TextDirection</a>?</span> <span class="parameter-name">textDirection</span>, </span><span class="parameter" id="-param-readOnly"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">readOnly</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-toolbarOptions"><span class="type-annotation"><a href="widgets/ToolbarOptions-class.html">ToolbarOptions</a>?</span> <span class="parameter-name">toolbarOptions</span>, </span><span class="parameter" id="-param-showCursor"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">showCursor</span>, </span><span class="parameter" id="-param-autofocus"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autofocus</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-obscuringCharacter"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">obscuringCharacter</span> = <span class="default-value">&#39;•&#39;</span>, </span><span class="parameter" id="-param-obscureText"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">obscureText</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-autocorrect"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autocorrect</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-smartDashesType"><span class="type-annotation"><a href="services/SmartDashesType.html">SmartDashesType</a>?</span> <span class="parameter-name">smartDashesType</span>, </span><span class="parameter" id="-param-smartQuotesType"><span class="type-annotation"><a href="services/SmartQuotesType.html">SmartQuotesType</a>?</span> <span class="parameter-name">smartQuotesType</span>, </span><span class="parameter" id="-param-enableSuggestions"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableSuggestions</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-maxLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLines</span> = <span class="default-value">1</span>, </span><span class="parameter" id="-param-minLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">minLines</span>, </span><span class="parameter" id="-param-expands"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">expands</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-maxLength"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLength</span>, </span><span class="parameter" id="-param-maxLengthEnforcement"><span class="type-annotation"><a href="services/MaxLengthEnforcement.html">MaxLengthEnforcement</a>?</span> <span class="parameter-name">maxLengthEnforcement</span>, </span><span class="parameter" id="-param-onChanged"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="-param-onEditingComplete"><span class="type-annotation"><a href="dart-ui/VoidCallback.html">VoidCallback</a>?</span> <span class="parameter-name">onEditingComplete</span>, </span><span class="parameter" id="-param-onSubmitted"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSubmitted</span>, </span><span class="parameter" id="-param-onTapOutside"><span class="type-annotation"><a href="widgets/TapRegionCallback.html">TapRegionCallback</a>?</span> <span class="parameter-name">onTapOutside</span>, </span><span class="parameter" id="-param-inputFormatters"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="services/TextInputFormatter-class.html">TextInputFormatter</a></span>&gt;</span>?</span> <span class="parameter-name">inputFormatters</span>, </span><span class="parameter" id="-param-enabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enabled</span>, </span><span class="parameter" id="-param-cursorWidth"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cursorWidth</span> = <span class="default-value">2.0</span>, </span><span class="parameter" id="-param-cursorHeight"><span class="type-annotation"><a href="dart-core/double-class.html">double</a>?</span> <span class="parameter-name">cursorHeight</span>, </span><span class="parameter" id="-param-cursorRadius"><span class="type-annotation"><a href="dart-ui/Radius-class.html">Radius</a></span> <span class="parameter-name">cursorRadius</span> = <span class="default-value">const Radius.circular(2.0)</span>, </span><span class="parameter" id="-param-cursorColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">cursorColor</span>, </span><span class="parameter" id="-param-selectionHeightStyle"><span class="type-annotation"><a href="dart-ui/BoxHeightStyle.html">BoxHeightStyle</a></span> <span class="parameter-name">selectionHeightStyle</span> = <span class="default-value">ui.BoxHeightStyle.tight</span>, </span><span class="parameter" id="-param-selectionWidthStyle"><span class="type-annotation"><a href="dart-ui/BoxWidthStyle.html">BoxWidthStyle</a></span> <span class="parameter-name">selectionWidthStyle</span> = <span class="default-value">ui.BoxWidthStyle.tight</span>, </span><span class="parameter" id="-param-keyboardAppearance"><span class="type-annotation"><a href="dart-ui/Brightness.html">Brightness</a>?</span> <span class="parameter-name">keyboardAppearance</span>, </span><span class="parameter" id="-param-scrollPadding"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">scrollPadding</span> = <span class="default-value">const EdgeInsets.all(20.0)</span>, </span><span class="parameter" id="-param-dragStartBehavior"><span class="type-annotation"><a href="gestures/DragStartBehavior.html">DragStartBehavior</a></span> <span class="parameter-name">dragStartBehavior</span> = <span class="default-value">DragStartBehavior.start</span>, </span><span class="parameter" id="-param-enableInteractiveSelection"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableInteractiveSelection</span>, </span><span class="parameter" id="-param-selectionControls"><span class="type-annotation"><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a>?</span> <span class="parameter-name">selectionControls</span>, </span><span class="parameter" id="-param-onTap"><span class="type-annotation"><a href="gestures/GestureTapCallback.html">GestureTapCallback</a>?</span> <span class="parameter-name">onTap</span>, </span><span class="parameter" id="-param-scrollController"><span class="type-annotation"><a href="widgets/ScrollController-class.html">ScrollController</a>?</span> <span class="parameter-name">scrollController</span>, </span><span class="parameter" id="-param-scrollPhysics"><span class="type-annotation"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a>?</span> <span class="parameter-name">scrollPhysics</span>, </span><span class="parameter" id="-param-autofillHints"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">autofillHints</span> = <span class="default-value">const &lt;String&gt;[]</span>, </span><span class="parameter" id="-param-clipBehavior"><span class="type-annotation"><a href="dart-ui/Clip.html">Clip</a></span> <span class="parameter-name">clipBehavior</span> = <span class="default-value">Clip.hardEdge</span>, </span><span class="parameter" id="-param-restorationId"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">restorationId</span>, </span><span class="parameter" id="-param-scribbleEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">scribbleEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="-param-enableIMEPersonalizedLearning"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableIMEPersonalizedLearning</span> = <span class="default-value">true</span>}</span>)</span>
         </dt>
         <dd>
           Creates an iOS-style text field.
             <div class="constructor-modifier features">const</div>
         </dd>
         <dt id="CupertinoTextField.borderless" class="callable">
-          <span class="name"><a href="cupertino/CupertinoTextField/CupertinoTextField.borderless.html">CupertinoTextField.borderless</a></span><span class="signature">(<span class="parameter" id="borderless-param-key">{<span class="type-annotation"><a href="foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="borderless-param-controller"><span class="type-annotation"><a href="widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span><span class="parameter" id="borderless-param-focusNode"><span class="type-annotation"><a href="widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span><span class="parameter" id="borderless-param-decoration"><span class="type-annotation"><a href="painting/BoxDecoration-class.html">BoxDecoration</a>?</span> <span class="parameter-name">decoration</span>, </span><span class="parameter" id="borderless-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span> = <span class="default-value">const EdgeInsets.all(6.0)</span>, </span><span class="parameter" id="borderless-param-placeholder"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">placeholder</span>, </span><span class="parameter" id="borderless-param-placeholderStyle"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">placeholderStyle</span> = <span class="default-value">_kDefaultPlaceholderStyle</span>, </span><span class="parameter" id="borderless-param-prefix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">prefix</span>, </span><span class="parameter" id="borderless-param-prefixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">prefixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="borderless-param-suffix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">suffix</span>, </span><span class="parameter" id="borderless-param-suffixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">suffixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="borderless-param-clearButtonMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">clearButtonMode</span> = <span class="default-value">OverlayVisibilityMode.never</span>, </span><span class="parameter" id="borderless-param-keyboardType"><span class="type-annotation"><a href="services/TextInputType-class.html">TextInputType</a>?</span> <span class="parameter-name">keyboardType</span>, </span><span class="parameter" id="borderless-param-textInputAction"><span class="type-annotation"><a href="services/TextInputAction.html">TextInputAction</a>?</span> <span class="parameter-name">textInputAction</span>, </span><span class="parameter" id="borderless-param-textCapitalization"><span class="type-annotation"><a href="services/TextCapitalization.html">TextCapitalization</a></span> <span class="parameter-name">textCapitalization</span> = <span class="default-value">TextCapitalization.none</span>, </span><span class="parameter" id="borderless-param-style"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">style</span>, </span><span class="parameter" id="borderless-param-strutStyle"><span class="type-annotation"><a href="painting/StrutStyle-class.html">StrutStyle</a>?</span> <span class="parameter-name">strutStyle</span>, </span><span class="parameter" id="borderless-param-textAlign"><span class="type-annotation"><a href="dart-ui/TextAlign.html">TextAlign</a></span> <span class="parameter-name">textAlign</span> = <span class="default-value">TextAlign.start</span>, </span><span class="parameter" id="borderless-param-textAlignVertical"><span class="type-annotation"><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a>?</span> <span class="parameter-name">textAlignVertical</span>, </span><span class="parameter" id="borderless-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection.html">TextDirection</a>?</span> <span class="parameter-name">textDirection</span>, </span><span class="parameter" id="borderless-param-readOnly"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">readOnly</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-toolbarOptions"><span class="type-annotation"><a href="widgets/ToolbarOptions-class.html">ToolbarOptions</a>?</span> <span class="parameter-name">toolbarOptions</span>, </span><span class="parameter" id="borderless-param-showCursor"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">showCursor</span>, </span><span class="parameter" id="borderless-param-autofocus"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autofocus</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-obscuringCharacter"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">obscuringCharacter</span> = <span class="default-value">&#39;•&#39;</span>, </span><span class="parameter" id="borderless-param-obscureText"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">obscureText</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-autocorrect"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autocorrect</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-smartDashesType"><span class="type-annotation"><a href="services/SmartDashesType.html">SmartDashesType</a>?</span> <span class="parameter-name">smartDashesType</span>, </span><span class="parameter" id="borderless-param-smartQuotesType"><span class="type-annotation"><a href="services/SmartQuotesType.html">SmartQuotesType</a>?</span> <span class="parameter-name">smartQuotesType</span>, </span><span class="parameter" id="borderless-param-enableSuggestions"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableSuggestions</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-maxLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLines</span> = <span class="default-value">1</span>, </span><span class="parameter" id="borderless-param-minLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">minLines</span>, </span><span class="parameter" id="borderless-param-expands"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">expands</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-maxLength"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLength</span>, </span><span class="parameter" id="borderless-param-maxLengthEnforcement"><span class="type-annotation"><a href="services/MaxLengthEnforcement.html">MaxLengthEnforcement</a>?</span> <span class="parameter-name">maxLengthEnforcement</span>, </span><span class="parameter" id="borderless-param-onChanged"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="borderless-param-onEditingComplete"><span class="type-annotation"><a href="dart-ui/VoidCallback.html">VoidCallback</a>?</span> <span class="parameter-name">onEditingComplete</span>, </span><span class="parameter" id="borderless-param-onSubmitted"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSubmitted</span>, </span><span class="parameter" id="borderless-param-inputFormatters"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="services/TextInputFormatter-class.html">TextInputFormatter</a></span>&gt;</span>?</span> <span class="parameter-name">inputFormatters</span>, </span><span class="parameter" id="borderless-param-enabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enabled</span>, </span><span class="parameter" id="borderless-param-cursorWidth"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cursorWidth</span> = <span class="default-value">2.0</span>, </span><span class="parameter" id="borderless-param-cursorHeight"><span class="type-annotation"><a href="dart-core/double-class.html">double</a>?</span> <span class="parameter-name">cursorHeight</span>, </span><span class="parameter" id="borderless-param-cursorRadius"><span class="type-annotation"><a href="dart-ui/Radius-class.html">Radius</a></span> <span class="parameter-name">cursorRadius</span> = <span class="default-value">const Radius.circular(2.0)</span>, </span><span class="parameter" id="borderless-param-cursorColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">cursorColor</span>, </span><span class="parameter" id="borderless-param-selectionHeightStyle"><span class="type-annotation"><a href="dart-ui/BoxHeightStyle.html">BoxHeightStyle</a></span> <span class="parameter-name">selectionHeightStyle</span> = <span class="default-value">ui.BoxHeightStyle.tight</span>, </span><span class="parameter" id="borderless-param-selectionWidthStyle"><span class="type-annotation"><a href="dart-ui/BoxWidthStyle.html">BoxWidthStyle</a></span> <span class="parameter-name">selectionWidthStyle</span> = <span class="default-value">ui.BoxWidthStyle.tight</span>, </span><span class="parameter" id="borderless-param-keyboardAppearance"><span class="type-annotation"><a href="dart-ui/Brightness.html">Brightness</a>?</span> <span class="parameter-name">keyboardAppearance</span>, </span><span class="parameter" id="borderless-param-scrollPadding"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">scrollPadding</span> = <span class="default-value">const EdgeInsets.all(20.0)</span>, </span><span class="parameter" id="borderless-param-dragStartBehavior"><span class="type-annotation"><a href="gestures/DragStartBehavior.html">DragStartBehavior</a></span> <span class="parameter-name">dragStartBehavior</span> = <span class="default-value">DragStartBehavior.start</span>, </span><span class="parameter" id="borderless-param-enableInteractiveSelection"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableInteractiveSelection</span>, </span><span class="parameter" id="borderless-param-selectionControls"><span class="type-annotation"><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a>?</span> <span class="parameter-name">selectionControls</span>, </span><span class="parameter" id="borderless-param-onTap"><span class="type-annotation"><a href="gestures/GestureTapCallback.html">GestureTapCallback</a>?</span> <span class="parameter-name">onTap</span>, </span><span class="parameter" id="borderless-param-scrollController"><span class="type-annotation"><a href="widgets/ScrollController-class.html">ScrollController</a>?</span> <span class="parameter-name">scrollController</span>, </span><span class="parameter" id="borderless-param-scrollPhysics"><span class="type-annotation"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a>?</span> <span class="parameter-name">scrollPhysics</span>, </span><span class="parameter" id="borderless-param-autofillHints"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">autofillHints</span> = <span class="default-value">const &lt;String&gt;[]</span>, </span><span class="parameter" id="borderless-param-clipBehavior"><span class="type-annotation"><a href="dart-ui/Clip.html">Clip</a></span> <span class="parameter-name">clipBehavior</span> = <span class="default-value">Clip.hardEdge</span>, </span><span class="parameter" id="borderless-param-restorationId"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">restorationId</span>, </span><span class="parameter" id="borderless-param-scribbleEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">scribbleEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-enableIMEPersonalizedLearning"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableIMEPersonalizedLearning</span> = <span class="default-value">true</span>}</span>)</span>
+          <span class="name"><a href="cupertino/CupertinoTextField/CupertinoTextField.borderless.html">CupertinoTextField.borderless</a></span><span class="signature">(<span class="parameter" id="borderless-param-key">{<span class="type-annotation"><a href="foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="borderless-param-controller"><span class="type-annotation"><a href="widgets/TextEditingController-class.html">TextEditingController</a>?</span> <span class="parameter-name">controller</span>, </span><span class="parameter" id="borderless-param-focusNode"><span class="type-annotation"><a href="widgets/FocusNode-class.html">FocusNode</a>?</span> <span class="parameter-name">focusNode</span>, </span><span class="parameter" id="borderless-param-decoration"><span class="type-annotation"><a href="painting/BoxDecoration-class.html">BoxDecoration</a>?</span> <span class="parameter-name">decoration</span>, </span><span class="parameter" id="borderless-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span> = <span class="default-value">const EdgeInsets.all(6.0)</span>, </span><span class="parameter" id="borderless-param-placeholder"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">placeholder</span>, </span><span class="parameter" id="borderless-param-placeholderStyle"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">placeholderStyle</span> = <span class="default-value">_kDefaultPlaceholderStyle</span>, </span><span class="parameter" id="borderless-param-prefix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">prefix</span>, </span><span class="parameter" id="borderless-param-prefixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">prefixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="borderless-param-suffix"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a>?</span> <span class="parameter-name">suffix</span>, </span><span class="parameter" id="borderless-param-suffixMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">suffixMode</span> = <span class="default-value">OverlayVisibilityMode.always</span>, </span><span class="parameter" id="borderless-param-clearButtonMode"><span class="type-annotation"><a href="cupertino/OverlayVisibilityMode.html">OverlayVisibilityMode</a></span> <span class="parameter-name">clearButtonMode</span> = <span class="default-value">OverlayVisibilityMode.never</span>, </span><span class="parameter" id="borderless-param-keyboardType"><span class="type-annotation"><a href="services/TextInputType-class.html">TextInputType</a>?</span> <span class="parameter-name">keyboardType</span>, </span><span class="parameter" id="borderless-param-textInputAction"><span class="type-annotation"><a href="services/TextInputAction.html">TextInputAction</a>?</span> <span class="parameter-name">textInputAction</span>, </span><span class="parameter" id="borderless-param-textCapitalization"><span class="type-annotation"><a href="services/TextCapitalization.html">TextCapitalization</a></span> <span class="parameter-name">textCapitalization</span> = <span class="default-value">TextCapitalization.none</span>, </span><span class="parameter" id="borderless-param-style"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a>?</span> <span class="parameter-name">style</span>, </span><span class="parameter" id="borderless-param-strutStyle"><span class="type-annotation"><a href="painting/StrutStyle-class.html">StrutStyle</a>?</span> <span class="parameter-name">strutStyle</span>, </span><span class="parameter" id="borderless-param-textAlign"><span class="type-annotation"><a href="dart-ui/TextAlign.html">TextAlign</a></span> <span class="parameter-name">textAlign</span> = <span class="default-value">TextAlign.start</span>, </span><span class="parameter" id="borderless-param-textAlignVertical"><span class="type-annotation"><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a>?</span> <span class="parameter-name">textAlignVertical</span>, </span><span class="parameter" id="borderless-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection.html">TextDirection</a>?</span> <span class="parameter-name">textDirection</span>, </span><span class="parameter" id="borderless-param-readOnly"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">readOnly</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-toolbarOptions"><span class="type-annotation"><a href="widgets/ToolbarOptions-class.html">ToolbarOptions</a>?</span> <span class="parameter-name">toolbarOptions</span>, </span><span class="parameter" id="borderless-param-showCursor"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">showCursor</span>, </span><span class="parameter" id="borderless-param-autofocus"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autofocus</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-obscuringCharacter"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">obscuringCharacter</span> = <span class="default-value">&#39;•&#39;</span>, </span><span class="parameter" id="borderless-param-obscureText"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">obscureText</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-autocorrect"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">autocorrect</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-smartDashesType"><span class="type-annotation"><a href="services/SmartDashesType.html">SmartDashesType</a>?</span> <span class="parameter-name">smartDashesType</span>, </span><span class="parameter" id="borderless-param-smartQuotesType"><span class="type-annotation"><a href="services/SmartQuotesType.html">SmartQuotesType</a>?</span> <span class="parameter-name">smartQuotesType</span>, </span><span class="parameter" id="borderless-param-enableSuggestions"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableSuggestions</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-maxLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLines</span> = <span class="default-value">1</span>, </span><span class="parameter" id="borderless-param-minLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">minLines</span>, </span><span class="parameter" id="borderless-param-expands"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">expands</span> = <span class="default-value">false</span>, </span><span class="parameter" id="borderless-param-maxLength"><span class="type-annotation"><a href="dart-core/int-class.html">int</a>?</span> <span class="parameter-name">maxLength</span>, </span><span class="parameter" id="borderless-param-maxLengthEnforcement"><span class="type-annotation"><a href="services/MaxLengthEnforcement.html">MaxLengthEnforcement</a>?</span> <span class="parameter-name">maxLengthEnforcement</span>, </span><span class="parameter" id="borderless-param-onChanged"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onChanged</span>, </span><span class="parameter" id="borderless-param-onEditingComplete"><span class="type-annotation"><a href="dart-ui/VoidCallback.html">VoidCallback</a>?</span> <span class="parameter-name">onEditingComplete</span>, </span><span class="parameter" id="borderless-param-onSubmitted"><span class="type-annotation"><a href="foundation/ValueChanged.html">ValueChanged</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">onSubmitted</span>, </span><span class="parameter" id="borderless-param-onTapOutside"><span class="type-annotation"><a href="widgets/TapRegionCallback.html">TapRegionCallback</a>?</span> <span class="parameter-name">onTapOutside</span>, </span><span class="parameter" id="borderless-param-inputFormatters"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="services/TextInputFormatter-class.html">TextInputFormatter</a></span>&gt;</span>?</span> <span class="parameter-name">inputFormatters</span>, </span><span class="parameter" id="borderless-param-enabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enabled</span>, </span><span class="parameter" id="borderless-param-cursorWidth"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cursorWidth</span> = <span class="default-value">2.0</span>, </span><span class="parameter" id="borderless-param-cursorHeight"><span class="type-annotation"><a href="dart-core/double-class.html">double</a>?</span> <span class="parameter-name">cursorHeight</span>, </span><span class="parameter" id="borderless-param-cursorRadius"><span class="type-annotation"><a href="dart-ui/Radius-class.html">Radius</a></span> <span class="parameter-name">cursorRadius</span> = <span class="default-value">const Radius.circular(2.0)</span>, </span><span class="parameter" id="borderless-param-cursorColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a>?</span> <span class="parameter-name">cursorColor</span>, </span><span class="parameter" id="borderless-param-selectionHeightStyle"><span class="type-annotation"><a href="dart-ui/BoxHeightStyle.html">BoxHeightStyle</a></span> <span class="parameter-name">selectionHeightStyle</span> = <span class="default-value">ui.BoxHeightStyle.tight</span>, </span><span class="parameter" id="borderless-param-selectionWidthStyle"><span class="type-annotation"><a href="dart-ui/BoxWidthStyle.html">BoxWidthStyle</a></span> <span class="parameter-name">selectionWidthStyle</span> = <span class="default-value">ui.BoxWidthStyle.tight</span>, </span><span class="parameter" id="borderless-param-keyboardAppearance"><span class="type-annotation"><a href="dart-ui/Brightness.html">Brightness</a>?</span> <span class="parameter-name">keyboardAppearance</span>, </span><span class="parameter" id="borderless-param-scrollPadding"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">scrollPadding</span> = <span class="default-value">const EdgeInsets.all(20.0)</span>, </span><span class="parameter" id="borderless-param-dragStartBehavior"><span class="type-annotation"><a href="gestures/DragStartBehavior.html">DragStartBehavior</a></span> <span class="parameter-name">dragStartBehavior</span> = <span class="default-value">DragStartBehavior.start</span>, </span><span class="parameter" id="borderless-param-enableInteractiveSelection"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">enableInteractiveSelection</span>, </span><span class="parameter" id="borderless-param-selectionControls"><span class="type-annotation"><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a>?</span> <span class="parameter-name">selectionControls</span>, </span><span class="parameter" id="borderless-param-onTap"><span class="type-annotation"><a href="gestures/GestureTapCallback.html">GestureTapCallback</a>?</span> <span class="parameter-name">onTap</span>, </span><span class="parameter" id="borderless-param-scrollController"><span class="type-annotation"><a href="widgets/ScrollController-class.html">ScrollController</a>?</span> <span class="parameter-name">scrollController</span>, </span><span class="parameter" id="borderless-param-scrollPhysics"><span class="type-annotation"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a>?</span> <span class="parameter-name">scrollPhysics</span>, </span><span class="parameter" id="borderless-param-autofillHints"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">autofillHints</span> = <span class="default-value">const &lt;String&gt;[]</span>, </span><span class="parameter" id="borderless-param-clipBehavior"><span class="type-annotation"><a href="dart-ui/Clip.html">Clip</a></span> <span class="parameter-name">clipBehavior</span> = <span class="default-value">Clip.hardEdge</span>, </span><span class="parameter" id="borderless-param-restorationId"><span class="type-annotation"><a href="dart-core/String-class.html">String</a>?</span> <span class="parameter-name">restorationId</span>, </span><span class="parameter" id="borderless-param-scribbleEnabled"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">scribbleEnabled</span> = <span class="default-value">true</span>, </span><span class="parameter" id="borderless-param-enableIMEPersonalizedLearning"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableIMEPersonalizedLearning</span> = <span class="default-value">true</span>}</span>)</span>
         </dt>
         <dd>
           Creates a borderless iOS-style text field.
@@ -225,7 +218,7 @@ Design UI conventions.</li>
 </dt>
 <dd>
   Whether to enable autocorrection.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -237,7 +230,7 @@ Design UI conventions.</li>
 <dd>
   A list of strings that helps the autofill service identify the type of this
 text input.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -249,7 +242,7 @@ text input.
 <dd>
   Whether this text field should focus itself if nothing else is already
 focused.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -260,7 +253,7 @@ focused.
 </dt>
 <dd>
   Show an iOS-style clear button to clear the current text entry.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -271,7 +264,7 @@ focused.
 </dt>
 <dd>
   The content will be clipped (or not) according to this option.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -282,7 +275,7 @@ focused.
 </dt>
 <dd>
   Controls the text being edited.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -293,7 +286,7 @@ focused.
 </dt>
 <dd>
   The color to use when painting the cursor.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -304,7 +297,7 @@ focused.
 </dt>
 <dd>
   How tall the cursor will be.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -315,7 +308,7 @@ focused.
 </dt>
 <dd>
   How rounded the corners of the cursor should be.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -326,7 +319,7 @@ focused.
 </dt>
 <dd>
   How thick the cursor will be.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -337,7 +330,7 @@ focused.
 </dt>
 <dd>
   Controls the <a href="painting/BoxDecoration-class.html">BoxDecoration</a> of the box behind the text input.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -348,7 +341,7 @@ focused.
 </dt>
 <dd>
   Determines the way that drag start behavior is handled.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -359,7 +352,7 @@ focused.
 </dt>
 <dd>
   Disables the text field when false.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -371,7 +364,7 @@ focused.
 <dd>
   Whether to enable that the IME update personalized data such as typing
 history and user dictionary data.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -383,7 +376,7 @@ history and user dictionary data.
 <dd>
   Whether to enable user interface affordances for changing the
 text selection.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -394,7 +387,7 @@ text selection.
 </dt>
 <dd>
   Whether to show input suggestions as the user types.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -405,7 +398,7 @@ text selection.
 </dt>
 <dd>
   Whether this widget's height will be sized to fill its parent.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -416,7 +409,7 @@ text selection.
 </dt>
 <dd>
   An optional focus node to use as the focus node for this widget.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -427,7 +420,7 @@ text selection.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">@<a href="meta/nonVirtual-constant.html">nonVirtual</a>, read-only, inherited</div>
+  <div class="features"><span class=" @<a href="meta/nonVirtual-constant.html">nonVirtual</a>">@<a href="meta/nonVirtual-constant.html">nonVirtual</a></span><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -438,7 +431,7 @@ text selection.
 </dt>
 <dd>
   Optional input validation and formatting overrides.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -449,7 +442,7 @@ text selection.
 </dt>
 <dd class="inherited">
   Controls how one widget replaces another widget in the tree.
-  <div class="features">final, inherited</div>
+  <div class="features"><span class="feature final">final</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -460,7 +453,7 @@ text selection.
 </dt>
 <dd>
   The appearance of the keyboard.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -471,7 +464,7 @@ text selection.
 </dt>
 <dd>
   The type of keyboard to use for editing the text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -483,7 +476,7 @@ text selection.
 <dd>
   The maximum number of characters (Unicode scalar values) to allow in the
 text field.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -494,7 +487,7 @@ text field.
 </dt>
 <dd>
   Determines how the <a href="cupertino/CupertinoTextField/maxLength.html">maxLength</a> limit should be enforced.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -505,7 +498,7 @@ text field.
 </dt>
 <dd>
   The maximum number of lines to show at one time, wrapping if necessary.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -516,7 +509,7 @@ text field.
 </dt>
 <dd>
   The minimum number of lines to occupy when the content spans fewer lines.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -527,7 +520,7 @@ text field.
 </dt>
 <dd>
   Whether to hide the text being edited (e.g., for passwords).
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -538,7 +531,7 @@ text field.
 </dt>
 <dd>
   Character used for obscuring text if <a href="cupertino/CupertinoTextField/obscureText.html">obscureText</a> is true.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -550,7 +543,7 @@ text field.
 <dd>
   Called when the user initiates a change to the TextField's
 value: when they have inserted or deleted text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -562,7 +555,7 @@ value: when they have inserted or deleted text.
 <dd>
   Called when the user submits editable content (e.g., user presses the "done"
 button on the keyboard).
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -574,7 +567,7 @@ button on the keyboard).
 <dd>
   Called when the user indicates that they are done editing the text in the
 field.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -585,7 +578,19 @@ field.
 </dt>
 <dd>
   Called for each distinct tap except for every second tap of a double tap.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
+
+</dd>
+
+        <dt id="onTapOutside" class="property">
+  <span class="name"><a href="cupertino/CupertinoTextField/onTapOutside.html">onTapOutside</a></span>
+  <span class="signature">&#8594; <a href="widgets/TapRegionCallback.html">TapRegionCallback</a>?</span> 
+
+</dt>
+<dd>
+  Called for each tap that occurs outside of the<a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a> group
+when the text field is focused.
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -597,7 +602,7 @@ field.
 <dd>
   Padding around the text entry area between the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a> and <a href="cupertino/CupertinoTextField/suffix.html">suffix</a>
 or the clear button when <a href="cupertino/CupertinoTextField/clearButtonMode.html">clearButtonMode</a> is not never.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -609,7 +614,7 @@ or the clear button when <a href="cupertino/CupertinoTextField/clearButtonMode.h
 <dd>
   A lighter colored placeholder hint that appears on the first line of the
 text field when the text entry is empty.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -620,7 +625,7 @@ text field when the text entry is empty.
 </dt>
 <dd>
   The style to use for the placeholder text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -631,7 +636,7 @@ text field when the text entry is empty.
 </dt>
 <dd>
   An optional <a href="widgets/Widget-class.html">Widget</a> to display before the text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -643,7 +648,7 @@ text field when the text entry is empty.
 <dd>
   Controls the visibility of the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a> widget based on the state of
 text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a> argument is not null.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -654,7 +659,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Whether the text can be changed.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -665,7 +670,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Restoration ID to save and restore the state of the text field.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -676,7 +681,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -687,7 +692,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Whether iOS 14 Scribble features are enabled for this widget.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -698,7 +703,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   The <a href="widgets/ScrollController-class.html">ScrollController</a> to use when vertically scrolling the input.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -709,7 +714,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Configures padding to edges surrounding a <a href="widgets/Scrollable-class.html">Scrollable</a> when the Textfield scrolls into view.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -720,7 +725,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   The <a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a> to use when vertically scrolling the input.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -731,7 +736,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Optional delegate for building the text selection handles and toolbar.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -742,7 +747,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Same as <a href="cupertino/CupertinoTextField/enableInteractiveSelection.html">enableInteractiveSelection</a>.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -753,7 +758,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Controls how tall the selection highlight boxes are computed to be.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -764,7 +769,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Controls how wide the selection highlight boxes are computed to be.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -775,7 +780,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Whether to show cursor.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -786,7 +791,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Whether to allow the platform to automatically format dashes.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -797,7 +802,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   Whether to allow the platform to automatically format quotes.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -808,7 +813,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   The strut style used for the vertical layout.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -819,7 +824,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   The style to use for the text being edited.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -830,7 +835,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 </dt>
 <dd>
   An optional <a href="widgets/Widget-class.html">Widget</a> to display after the text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -842,7 +847,7 @@ text entry when the <a href="cupertino/CupertinoTextField/prefix.html">prefix</a
 <dd>
   Controls the visibility of the <a href="cupertino/CupertinoTextField/suffix.html">suffix</a> widget based on the state of
 text entry when the <a href="cupertino/CupertinoTextField/suffix.html">suffix</a> argument is not null.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -853,7 +858,7 @@ text entry when the <a href="cupertino/CupertinoTextField/suffix.html">suffix</a
 </dt>
 <dd>
   How the text should be aligned horizontally.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -864,7 +869,7 @@ text entry when the <a href="cupertino/CupertinoTextField/suffix.html">suffix</a
 </dt>
 <dd>
   How the text should be aligned vertically.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -876,7 +881,7 @@ text entry when the <a href="cupertino/CupertinoTextField/suffix.html">suffix</a
 <dd>
   Configures how the platform keyboard will select an uppercase or
 lowercase keyboard.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -887,7 +892,7 @@ lowercase keyboard.
 </dt>
 <dd>
   The directionality of the text.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -898,7 +903,7 @@ lowercase keyboard.
 </dt>
 <dd>
   The type of action button to use for the keyboard.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -909,7 +914,7 @@ lowercase keyboard.
 </dt>
 <dd>
   Configuration of toolbar options.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -931,7 +936,7 @@ lowercase keyboard.
 </dt>
 <dd class="inherited">
   Creates a <a href="widgets/StatefulElement-class.html">StatefulElement</a> to manage this widget's location in the tree.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -944,7 +949,7 @@ lowercase keyboard.
 </dt>
 <dd>
   Creates the mutable state for this widget at a given location in the tree.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -958,7 +963,7 @@ lowercase keyboard.
 <dd class="inherited">
   Returns a list of <code>DiagnosticsNode</code> objects describing this node's
 children.
-  <div class="features">@<a href="meta/protected-constant.html">protected</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/protected-constant.html">protected</a>">@<a href="meta/protected-constant.html">protected</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -971,7 +976,7 @@ children.
 </dt>
 <dd>
   Add additional properties associated with the node.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -984,7 +989,7 @@ children.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -998,7 +1003,7 @@ children.
 <dd class="inherited">
   Returns a debug representation of the object that is used by debugging
 tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsNode.toStringDeep</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1011,7 +1016,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1024,7 +1029,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   Returns a string representation of this node and its descendants.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1037,7 +1042,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   Returns a one-line detailed description of the object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1050,7 +1055,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   A short, textual description of this widget.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1071,7 +1076,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">@<a href="meta/nonVirtual-constant.html">nonVirtual</a>, inherited</div>
+  <div class="features"><span class=" @<a href="meta/nonVirtual-constant.html">nonVirtual</a>">@<a href="meta/nonVirtual-constant.html">nonVirtual</a></span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -1416,8 +1421,6 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/FocusOrder-class.html">FocusOrder</a></li>
         <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
         <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
-        <li><a href="widgets/FocusTrap-class.html">FocusTrap</a></li>
-        <li><a href="widgets/FocusTrapArea-class.html">FocusTrapArea</a></li>
         <li><a href="widgets/FocusTraversalGroup-class.html">FocusTraversalGroup</a></li>
         <li><a href="widgets/FocusTraversalOrder-class.html">FocusTraversalOrder</a></li>
         <li><a href="widgets/FocusTraversalPolicy-class.html">FocusTraversalPolicy</a></li>
@@ -1677,6 +1680,8 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="rendering/RenderSemanticsGestureHandler-class.html">RenderSemanticsGestureHandler</a></li>
         <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
         <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+        <li><a href="widgets/RenderTapRegion-class.html">RenderTapRegion</a></li>
+        <li><a href="widgets/RenderTapRegionSurface-class.html">RenderTapRegionSurface</a></li>
         <li><a href="widgets/ReorderableDelayedDragStartListener-class.html">ReorderableDelayedDragStartListener</a></li>
         <li><a href="widgets/ReorderableDragStartListener-class.html">ReorderableDragStartListener</a></li>
         <li><a href="widgets/ReorderableList-class.html">ReorderableList</a></li>
@@ -1847,6 +1852,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="physics/SpringDescription-class.html">SpringDescription</a></li>
         <li><a href="widgets/Stack-class.html">Stack</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="widgets/State-class.html">State</a></li>
         <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
         <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
@@ -1867,6 +1873,9 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
         <li><a href="widgets/TableRow-class.html">TableRow</a></li>
         <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+        <li><a href="widgets/TapRegion-class.html">TapRegion</a></li>
+        <li><a href="widgets/TapRegionRegistry-class.html">TapRegionRegistry</a></li>
+        <li><a href="widgets/TapRegionSurface-class.html">TapRegionSurface</a></li>
         <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
         <li><a href="widgets/Text-class.html">Text</a></li>
         <li><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a></li>
@@ -1874,6 +1883,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
         <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
         <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+        <li><a href="widgets/TextFieldTapRegion-class.html">TextFieldTapRegion</a></li>
         <li><a href="dart-ui/TextHeightBehavior-class.html">TextHeightBehavior</a></li>
         <li><a href="services/TextInputType-class.html">TextInputType</a></li>
         <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
@@ -2276,6 +2286,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/SliverLayoutWidgetBuilder.html">SliverLayoutWidgetBuilder</a></li>
         <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
         <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+        <li><a href="widgets/TapRegionCallback.html">TapRegionCallback</a></li>
         <li><a href="widgets/TextEditingValueCallback.html">TextEditingValueCallback</a></li>
         <li><a href="widgets/ToolbarBuilder.html">ToolbarBuilder</a></li>
         <li><a href="widgets/TransitionBuilder.html">TransitionBuilder</a></li>
@@ -2283,6 +2294,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
         <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
         <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
         <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+        <li><a href="animation/ValueListenableTransformer.html">ValueListenableTransformer</a></li>
         <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
         <li><a href="widgets/ValueWidgetBuilder.html">ValueWidgetBuilder</a></li>
         <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>
@@ -2342,6 +2354,7 @@ tools and by <a href="foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsN
           <li><a href="cupertino/CupertinoTextField/onEditingComplete.html">onEditingComplete</a></li>
           <li><a href="cupertino/CupertinoTextField/onSubmitted.html">onSubmitted</a></li>
           <li><a href="cupertino/CupertinoTextField/onTap.html">onTap</a></li>
+          <li><a href="cupertino/CupertinoTextField/onTapOutside.html">onTapOutside</a></li>
           <li><a href="cupertino/CupertinoTextField/padding.html">padding</a></li>
           <li><a href="cupertino/CupertinoTextField/placeholder.html">placeholder</a></li>
           <li><a href="cupertino/CupertinoTextField/placeholderStyle.html">placeholderStyle</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the HttpResponse class from the dart:io library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -182,7 +175,7 @@ while an unsupported content-type is set.</p>
 </dt>
 <dd>
   Gets or sets if the <a href="dart-io/HttpResponse-class.html">HttpResponse</a> should buffer output.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -194,7 +187,7 @@ while an unsupported content-type is set.</p>
 <dd>
   Gets information about the client connection. Returns <code>null</code> if the
 socket is not available.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -207,7 +200,7 @@ socket is not available.
   Gets and sets the content length of the response. If the size of
 the response is not known in advance set the content length to
 -1, which is also the default if not set.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -218,7 +211,7 @@ the response is not known in advance set the content length to
 </dt>
 <dd>
   Cookies to set in the client (in the 'set-cookie' header).
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -232,7 +225,7 @@ the response is not known in advance set the content length to
 time it's set. Setting a new deadline will override any previous deadline.
 When a deadline is exceeded, the response will be closed and any further
 data ignored.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -244,7 +237,7 @@ data ignored.
 <dd class="inherited">
   A future that will complete when the consumer closes, or when an
 error occurs.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -255,7 +248,7 @@ error occurs.
 </dt>
 <dd class="inherited">
   The <a href="dart-convert/Encoding-class.html">Encoding</a> used when writing strings.
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -266,7 +259,7 @@ error occurs.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -277,7 +270,7 @@ error occurs.
 </dt>
 <dd>
   Returns the response headers.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -290,7 +283,7 @@ error occurs.
   Gets and sets the persistent connection state. The initial value
 of this property is the persistent connection state from the
 request.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -301,7 +294,7 @@ request.
 </dt>
 <dd>
   The reason phrase for the response.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -312,7 +305,7 @@ request.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -323,7 +316,7 @@ request.
 </dt>
 <dd>
   The status code of the response.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -345,7 +338,7 @@ request.
 </dt>
 <dd class="inherited">
   Adds byte <code>data</code> to the target consumer, ignoring <a href="dart-io/IOSink/encoding.html">encoding</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -358,7 +351,7 @@ request.
 </dt>
 <dd class="inherited">
   Passes the error to the target consumer as an error event.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -371,7 +364,7 @@ request.
 </dt>
 <dd class="inherited">
   Adds all elements of the given <code>stream</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -384,7 +377,7 @@ request.
 </dt>
 <dd class="inherited">
   Close the target consumer.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -413,7 +406,7 @@ operations on it.
 <dd class="inherited">
   Returns a <a href="dart-async/Future-class.html">Future</a> that completes once all buffered data is accepted by the
 underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -426,7 +419,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -452,7 +445,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -466,7 +459,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 <dd class="inherited">
   Converts <code>object</code> to a String by invoking <a href="dart-core/Object/toString.html">Object.toString</a> and
 <a href="dart-io/IOSink/add.html">add</a>s the encoding of the result to the target consumer.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -479,7 +472,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 </dt>
 <dd class="inherited">
   Iterates over the given <code>objects</code> and <a href="dart-io/IOSink/write.html">write</a>s them in sequence.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -492,7 +485,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 </dt>
 <dd class="inherited">
   Writes the character of <code>charCode</code>.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -506,7 +499,7 @@ underlying <a href="dart-async/StreamConsumer-class.html">StreamConsumer</a>.
 <dd class="inherited">
   Converts <code>object</code> to a String by invoking <a href="dart-core/Object/toString.html">Object.toString</a> and
 writes the result to <code>this</code>, followed by a newline.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -527,7 +520,7 @@ writes the result to <code>this</code>, followed by a newline.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

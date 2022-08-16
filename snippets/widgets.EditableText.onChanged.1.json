@@ -2,7 +2,7 @@
     "id": "widgets.EditableText.onChanged.1",
     "element": "EditableText.onChanged",
     "sourcePath": "lib/src/widgets/editable_text.dart",
-    "sourceLine": 1157,
+    "sourceLine": 1159,
     "channel": "master",
     "serial": "1",
     "package": "flutter",

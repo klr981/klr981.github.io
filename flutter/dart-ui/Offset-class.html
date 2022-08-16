@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Offset class from the dart:ui library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -148,8 +141,8 @@ senses.</p>
           <span class="name"><a href="dart-ui/Offset/Offset.html">Offset</a></span><span class="signature">(<span class="parameter" id="-param-dx"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dx</span>, </span><span class="parameter" id="-param-dy"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">dy</span></span>)</span>
         </dt>
         <dd>
-          Creates an offset. The first argument sets <code>dx</code>, the horizontal component,
-and the second sets <code>dy</code>, the vertical component.
+          Creates an offset. The first argument sets <a href="dart-ui/Offset/dx.html">dx</a>, the horizontal component,
+and the second sets <a href="dart-ui/Offset/dy.html">dy</a>, the vertical component.
             <div class="constructor-modifier features">const</div>
         </dd>
         <dt id="Offset.fromDirection" class="callable">
@@ -175,7 +168,7 @@ and the second sets <code>dy</code>, the vertical component.
   The angle of this offset as radians clockwise from the positive x-axis, in
 the range -<a href="dart-math/pi-constant.html">pi</a> to <a href="dart-math/pi-constant.html">pi</a>, assuming positive values of the x-axis go to the
 right and positive values of the y-axis go down.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -186,7 +179,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd>
   The magnitude of the offset.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -197,7 +190,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd>
   The square of the magnitude of the offset.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -208,7 +201,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd>
   The x component of the offset.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -219,7 +212,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd>
   The y component of the offset.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -230,7 +223,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -241,7 +234,7 @@ right and positive values of the y-axis go down.
 </dt>
 <dd class="inherited">
   Whether both components are finite (neither infinite nor NaN).
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -253,7 +246,7 @@ right and positive values of the y-axis go down.
 <dd class="inherited">
   Returns true if either component is <a href="dart-core/double/infinity-constant.html">double.infinity</a>, and false if both
 are finite (or negative infinity, or NaN).
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -264,7 +257,7 @@ are finite (or negative infinity, or NaN).
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -286,7 +279,7 @@ are finite (or negative infinity, or NaN).
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -313,7 +306,7 @@ component scaled by <code>scaleY</code>.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -429,7 +422,7 @@ translateY added to the y component.
 <a href="dart-ui/Size-class.html">Size</a>, and returns true if both the horizontal and vertical values of the
 left-hand-side operand are smaller than the horizontal and vertical values
 of the right-hand-side operand respectively. Returns false otherwise.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -446,7 +439,7 @@ of the right-hand-side operand respectively. Returns false otherwise.
 values of the left-hand-side operand are smaller than or equal to the
 horizontal and vertical values of the right-hand-side operand
 respectively. Returns false otherwise.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -459,7 +452,7 @@ respectively. Returns false otherwise.
 </dt>
 <dd>
   Compares two Offsets for equality.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -476,7 +469,7 @@ or <a href="dart-ui/Size-class.html">Size</a>, and returns true if both the hori
 the left-hand-side operand are bigger than the horizontal and vertical
 values of the right-hand-side operand respectively. Returns false
 otherwise.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -493,7 +486,7 @@ another <a href="dart-ui/Offset-class.html">Offset</a> or <a href="dart-ui/Size-
 vertical values of the left-hand-side operand are bigger than or equal to
 the horizontal and vertical values of the right-hand-side operand
 respectively. Returns false otherwise.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

@@ -2,7 +2,7 @@
     "id": "widgets.GridView.4",
     "element": "GridView",
     "sourcePath": "lib/src/widgets/scroll_view.dart",
-    "sourceLine": 1678,
+    "sourceLine": 1688,
     "channel": "master",
     "serial": "4",
     "package": "flutter",

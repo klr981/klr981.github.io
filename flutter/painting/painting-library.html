@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="painting library API docs, for the Dart programming language.">
@@ -70,15 +70,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -863,6 +856,15 @@ correspond to shaders as used by <a href="dart-ui/Paint/shader.html">Paint.shade
 within the rectangle of the widget it is applied to.
 </dd>
 
+        <dt id="StarBorder">
+  <span class="name "><a href="painting/StarBorder-class.html">StarBorder</a></span> 
+
+</dt>
+<dd>
+  A border that fits a star or polygon-shaped border within the rectangle of
+the widget it is applied to.
+</dd>
+
         <dt id="StrutStyle">
   <span class="name "><a href="painting/StrutStyle-class.html">StrutStyle</a></span> 
 
@@ -999,7 +1001,7 @@ relative to the baseline.
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates an <a href="dart-ui/Image-class.html">Image</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1010,7 +1012,7 @@ relative to the baseline.
 </dt>
 <dd>
   Called by <a href="painting/ShaderWarmUp/execute.html">ShaderWarmUp.execute</a> immediately after it creates a <a href="dart-ui/Picture-class.html">Picture</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1021,7 +1023,7 @@ relative to the baseline.
 </dt>
 <dd>
   Whether to replace all shadows with solid color blocks.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1033,7 +1035,7 @@ relative to the baseline.
 <dd>
   The number of bytes an image must use before it triggers inversion when
 <a href="painting/debugInvertOversizedImages.html">debugInvertOversizedImages</a> is true.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1046,7 +1048,7 @@ relative to the baseline.
   If true, the framework will color invert and horizontally flip images that
 have been decoded to a size taking at least <a href="painting/debugImageOverheadAllowance.html">debugImageOverheadAllowance</a>
 bytes more than necessary.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1057,7 +1059,7 @@ bytes more than necessary.
 </dt>
 <dd>
   Provider from which <a href="painting/NetworkImage-class.html">NetworkImage</a> will get its <a href="dart-io/HttpClient-class.html">HttpClient</a> in debug builds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1070,7 +1072,7 @@ bytes more than necessary.
   If not null, called when the framework is about to paint an <a href="dart-ui/Image-class.html">Image</a> to a
 <a href="dart-ui/Canvas-class.html">Canvas</a> with an <a href="painting/ImageSizeInfo-class.html">ImageSizeInfo</a> that contains the decoded size of the
 image as well as its output size.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1081,7 +1083,7 @@ image as well as its output size.
 </dt>
 <dd>
   The singleton that implements the Flutter framework's image cache.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -1181,7 +1183,7 @@ useful for <a href="painting/TransformProperty-class.html">TransformProperty</a>
 </dt>
 <dd>
   Flushes inter-frame tracking of image size information from <a href="painting/paintImage.html">paintImage</a>.
-  <div class="features">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></div>
+  <div class="features"><span class=" @<a href="meta/visibleForTesting-constant.html">visibleForTesting</a>">@<a href="meta/visibleForTesting-constant.html">visibleForTesting</a></span></div>
 
 </dd>
 
@@ -1235,7 +1237,7 @@ useful for <a href="painting/TransformProperty-class.html">TransformProperty</a>
   Combine the <a href="dart-core/Object/hashCode.html">Object.hashCode</a> values of an arbitrary number of objects from
 an <a href="dart-core/Iterable-class.html">Iterable</a> into one value. This function will return the same value if
 given null as if given an empty list.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hashAll() or Object.hashAllUnordered() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -1248,7 +1250,7 @@ given null as if given an empty list.
 </dt>
 <dd>
   Combine up to twenty objects' hash codes into one value.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use Object.hash() instead. &#39; &#39;This feature was deprecated in v3.1.0-0.0.pre.897&#39;)</span></div>
 
 </dd>
 
@@ -1616,7 +1618,7 @@ in an <a href="dart-ui/ImageFilter-class.html">ImageFilter</a>.
   </dt>
   <dd>
     Performs the decode process for use in <a class="deprecated" href="painting/ImageProvider/load.html">ImageProvider.load</a>.
-    <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</div>
+    <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use DecoderBufferCallback with ImageProvider.loadBuffer instead. &#39; &#39;This feature was deprecated after v2.13.0-1.0.pre.&#39;)</span></div>
 
   </dd>
 
@@ -1798,6 +1800,7 @@ output size.
       <li><a href="widgets/widgets-library.html">widgets</a></li>
       <li class="section-title">Dart</li>
       <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+      <li><a href="dart-wasm/dart-wasm-library.html">dart:wasm</a></li>
       <li class="section-subtitle">Core</li>
         <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
         <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
@@ -2054,6 +2057,7 @@ output size.
         <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
         <li><a href="dart-ui/Size-class.html">Size</a></li>
         <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+        <li><a href="painting/StarBorder-class.html">StarBorder</a></li>
         <li><a href="painting/StrutStyle-class.html">StrutStyle</a></li>
         <li><a href="painting/SweepGradient-class.html">SweepGradient</a></li>
         <li><a href="painting/TextAlignVertical-class.html">TextAlignVertical</a></li>

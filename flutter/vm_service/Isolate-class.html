@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Isolate class from the vm_service library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -148,7 +141,7 @@
 </dt>
 <dd>
   A list of all breakpoints for this isolate.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -159,7 +152,7 @@
 </dt>
 <dd>
   The error that is causing this isolate to exit, if applicable.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -170,7 +163,7 @@
 </dt>
 <dd>
   The current pause on exception mode for this isolate.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -182,7 +175,7 @@
 <dd>
   The list of service extension RPCs that are registered for this isolate,
 if any.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -193,7 +186,7 @@ if any.
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -204,7 +197,7 @@ if any.
 </dt>
 <dd>
   The id which is passed to the getIsolate RPC to reload this isolate.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -216,7 +209,7 @@ if any.
 <dd>
   The list of isolate flags provided to this isolate. See Dart_IsolateFlags
 in dart_api.h for the list of accepted isolate flags.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -228,7 +221,7 @@ in dart_api.h for the list of accepted isolate flags.
 <dd>
   Specifies whether the isolate was spawned by the VM or embedder for
 internal use. If <code>false</code>, this isolate is likely running user code.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -239,7 +232,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 </dt>
 <dd class="inherited">
   
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -250,7 +243,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 </dt>
 <dd>
   A list of all libraries for this isolate.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -261,7 +254,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 </dt>
 <dd>
   The number of live ports for this isolate.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -272,7 +265,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 </dt>
 <dd>
   A name identifying this isolate. Not guaranteed to be unique.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -283,7 +276,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 </dt>
 <dd>
   A numeric id for this isolate, represented as a string. Unique.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -295,7 +288,7 @@ internal use. If <code>false</code>, this isolate is likely running user code.
 <dd>
   The last pause event delivered to the isolate. If the isolate is running,
 this will be a resume event.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -306,7 +299,7 @@ this will be a resume event.
 </dt>
 <dd>
   Will this isolate pause when exiting?
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -317,7 +310,7 @@ this will be a resume event.
 </dt>
 <dd>
   The root library for this isolate.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -328,7 +321,7 @@ this will be a resume event.
 </dt>
 <dd>
   Is the isolate in a runnable state?
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -339,7 +332,7 @@ this will be a resume event.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -350,7 +343,7 @@ this will be a resume event.
 </dt>
 <dd>
   The time that the VM started in milliseconds since the epoch.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -361,7 +354,7 @@ this will be a resume event.
 </dt>
 <dd>
   
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -383,7 +376,7 @@ this will be a resume event.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -396,7 +389,7 @@ this will be a resume event.
 </dt>
 <dd>
   
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -409,7 +402,7 @@ this will be a resume event.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -430,7 +423,7 @@ this will be a resume event.
 </dt>
 <dd>
   The equality operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -450,7 +443,7 @@ this will be a resume event.
 </dt>
 <dd>
   
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 

@@ -87,6 +87,11 @@ code {
   max-width: inherit;
 }
 
+#search-box {
+  border: 1px solid #ccc;
+}
+
+
 dl.dl-horizontal dt {
   color: inherit;
 }

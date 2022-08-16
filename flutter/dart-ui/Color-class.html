@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Color class from the dart:ui library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -98,10 +91,10 @@ channel value of 0x42 (66), a green channel value of 0xA5 (165), and a blue
 channel value of 0xF5 (245). In the common "hash syntax" for color values,
 it would be described as <code>#42A5F5</code>.</p>
 <p>Here are some ways it could be constructed:</p>
-<pre class="language-dart"><code class="language-dart">Color c = const Color(0xFF42A5F5);
-Color c = const Color.fromARGB(0xFF, 0x42, 0xA5, 0xF5);
-Color c = const Color.fromARGB(255, 66, 165, 245);
-Color c = const Color.fromRGBO(66, 165, 245, 1.0);
+<pre class="language-dart"><code class="language-dart">Color c1 = const Color(0xFF42A5F5);
+Color c2 = const Color.fromARGB(0xFF, 0x42, 0xA5, 0xF5);
+Color c3 = const Color.fromARGB(255, 66, 165, 245);
+Color c4 = const Color.fromRGBO(66, 165, 245, 1.0);
 </code></pre>
 <p>If you are having a problem with <code>Color</code> wherein it seems your color is just
 not painting, check to make sure you are specifying the full 8 hexadecimal
@@ -177,7 +170,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The alpha channel of this color in an 8 bit value.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -188,7 +181,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The blue channel of this color in an 8 bit value.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -199,7 +192,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The green channel of this color in an 8 bit value.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -210,7 +203,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -221,7 +214,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The alpha channel of this color as a double.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -232,7 +225,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   The red channel of this color in an 8 bit value.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -243,7 +236,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -254,7 +247,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   A 32 bit value representing this color.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -289,7 +282,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -302,7 +295,7 @@ defines the colors found in the Material Design specification.</li>
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -393,7 +386,7 @@ with <code>r</code> (which ranges from 0 to 255).
 </dt>
 <dd>
   The equality operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 

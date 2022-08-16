@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the TestPlatformDispatcher class from the flutter_test library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -148,7 +141,7 @@ testing and mocking purposes.</li>
 </dt>
 <dd>
   Additional accessibility features that may be enabled by the platform.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -160,7 +153,7 @@ testing and mocking purposes.</li>
 <dd>
   Hides the real accessibility features and reports the given
 <a href="flutter_test/TestPlatformDispatcher/accessibilityFeaturesTestValue.html">accessibilityFeaturesTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -172,7 +165,7 @@ testing and mocking purposes.</li>
 <dd>
   The setting indicating whether time should always be shown in the 24-hour
 format.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -184,7 +177,7 @@ format.
 <dd>
   Hides the real clock format and reports the given
 <a href="flutter_test/TestPlatformDispatcher/alwaysUse24HourFormatTestValue.html">alwaysUse24HourFormatTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -196,7 +189,7 @@ format.
 <dd>
   Whether briefly displaying the characters as you type in obscured text
 fields is enabled in system settings.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -208,7 +201,7 @@ fields is enabled in system settings.
 <dd>
   Hides the real <a href="flutter_test/TestPlatformDispatcher/brieflyShowPassword.html">brieflyShowPassword</a> and reports the given
 <code>brieflyShowPasswordTestValue</code> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -219,7 +212,7 @@ fields is enabled in system settings.
 </dt>
 <dd>
   The current platform configuration.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -231,7 +224,7 @@ fields is enabled in system settings.
 <dd>
   The route or path that the embedder requested when the application was
 launched.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -243,7 +236,7 @@ launched.
 <dd>
   Hides the real default route name and reports the given
 <a href="flutter_test/TestPlatformDispatcher/defaultRouteNameTestValue.html">defaultRouteNameTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -254,7 +247,7 @@ launched.
 </dt>
 <dd>
   The <a href="dart-ui/FrameData-class.html">FrameData</a> object for the current frame.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -265,7 +258,7 @@ launched.
 </dt>
 <dd class="inherited">
   The hash code for this object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -276,7 +269,7 @@ launched.
 </dt>
 <dd>
   The lifecycle state immediately after dart isolate initialization.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -287,7 +280,7 @@ launched.
 </dt>
 <dd>
   Sets a faked initialLifecycleState for testing.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -298,7 +291,7 @@ launched.
 </dt>
 <dd>
   The system-reported default locale of the device.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -309,7 +302,7 @@ launched.
 </dt>
 <dd>
   The full system-reported supported locales of the device.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -320,7 +313,7 @@ launched.
 </dt>
 <dd>
   Hides the real locales and reports the given <a href="flutter_test/TestPlatformDispatcher/localesTestValue.html">localesTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -331,7 +324,7 @@ launched.
 </dt>
 <dd>
   Hides the real locale and reports the given <a href="flutter_test/TestPlatformDispatcher/localeTestValue.html">localeTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -342,7 +335,7 @@ launched.
 </dt>
 <dd class="inherited">
   Whether the spell check service is supported on the current platform.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -354,7 +347,7 @@ launched.
 <dd>
   A callback that is invoked when the value of <a href="flutter_test/TestPlatformDispatcher/accessibilityFeatures.html">accessibilityFeatures</a>
 changes.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -365,7 +358,7 @@ changes.
 </dt>
 <dd>
   A callback invoked when any view begins a frame.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -377,7 +370,7 @@ changes.
 <dd>
   A callback that is invoked for each frame after <a href="flutter_test/TestPlatformDispatcher/onBeginFrame.html">onBeginFrame</a> has
 completed and after the microtask queue has been drained.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -389,7 +382,7 @@ completed and after the microtask queue has been drained.
 <dd class="inherited">
   A callback that is invoked when an unhandled error occurs in the root
 isolate.
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -400,7 +393,7 @@ isolate.
 </dt>
 <dd>
   A callback that is invoked when the window updates the <a href="dart-ui/FrameData-class.html">FrameData</a>.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -411,7 +404,7 @@ isolate.
 </dt>
 <dd>
   A callback that is invoked when key data is available.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -422,7 +415,7 @@ isolate.
 </dt>
 <dd>
   A callback that is invoked whenever <a href="flutter_test/TestPlatformDispatcher/locale.html">locale</a> changes value.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -434,7 +427,7 @@ isolate.
 <dd>
   A callback that is invoked whenever the <a href="dart-ui/ViewConfiguration-class.html">ViewConfiguration</a> of any of the
 <a href="flutter_test/TestPlatformDispatcher/views.html">views</a> changes.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -445,7 +438,7 @@ isolate.
 </dt>
 <dd>
   A callback that is invoked whenever <a href="flutter_test/TestPlatformDispatcher/platformBrightness.html">platformBrightness</a> changes value.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -456,7 +449,7 @@ isolate.
 </dt>
 <dd>
   Called when the platform configuration changes.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -468,7 +461,7 @@ isolate.
 <dd>
   Called whenever this platform dispatcher receives a message from a
 platform-specific plugin.
-  <div class="features">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of calling this callback, use ServicesBinding.instance.channelBuffers.push. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;), @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of setting this callback, use ServicesBinding.instance.defaultBinaryMessenger.setMessageHandler. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;), read / write, override</div>
+  <div class="features"><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of calling this callback, use ServicesBinding.instance.channelBuffers.push. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of calling this callback, use ServicesBinding.instance.channelBuffers.push. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;)</span><span class=" @<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of setting this callback, use ServicesBinding.instance.defaultBinaryMessenger.setMessageHandler. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;)">@<a href="dart-core/Deprecated-class.html">Deprecated</a>(&#39;Instead of setting this callback, use ServicesBinding.instance.defaultBinaryMessenger.setMessageHandler. &#39; &#39;This feature was deprecated after v2.1.0-10.0.pre.&#39;)</span><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -479,7 +472,7 @@ platform-specific plugin.
 </dt>
 <dd>
   A callback that is invoked when pointer data is available.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -491,7 +484,7 @@ platform-specific plugin.
 <dd>
   A callback that is invoked to report the <a href="dart-ui/FrameTiming-class.html">FrameTiming</a> of recently
 rasterized frames.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -503,7 +496,7 @@ rasterized frames.
 <dd>
   A callback that is invoked whenever the user requests an action to be
 performed.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -514,7 +507,7 @@ performed.
 </dt>
 <dd>
   A callback that is invoked when the value of <a href="flutter_test/TestPlatformDispatcher/semanticsEnabled.html">semanticsEnabled</a> changes.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -525,7 +518,7 @@ performed.
 </dt>
 <dd class="inherited">
   A callback that is invoked whenever <a href="dart-ui/PlatformDispatcher/systemFontFamily.html">systemFontFamily</a> changes value.
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -536,7 +529,7 @@ performed.
 </dt>
 <dd>
   A callback that is invoked whenever <a href="flutter_test/TestPlatformDispatcher/textScaleFactor.html">textScaleFactor</a> changes value.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -549,7 +542,7 @@ performed.
   The setting indicating the current brightness mode of the host platform.
 If the platform has no preference, <a href="flutter_test/TestPlatformDispatcher/platformBrightness.html">platformBrightness</a> defaults to
 <a href="dart-ui/Brightness.html">Brightness.light</a>.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -561,7 +554,7 @@ If the platform has no preference, <a href="flutter_test/TestPlatformDispatcher/
 <dd>
   Hides the real text scale factor and reports the given
 <a href="flutter_test/TestPlatformDispatcher/platformBrightnessTestValue.html">platformBrightnessTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -572,7 +565,7 @@ If the platform has no preference, <a href="flutter_test/TestPlatformDispatcher/
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -584,7 +577,7 @@ If the platform has no preference, <a href="flutter_test/TestPlatformDispatcher/
 <dd>
   Whether the user has requested that <a href="flutter_test/TestPlatformDispatcher/updateSemantics.html">updateSemantics</a> be called when the
 semantic contents of a view changes.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -596,7 +589,7 @@ semantic contents of a view changes.
 <dd>
   Hides the real semantics enabled and reports the given
 <a href="flutter_test/TestPlatformDispatcher/semanticsEnabledTestValue.html">semanticsEnabledTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -607,7 +600,7 @@ semantic contents of a view changes.
 </dt>
 <dd class="inherited">
   The setting indicating the current system font of the host platform.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -618,7 +611,7 @@ semantic contents of a view changes.
 </dt>
 <dd>
   The system-reported text scale.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -630,7 +623,7 @@ semantic contents of a view changes.
 <dd>
   Hides the real text scale factor and reports the given
 <a href="flutter_test/TestPlatformDispatcher/textScaleFactorTestValue.html">textScaleFactorTestValue</a> instead.
-  <div class="features">write-only</div>
+  <div class="features"><span class="feature write-only">write-only</span></div>
 
 </dd>
 
@@ -642,7 +635,7 @@ semantic contents of a view changes.
 <dd>
   The current list of views, including top level platform windows used by
 the application.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -789,7 +782,7 @@ text scale factor.
 </dt>
 <dd>
   Performs the platform-native locale resolution.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -803,7 +796,7 @@ text scale factor.
 <dd>
   The embedder can specify data that the isolate can request synchronously
 on launch. This accessor fetches that data.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -818,7 +811,7 @@ on launch. This accessor fetches that data.
   This gives us some grace time when the dart:ui side adds something to
 <a href="dart-ui/PlatformDispatcher-class.html">PlatformDispatcher</a>, and makes things easier when we do rolls to give
 us time to catch up.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -832,7 +825,7 @@ us time to catch up.
 <dd>
   Requests that, at the next appropriate opportunity, the <a href="flutter_test/TestPlatformDispatcher/onBeginFrame.html">onBeginFrame</a> and
 <a href="flutter_test/TestPlatformDispatcher/onDrawFrame.html">onDrawFrame</a> callbacks be invoked.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -845,7 +838,7 @@ us time to catch up.
 </dt>
 <dd>
   Sends a message to a platform-specific plugin.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -859,7 +852,7 @@ us time to catch up.
 <dd>
   Set the debug name associated with this platform dispatcher's root
 isolate.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -872,7 +865,7 @@ isolate.
 </dt>
 <dd class="inherited">
   A string representation of this object.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -885,7 +878,7 @@ isolate.
 </dt>
 <dd>
   Change the retained semantics data about this platform dispatcher.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -906,7 +899,7 @@ isolate.
 </dt>
 <dd class="inherited">
   The equality operator.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 

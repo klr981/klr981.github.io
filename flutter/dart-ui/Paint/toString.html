@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the toString method from the Paint class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -101,7 +94,7 @@
 <span class="returntype"><a href="dart-core/String-class.html">String</a></span>
 <span class="name ">toString</span>(<wbr>)
 
-      <div class="features">override</div>
+      <div class="features"><span class="feature override">override</span></div>
 
     </section>
     
@@ -124,7 +117,7 @@ mainly for debugging or logging.</p>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 String toString() {
-  if (const bool.fromEnvironment(&#39;dart.vm.product&#39;, defaultValue: false)) {
+  if (const bool.fromEnvironment(&#39;dart.vm.product&#39;)) {
     return super.toString();
   }
   final StringBuffer result = StringBuffer();
@@ -132,15 +125,18 @@ String toString() {
   result.write(&#39;Paint(&#39;);
   if (style == PaintingStyle.stroke) {
     result.write(&#39;$style&#39;);
-    if (strokeWidth != 0.0)
+    if (strokeWidth != 0.0) {
       result.write(&#39; ${strokeWidth.toStringAsFixed(1)}&#39;);
-    else
+    } else {
       result.write(&#39; hairline&#39;);
-    if (strokeCap != StrokeCap.butt)
+    }
+    if (strokeCap != StrokeCap.butt) {
       result.write(&#39; $strokeCap&#39;);
+    }
     if (strokeJoin == StrokeJoin.miter) {
-      if (strokeMiterLimit != _kStrokeMiterLimitDefault)
+      if (strokeMiterLimit != _kStrokeMiterLimitDefault) {
         result.write(&#39; $strokeJoin up to ${strokeMiterLimit.toStringAsFixed(1)}&#39;);
+      }
     } else {
       result.write(&#39; $strokeJoin&#39;);
     }
@@ -178,10 +174,12 @@ String toString() {
     result.write(&#39;${semicolon}imageFilter: $imageFilter&#39;);
     semicolon = &#39;; &#39;;
   }
-  if (invertColors)
+  if (invertColors) {
     result.write(&#39;${semicolon}invert: $invertColors&#39;);
-  if (_dither)
+  }
+  if (_dither) {
     result.write(&#39;${semicolon}dither: $_dither&#39;);
+  }
   result.write(&#39;)&#39;);
   return result.toString();
 }</code></pre>

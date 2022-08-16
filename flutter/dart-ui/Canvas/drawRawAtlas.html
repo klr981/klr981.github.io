@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the drawRawAtlas method from the Canvas class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -129,12 +122,14 @@ argument is not null then the <code>blendMode</code> argument must also not be n
 <p>An example usage to render many sprites from a single sprite atlas with no rotations
 or scales:</p>
 <pre class="language-dart"><code class="language-dart">class Sprite {
+  Sprite(this.index, this.center);
   int index;
-  double centerX;
-  double centerY;
+  Offset center;
 }
 
 class MyPainter extends CustomPainter {
+  MyPainter(this.spriteAtlas, this.allSprites);
+
   // assume spriteAtlas contains N 10x10 sprites side by side in a (N*10)x10 image
   ui.Image spriteAtlas;
   List&lt;Sprite&gt; allSprites;
@@ -148,7 +143,8 @@ class MyPainter extends CustomPainter {
     Float32List rectList = Float32List(allSprites.length * 4);
     Float32List transformList = Float32List(allSprites.length * 4);
     for (int i = 0; i &lt; allSprites.length; i++) {
-      final double rectX = sprite.spriteIndex * 10.0;
+      Sprite sprite = allSprites[i];
+      final double rectX = sprite.index * 10.0;
       rectList[i * 4 + 0] = rectX;
       rectList[i * 4 + 1] = 0.0;
       rectList[i * 4 + 2] = rectX + 10.0;
@@ -160,11 +156,11 @@ class MyPainter extends CustomPainter {
       // the necessary values or do the same math directly.
       transformList[i * 4 + 0] = 1.0;
       transformList[i * 4 + 1] = 0.0;
-      transformList[i * 4 + 2] = sprite.centerX - 5.0;
-      transformList[i * 4 + 3] = sprite.centerY - 5.0;
+      transformList[i * 4 + 2] = sprite.center.dx - 5.0;
+      transformList[i * 4 + 3] = sprite.center.dy - 5.0;
     }
     Paint paint = Paint();
-    canvas.drawAtlas(spriteAtlas, transformList, rectList, null, null, null, paint);
+    canvas.drawRawAtlas(spriteAtlas, transformList, rectList, null, null, null, paint);
   }
 
   ...
@@ -172,14 +168,16 @@ class MyPainter extends CustomPainter {
 </code></pre>
 <p>Another example usage which renders sprites with an optional opacity and rotation:</p>
 <pre class="language-dart"><code class="language-dart">class Sprite {
+  Sprite(this.index, this.center, this.alpha, this.rotation);
   int index;
-  double centerX;
-  double centerY;
+  Offset center;
   int alpha;
   double rotation;
 }
 
 class MyPainter extends CustomPainter {
+  MyPainter(this.spriteAtlas, this.allSprites);
+
   // assume spriteAtlas contains N 10x10 sprites side by side in a (N*10)x10 image
   ui.Image spriteAtlas;
   List&lt;Sprite&gt; allSprites;
@@ -194,7 +192,8 @@ class MyPainter extends CustomPainter {
     Float32List transformList = Float32List(allSprites.length * 4);
     Int32List colorList = Int32List(allSprites.length);
     for (int i = 0; i &lt; allSprites.length; i++) {
-      final double rectX = sprite.spriteIndex * 10.0;
+      Sprite sprite = allSprites[i];
+      final double rectX = sprite.index * 10.0;
       rectList[i * 4 + 0] = rectX;
       rectList[i * 4 + 1] = 0.0;
       rectList[i * 4 + 2] = rectX + 10.0;
@@ -212,8 +211,8 @@ class MyPainter extends CustomPainter {
         anchorX: 5.0,
         anchorY: 5.0,
         // Location at which to draw the center of the sprite
-        translateX: sprite.centerX,
-        translateY: sprite.centerY,
+        translateX: sprite.center.dx,
+        translateY: sprite.center.dy,
       );
       transformList[i * 4 + 0] = transform.scos;
       transformList[i * 4 + 1] = transform.ssin;
@@ -227,7 +226,7 @@ class MyPainter extends CustomPainter {
       colorList[i] = sprite.alpha &lt;&lt; 24;
     }
     Paint paint = Paint();
-    canvas.drawAtlas(spriteAtlas, transformList, rectList, colorList, BlendMode.srcIn, null, paint);
+    canvas.drawRawAtlas(spriteAtlas, transformList, rectList, colorList, BlendMode.srcIn, null, paint);
   }
 
   ...
@@ -258,12 +257,15 @@ data lists.</li>
   assert(paint != null);
 
   final int rectCount = rects.length;
-  if (rstTransforms.length != rectCount)
+  if (rstTransforms.length != rectCount) {
     throw ArgumentError(&#39;&quot;rstTransforms&quot; and &quot;rects&quot; lengths must match.&#39;);
-  if (rectCount % 4 != 0)
+  }
+  if (rectCount % 4 != 0) {
     throw ArgumentError(&#39;&quot;rstTransforms&quot; and &quot;rects&quot; lengths must be a multiple of four.&#39;);
-  if (colors != null &amp;&amp; colors.length * 4 != rectCount)
+  }
+  if (colors != null &amp;&amp; colors.length * 4 != rectCount) {
     throw ArgumentError(&#39;If non-null, &quot;colors&quot; length must be one fourth the length of &quot;rstTransforms&quot; and &quot;rects&quot;.&#39;);
+  }
   final int qualityIndex = paint.filterQuality.index;
 
   final String? error = _drawAtlas(

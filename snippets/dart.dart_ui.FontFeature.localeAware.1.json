@@ -2,7 +2,7 @@
     "id": "dart.dart_ui.FontFeature.localeAware.1",
     "element": "FontFeature.localeAware",
     "sourcePath": "../pkg/sky_engine/lib/ui/text.dart",
-    "sourceLine": 503,
+    "sourceLine": 504,
     "channel": "master",
     "serial": "1",
     "package": "Dart",

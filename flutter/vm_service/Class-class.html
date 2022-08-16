@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the Class class from the vm_service library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -150,7 +143,7 @@
 <dd class="inherited">
   If an object is allocated in the Dart heap, it will have a corresponding
 class object.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write, inherited</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -161,7 +154,7 @@ class object.
 </dt>
 <dd>
   The error which occurred during class finalization, if it exists.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -172,7 +165,7 @@ class object.
 </dt>
 <dd>
   A list of fields in this class. Does not include fields from superclasses.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -185,7 +178,7 @@ class object.
   Provided and set to true if the id of an Object is fixed. If true, the id
 of an Object is guaranteed not to change or expire. The object may,
 however, still be <em>Collected</em>.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write, inherited</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -197,7 +190,7 @@ however, still be <em>Collected</em>.
 <dd>
   A list of functions in this class. Does not include functions from
 superclasses.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -208,7 +201,7 @@ superclasses.
 </dt>
 <dd>
   The hash code for this object.
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -220,7 +213,7 @@ superclasses.
 <dd class="inherited">
   A unique identifier for an Object. Passed to the getObject RPC to reload
 this Object.
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -231,7 +224,7 @@ this Object.
 </dt>
 <dd>
   A list of interface types for this class.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -242,7 +235,7 @@ this Object.
 </dt>
 <dd>
   Is this an abstract class?
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -253,7 +246,7 @@ this Object.
 </dt>
 <dd>
   Is this a const class?
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -264,7 +257,7 @@ this Object.
 </dt>
 <dd class="inherited">
   
-  <div class="features">read / write, inherited</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -275,7 +268,7 @@ this Object.
 </dt>
 <dd>
   The library which contains this class.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -286,7 +279,7 @@ this Object.
 </dt>
 <dd>
   The location of this class in the source code.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write, override</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -297,7 +290,7 @@ this Object.
 </dt>
 <dd>
   The mixin type for this class, if any.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -308,7 +301,7 @@ this Object.
 </dt>
 <dd>
   The name of this class.
-  <div class="features">read / write, override</div>
+  <div class="features"><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -319,7 +312,7 @@ this Object.
 </dt>
 <dd class="inherited">
   A representation of the runtime type of the object.
-  <div class="features">read-only, inherited</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -330,7 +323,7 @@ this Object.
 </dt>
 <dd class="inherited">
   The size of this object in the heap.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write, inherited</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -341,7 +334,7 @@ this Object.
 </dt>
 <dd>
   A list of subclasses of this class.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -352,7 +345,7 @@ this Object.
 </dt>
 <dd>
   The superclass of this class, if any.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -363,7 +356,7 @@ this Object.
 </dt>
 <dd>
   The supertype for this class, if any.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -374,7 +367,7 @@ this Object.
 </dt>
 <dd>
   Are allocations of this class being traced?
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -385,7 +378,7 @@ this Object.
 </dt>
 <dd>
   
-  <div class="features">read-only, override</div>
+  <div class="features"><span class="feature read-only">read-only</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -396,7 +389,7 @@ this Object.
 </dt>
 <dd>
   The type parameters for the class.
-  <div class="features">@<a href="vm_service/optional-constant.html">optional</a>, read / write, override</div>
+  <div class="features"><span class=" @<a href="vm_service/optional-constant.html">optional</a>">@<a href="vm_service/optional-constant.html">optional</a></span><span class="feature read / write">read / write</span><span class="feature override">override</span></div>
 
 </dd>
 
@@ -418,7 +411,7 @@ this Object.
 </dt>
 <dd class="inherited">
   Invoked when a non-existent method or property is accessed.
-  <div class="features">inherited</div>
+  <div class="features"><span class="feature inherited">inherited</span></div>
 
 </dd>
 
@@ -431,7 +424,7 @@ this Object.
 </dt>
 <dd>
   
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -444,7 +437,7 @@ this Object.
 </dt>
 <dd>
   A string representation of this object.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -465,7 +458,7 @@ this Object.
 </dt>
 <dd>
   The equality operator.
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 
@@ -485,7 +478,7 @@ this Object.
 </dt>
 <dd>
   
-  <div class="features">override</div>
+  <div class="features"><span class="feature override">override</span></div>
 
 </dd>
 

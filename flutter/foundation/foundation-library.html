@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="foundation library API docs, for the Dart programming language.">
@@ -70,15 +70,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -990,7 +983,7 @@ visible than otherwise necessary, to make code testable.
 <dd>
   The address for the active DevTools server used for debugging this
 application.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1001,7 +994,7 @@ application.
 </dt>
 <dd>
   The uri for the connected vm service protocol.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1013,7 +1006,7 @@ application.
 <dd>
   Identical to <a href="foundation/sparseTextConfiguration.html">sparseTextConfiguration</a> except that the lines connecting
 parent to children are dashed.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1025,7 +1018,7 @@ parent to children are dashed.
 <dd>
   A setting that can be used to override the platform <a href="dart-ui/Brightness.html">Brightness</a> exposed
 from <a href="foundation/BindingBase/platformDispatcher.html">BindingBase.platformDispatcher</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1036,7 +1029,7 @@ from <a href="foundation/BindingBase/platformDispatcher.html">BindingBase.platfo
 </dt>
 <dd>
   Override the <a href="foundation/defaultTargetPlatform.html">defaultTargetPlatform</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1047,7 +1040,7 @@ from <a href="foundation/BindingBase/platformDispatcher.html">BindingBase.platfo
 </dt>
 <dd>
   Configure <a href="foundation/debugFormatDouble.html">debugFormatDouble</a> using <a href="dart-core/num/toStringAsPrecision.html">num.toStringAsPrecision</a>.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1059,7 +1052,7 @@ from <a href="foundation/BindingBase/platformDispatcher.html">BindingBase.platfo
 <dd>
   Boolean value indicating whether <a href="foundation/debugInstrumentAction.html">debugInstrumentAction</a> will instrument
 actions in debug builds.
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1071,7 +1064,7 @@ actions in debug builds.
 <dd>
   Prints a message to the console, which you can access using the "flutter"
 tool's "logs" command ("flutter logs").
-  <div class="features">read / write</div>
+  <div class="features"><span class="feature read / write">read / write</span></div>
 
 </dd>
 
@@ -1084,7 +1077,7 @@ tool's "logs" command ("flutter logs").
   A Future that resolves when there is no longer any buffered content being
 printed by <a href="foundation/debugPrintThrottled.html">debugPrintThrottled</a> (which is the default implementation for
 <a href="foundation/debugPrint.html">debugPrint</a>, which is used to report errors to the console).
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -1096,7 +1089,7 @@ printed by <a href="foundation/debugPrintThrottled.html">debugPrintThrottled</a>
 <dd>
   The <a href="foundation/TargetPlatform.html">TargetPlatform</a> that matches the platform on which the framework is
 currently executing.
-  <div class="features">read-only</div>
+  <div class="features"><span class="feature read-only">read-only</span></div>
 
 </dd>
 
@@ -1107,7 +1100,7 @@ currently executing.
 </dt>
 <dd>
   Dense text tree configuration that minimizes horizontal whitespace.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1119,7 +1112,7 @@ currently executing.
 <dd>
   Render the name on a line followed by the body and properties on the next
 line omitting the children.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1131,7 +1124,7 @@ line omitting the children.
 <dd>
   Configuration that draws a box around a node ignoring the connection to the
 parents.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1142,7 +1135,7 @@ parents.
 </dt>
 <dd>
   Whitespace only configuration where children are not indented.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1153,7 +1146,7 @@ parents.
 </dt>
 <dd>
   Render a node on multiple lines omitting children.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1164,7 +1157,7 @@ parents.
 </dt>
 <dd>
   Render a node as a single line omitting children.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1175,7 +1168,7 @@ parents.
 </dt>
 <dd>
   Default text tree configuration.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1186,7 +1179,7 @@ parents.
 </dt>
 <dd>
   Configuration that draws a box around a leaf node.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1198,7 +1191,7 @@ parents.
 <dd>
   Whitespace only configuration where children are consistently indented
 two spaces.
-  <div class="features">final</div>
+  <div class="features"><span class="feature final">final</span></div>
 
 </dd>
 
@@ -1836,6 +1829,7 @@ contract violations.
       <li><a href="widgets/widgets-library.html">widgets</a></li>
       <li class="section-title">Dart</li>
       <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+      <li><a href="dart-wasm/dart-wasm-library.html">dart:wasm</a></li>
       <li class="section-subtitle">Core</li>
         <li class="section-subitem"><a href="dart-async/dart-async-library.html">dart:async</a></li>
         <li class="section-subitem"><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>

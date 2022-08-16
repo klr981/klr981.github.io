@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the ColorFilter.matrix constructor from Class ColorFilter from the dart:ui library, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -101,7 +94,7 @@
 the fifth row is implicitly added in an identity configuration.</p>
 <p>Every pixel's color value, repsented as an <code>[R, G, B, A]</code>, is matrix
 multiplied to create a new color:</p>
-<pre class="language-text"><code class="language-text">| R' |   | a00 a01 a02 a03 a04 |   | R |
+<pre class="language-dart"><code>| R' |   | a00 a01 a02 a03 a04 |   | R |
 | G' |   | a10 a11 a22 a33 a44 |   | G |
 | B' | = | a20 a21 a22 a33 a44 | * | B |
 | A' |   | a30 a31 a22 a33 a44 |   | A |
@@ -109,7 +102,7 @@ multiplied to create a new color:</p>
 </code></pre>
 <p>The matrix is in row-major order and the translation column is specified
 in unnormalized, 0...255, space. For example, the identity matrix is:</p>
-<pre class="language-dart"><code>const ColorFilter identity = ColorFilter.matrix(&lt;double&gt;[
+<pre class="language-dart"><code class="language-dart">const ColorFilter identity = ColorFilter.matrix(&lt;double&gt;[
   1, 0, 0, 0, 0,
   0, 1, 0, 0, 0,
   0, 0, 1, 0, 0,
@@ -118,7 +111,7 @@ in unnormalized, 0...255, space. For example, the identity matrix is:</p>
 </code></pre>
 <h2 id="examples">Examples</h2>
 <p>An inversion color matrix:</p>
-<pre class="language-dart"><code>const ColorFilter invert = ColorFilter.matrix(&lt;double&gt;[
+<pre class="language-dart"><code class="language-dart">const ColorFilter invert = ColorFilter.matrix(&lt;double&gt;[
   -1,  0,  0, 0, 255,
    0, -1,  0, 0, 255,
    0,  0, -1, 0, 255,
@@ -126,7 +119,7 @@ in unnormalized, 0...255, space. For example, the identity matrix is:</p>
 ]);
 </code></pre>
 <p>A sepia-toned color matrix (values based on the <a href="https://www.w3.org/TR/filter-effects-1/#sepiaEquivalent">Filter Effects Spec</a>):</p>
-<pre class="language-dart"><code>const ColorFilter sepia = ColorFilter.matrix(&lt;double&gt;[
+<pre class="language-dart"><code class="language-dart">const ColorFilter sepia = ColorFilter.matrix(&lt;double&gt;[
   0.393, 0.769, 0.189, 0, 0,
   0.349, 0.686, 0.168, 0, 0,
   0.272, 0.534, 0.131, 0, 0,
@@ -134,7 +127,7 @@ in unnormalized, 0...255, space. For example, the identity matrix is:</p>
 ]);
 </code></pre>
 <p>A greyscale color filter (values based on the <a href="https://www.w3.org/TR/filter-effects-1/#grayscaleEquivalent">Filter Effects Spec</a>):</p>
-<pre class="language-dart"><code>const ColorFilter greyscale = ColorFilter.matrix(&lt;double&gt;[
+<pre class="language-dart"><code class="language-dart">const ColorFilter greyscale = ColorFilter.matrix(&lt;double&gt;[
   0.2126, 0.7152, 0.0722, 0, 0,
   0.2126, 0.7152, 0.0722, 0, 0,
   0.2126, 0.7152, 0.0722, 0, 0,

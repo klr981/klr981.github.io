@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the hashValues function from the dart:ui library, for the Dart programming language.">
@@ -71,15 +71,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -131,7 +124,18 @@
 <a href="dart-core/Iterable-class.html">Iterable</a>, use <a class="deprecated" href="dart-ui/hashList.html">hashList</a>. The output of <a class="deprecated" href="dart-ui/hashList.html">hashList</a> can be used as one of
 the arguments to this function.</p>
 <p>For example:</p>
-<pre class="language-dart"><code class="language-dart">int hashCode =&gt; hashValues(foo, bar, hashList(quux), baz);
+<pre class="language-dart"><code class="language-dart">int get hashCode =&gt; hashValues(foo, bar, hashList(quux), baz); // ignore: deprecated_member_use
+</code></pre>
+<h2 id="deprecation">Deprecation</h2>
+<p>This function has been replaced by <a href="dart-core/Object/hash.html">Object.hash</a>, so that it can be used
+outside of Flutter as well. The new function is a drop-in replacement.</p>
+<p>The <a class="deprecated" href="dart-ui/hashList.html">hashList</a> function has also been replaced, <a href="dart-core/Object/hashAll.html">Object.hashAll</a> is the new
+function. The example above therefore is better written as:</p>
+<pre class="language-dart"><code class="language-dart">int get hashCode =&gt; Object.hash(foo, bar, Object.hashAll(quux), baz);
+</code></pre>
+<p>If <code>quux</code> in this example was nullable, then it would need special handling,
+because <a href="dart-core/Object/hashAll.html">Object.hashAll</a>'s argument is not nullable:</p>
+<pre class="language-dart"><code class="language-dart">int get hashCode =&gt; Object.hash(foo, bar, quux == null ? null : Object.hashAll(quux), baz);
 </code></pre>
 </section>
 

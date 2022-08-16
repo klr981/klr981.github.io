@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
   <meta name="description" content="API docs for the drawAtlas method from the Canvas class, for the Dart programming language.">
@@ -72,15 +72,8 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-<!--  <div class="temp-box"></div>-->
-<!--  <i class="fa fa-sun-o" style="font-size:24px;"></i>  <div class="toggle" id="theme-button">-->
-<!--    <label for="theme" class="switch">-->
-<!--      <input type="checkbox" id="theme" value="light">-->
-<!--      <span class="slider round"></span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--  <i class="fa fa-moon-o"  style="font-size:24px;"></i>-->
 </header>
+
 <main>
 
 
@@ -142,12 +135,14 @@ the clip to quickly reject the operation if it does not intersect.</p>
 <p>An example usage to render many sprites from a single sprite atlas with no
 rotations or scales:</p>
 <pre class="language-dart"><code class="language-dart">class Sprite {
+  Sprite(this.index, this.center);
   int index;
-  double centerX;
-  double centerY;
+  Offset center;
 }
 
 class MyPainter extends CustomPainter {
+  MyPainter(this.spriteAtlas, this.allSprites);
+
   // assume spriteAtlas contains N 10x10 sprites side by side in a (N*10)x10 image
   ui.Image spriteAtlas;
   List&lt;Sprite&gt; allSprites;
@@ -164,8 +159,8 @@ class MyPainter extends CustomPainter {
           anchorX: 5.0,
           anchorY: 5.0,
           // Location at which to draw the center of the sprite
-          translateX: sprite.centerX,
-          translateY: sprite.centerY,
+          translateX: sprite.center.dx,
+          translateY: sprite.center.dy,
         ),
     ], &lt;Rect&gt;[
       for (Sprite sprite in allSprites)
@@ -178,14 +173,16 @@ class MyPainter extends CustomPainter {
 </code></pre>
 <p>Another example usage which renders sprites with an optional opacity and rotation:</p>
 <pre class="language-dart"><code class="language-dart">class Sprite {
+  Sprite(this.index, this.center, this.alpha, this.rotation);
   int index;
-  double centerX;
-  double centerY;
+  Offset center;
   int alpha;
   double rotation;
 }
 
 class MyPainter extends CustomPainter {
+  MyPainter(this.spriteAtlas, this.allSprites);
+
   // assume spriteAtlas contains N 10x10 sprites side by side in a (N*10)x10 image
   ui.Image spriteAtlas;
   List&lt;Sprite&gt; allSprites;
@@ -202,8 +199,8 @@ class MyPainter extends CustomPainter {
           anchorX: 5.0,
           anchorY: 5.0,
           // Location at which to draw the center of the sprite
-          translateX: sprite.centerX,
-          translateY: sprite.centerY,
+          translateX: sprite.center.dx,
+          translateY: sprite.center.dy,
         ),
     ], &lt;Rect&gt;[
       for (Sprite sprite in allSprites)
@@ -245,10 +242,12 @@ than objects.</li>
   assert(paint != null);
 
   final int rectCount = rects.length;
-  if (transforms.length != rectCount)
+  if (transforms.length != rectCount) {
     throw ArgumentError(&#39;&quot;transforms&quot; and &quot;rects&quot; lengths must match.&#39;);
-  if (colors != null &amp;&amp; colors.isNotEmpty &amp;&amp; colors.length != rectCount)
+  }
+  if (colors != null &amp;&amp; colors.isNotEmpty &amp;&amp; colors.length != rectCount) {
     throw ArgumentError(&#39;If non-null, &quot;colors&quot; length must match that of &quot;transforms&quot; and &quot;rects&quot;.&#39;);
+  }
 
   final Float32List rstTransformBuffer = Float32List(rectCount * 4);
   final Float32List rectBuffer = Float32List(rectCount * 4);
